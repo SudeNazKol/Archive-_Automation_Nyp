@@ -54,9 +54,9 @@
             this.arsivTxt = new System.Windows.Forms.Label();
             this.teslimBilgileriTxt = new System.Windows.Forms.Label();
             this.profilTxt = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.personelEkleTxt = new System.Windows.Forms.Label();
             this.personelEkleButton = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -298,15 +298,6 @@
             this.profilTxt.TabIndex = 22;
             this.profilTxt.Text = "Profil";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(856, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "label1";
-            // 
             // personelEkleTxt
             // 
             this.personelEkleTxt.AutoSize = true;
@@ -330,6 +321,15 @@
             this.personelEkleButton.TabStop = false;
             this.personelEkleButton.Visible = false;
             this.personelEkleButton.Click += new System.EventHandler(this.personelEkleButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(856, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "label1";
             // 
             // anaSayfa
             // 
@@ -410,9 +410,9 @@
         private System.Windows.Forms.Label arsivTxt;
         private System.Windows.Forms.Label teslimBilgileriTxt;
         private System.Windows.Forms.Label profilTxt;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label personelEkleTxt;
         private System.Windows.Forms.PictureBox personelEkleButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

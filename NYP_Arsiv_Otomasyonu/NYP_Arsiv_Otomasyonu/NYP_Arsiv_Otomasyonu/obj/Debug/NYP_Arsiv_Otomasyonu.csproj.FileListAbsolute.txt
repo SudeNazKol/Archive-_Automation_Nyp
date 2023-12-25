@@ -356,3 +356,4 @@ C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Ar
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfasi.resources

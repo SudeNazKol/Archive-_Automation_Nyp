@@ -58,6 +58,20 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimbilgileri_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(58, 86, 131);
+            buttonekle.BackColor = Color.FromArgb(58, 86, 131);
+            güncellebutton.BackColor = Color.FromArgb(58, 86, 131);
+            silbutton.BackColor = Color.FromArgb(58, 86, 131);
+            arabutton.BackColor = Color.FromArgb(58, 86, 131);
+            evrakAdiTxt.BackColor = Color.FromArgb(58, 86, 131);
+            teslimAlanTxt.BackColor = Color.FromArgb(58, 86, 131);
+            unvanTxt.BackColor = Color.FromArgb(58, 86, 131);
+            teslimAlmaTarihiTxt.BackColor = Color.FromArgb(58, 86, 131);
+            teslimBırakmaTarihiTxt.BackColor = Color.FromArgb(58, 86, 131);
+            teslimAlmaNedeniTxt.BackColor = Color.FromArgb(58, 86, 131);
+            arabutton.BackColor = Color.FromArgb(58, 86, 131);
+           kodTxt.BackColor = Color.FromArgb(58, 86, 131);
+           aranacakKodTxt.BackColor = Color.FromArgb(58, 86, 131);
             TabloyuDoldur();
         }
         private void button1_Click(object sender, EventArgs e)
