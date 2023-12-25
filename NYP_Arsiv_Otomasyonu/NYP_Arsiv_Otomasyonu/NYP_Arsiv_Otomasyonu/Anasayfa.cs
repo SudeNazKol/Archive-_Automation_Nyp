@@ -47,8 +47,8 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfası arsivSayfası = new ArsivSayfası();
-            arsivSayfası.ShowDialog();
+           // ArsivSayfası arsivSayfası = new ArsivSayfası();
+            //arsivSayfası.ShowDialog();
            this.Hide();
         }
 
