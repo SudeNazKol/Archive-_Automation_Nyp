@@ -21,13 +21,23 @@ namespace NYP_Arsiv_Otomasyonu
         public teslimbilgileri()
         {
             InitializeComponent();
+            InitializeDataGridView();
+
             this.Controls.Add(dgvKullanicilar);
         }
+        private void InitializeDataGridView()
+        {
+            // DataGridView'e sütunları ekle ve her bir sütunun "HeaderText" özelliğini belirle
+            dgvKullanicilar.Columns.Add("Column1", "Evrak Adı");
+            dgvKullanicilar.Columns.Add("Column2", "Teslim Alan");
+            dgvKullanicilar.Columns.Add("Column3", "Teslim Alma Tarihi");
+        }
+
 
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
 
-
+        
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -44,8 +54,9 @@ namespace NYP_Arsiv_Otomasyonu
 
             DataTable table = new DataTable();
             adapter.Fill(table);
-
+            
             return table;
+
         }
 
        void TabloyuDoldur()
@@ -77,7 +88,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO users (evrakadı,teslimalan,ünvan,teslimalmatarihi,teslimbırakmatarihi,teslimneden,konum) VALUES (@p0,@p1,@p2,@p3,@p4,@p5,@p6)", connection);
+            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO users (evrakadi,teslimalan,unvan,teslimalmatarihi,teslimbirakmatarihi,teslimneden,konum) VALUES (@p0,@p1,@p2,@p3,@p4,@p5,@p6)", connection);
             commandToAdd.Parameters.AddWithValue("@p0", txtevrakadı.Text);
             commandToAdd.Parameters.AddWithValue("@p1", txtteslimalan.Text);
             commandToAdd.Parameters.AddWithValue("@p2", ünvancombo.Text);
@@ -104,7 +115,7 @@ namespace NYP_Arsiv_Otomasyonu
             if (connection.State == ConnectionState.Open)
             {
                 deleteCommand.Parameters.AddWithValue
-                        ("@6", silbutton.Text);
+                        ("@6", txtkonum.Text);
                 deleteCommand.ExecuteNonQuery();
                 MessageBox.Show("Kayıt Silindi!");
                 connection.Close();
@@ -114,7 +125,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void güncelbutton_Click(object sender, EventArgs e)
         {
             connection.Open ();
-            MySqlCommand komut = new MySqlCommand("update users set evrakadı='" + txtevrakadı.Text + "',teslimaalan'" + txtteslimalan.Text + "',ünvan'" + ünvancombo.Text + "',teslimalan'" + txtteslimalan.Text + "',teslimalmatarihi'" + txtteslimalmatarih.Text + "',teslimbırakmatarihi'" + txtteslimbırakmatarih.Text + "',teslimneden'" + txtteslimneden.Text + "'where konum='" + txtkonum.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update users set evrakadi='" + txtevrakadı.Text + "',teslimaalan'" + txtteslimalan.Text + "',unvan'" + ünvancombo.Text +  "',teslimalmatarihi'" + txtteslimalmatarih.Text + "',teslimbirakmatarihi'" + txtteslimbırakmatarih.Text + "',teslimneden'" + txtteslimneden.Text + "'where konum='" + txtkonum.Text + "'", connection);
             komut.ExecuteNonQuery ();
             MessageBox.Show("Kayıt Güncellendi");
             TabloyuDoldur();
@@ -143,18 +154,18 @@ namespace NYP_Arsiv_Otomasyonu
         private void dgvKullanicilar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int seçilialan = dgvKullanicilar.SelectedCells[0].RowIndex;
-            string evrakadı = dgvKullanicilar.Rows[seçilialan].Cells[1].Value.ToString();
+            string evrakadi = dgvKullanicilar.Rows[seçilialan].Cells[1].Value.ToString();
             string teslimalan = dgvKullanicilar.Rows[seçilialan].Cells[2].Value.ToString();
-            string ünvan = dgvKullanicilar.Rows[seçilialan].Cells[3].Value.ToString();
+            string unvan = dgvKullanicilar.Rows[seçilialan].Cells[3].Value.ToString();
             string teslimalmatarihi = dgvKullanicilar.Rows[seçilialan].Cells[4].Value.ToString();
-            string teslimbırakmatarihi = dgvKullanicilar.Rows[seçilialan].Cells[5].Value.ToString();
+            string teslimbirakmatarihi = dgvKullanicilar.Rows[seçilialan].Cells[5].Value.ToString();
             string teslimneden = dgvKullanicilar.Rows[seçilialan].Cells[6].Value.ToString();
             string konum = dgvKullanicilar.Rows[seçilialan].Cells[7].Value.ToString();
-            txtevrakadı.Text = evrakadı;
+            txtevrakadı.Text = evrakadi;
             txtteslimalan.Text = teslimalan;
-            ünvancombo.Text = ünvan;
+            ünvancombo.Text = unvan;
             txtteslimalmatarih.Text = teslimalmatarihi;
-            txtteslimbırakmatarih.Text = teslimbırakmatarihi;
+            txtteslimbırakmatarih.Text = teslimbirakmatarihi;
             txtteslimneden.Text = teslimneden;
             txtkonum.Text = konum;
         }
