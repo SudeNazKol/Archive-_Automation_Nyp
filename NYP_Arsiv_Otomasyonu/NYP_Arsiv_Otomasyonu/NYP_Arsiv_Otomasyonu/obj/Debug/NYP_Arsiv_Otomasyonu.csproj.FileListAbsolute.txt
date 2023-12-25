@@ -220,3 +220,13 @@ C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Oto
 C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
 C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
 C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.personelEkle.resources
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
