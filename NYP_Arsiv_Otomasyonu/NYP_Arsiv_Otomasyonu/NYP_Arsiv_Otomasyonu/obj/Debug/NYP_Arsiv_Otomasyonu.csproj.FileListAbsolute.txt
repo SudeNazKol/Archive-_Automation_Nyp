@@ -1,0 +1,222 @@
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\Hp\Documents\GitHub\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfası.resources
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfası.resources
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\ilayda\Desktop\dönem ödevi\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfası.resources
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\admin\Desktop\bulbulsenagit\WinFormsApp3\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\ZstdSharp.dll
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.pdb
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfası.resources
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\admin\Desktop\nyp\NYP_Odev\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\ZstdSharp.dll
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.pdb
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfası.resources
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\ZstdSharp.dll
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.pdb
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfası.resources
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\admin\Desktop\bulbulsenagit\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.personelEkle.resources
+C:\Users\ilayda\Desktop\arşiv otomasyonu\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.personelEkle.resources
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\ZstdSharp.dll
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.pdb
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Google.Protobuf.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\MySql.Data.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Buffers.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Memory.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.anaSayfa.resources
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.GirisSayfası.resources
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.personelEkle.resources
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Properties.Resources.resources
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.teslimbilgileri.resources
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Documents\GitHub\Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYP_Arsiv_Otomasyonu", "NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu.csproj", "{48F0AA11-FCCC-49A1-873D-F038F916FE60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F0AA11-FCCC-49A1-873D-F038F916FE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F0AA11-FCCC-49A1-873D-F038F916FE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F0AA11-FCCC-49A1-873D-F038F916FE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F0AA11-FCCC-49A1-873D-F038F916FE60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A00FB318-0902-42D5-BBDD-6DF757413135}
+	EndGlobalSection
+EndGlobal
