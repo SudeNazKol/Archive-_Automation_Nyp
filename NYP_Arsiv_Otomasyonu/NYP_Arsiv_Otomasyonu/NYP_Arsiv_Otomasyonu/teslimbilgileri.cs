@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Google.Protobuf.WellKnownTypes;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +63,9 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void teslimbilgileri_Load(object sender, EventArgs e)
-        {
+        { 
+            int kayitsayisi =dgvKullanicilar.Rows.Count;
+            label9.Text=kayitsayisi.ToString();
             this.BackColor = Color.FromArgb(58, 86, 131);
             buttonekle.BackColor = Color.FromArgb(58, 86, 131);
             güncellebutton.BackColor = Color.FromArgb(58, 86, 131);
@@ -78,6 +81,7 @@ namespace NYP_Arsiv_Otomasyonu
            kodTxt.BackColor = Color.FromArgb(58, 86, 131);
            aranacakKodTxt.BackColor = Color.FromArgb(58, 86, 131);
             TabloyuDoldur();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -94,6 +98,7 @@ namespace NYP_Arsiv_Otomasyonu
             commandToAdd.ExecuteNonQuery();
             connection.Close();
             TabloyuDoldur();
+            
             MessageBox.Show("Eklendi!");
 
 
@@ -113,13 +118,15 @@ namespace NYP_Arsiv_Otomasyonu
                 deleteCommand.ExecuteNonQuery();
                 MessageBox.Show("Kayıt Silindi!");
                 connection.Close();
+                TabloyuDoldur();
+               
             }
         }
 
         private void güncelbutton_Click(object sender, EventArgs e)
         {
             connection.Open ();
-            MySqlCommand komut = new MySqlCommand("update users set evrakadi='" + txtevrakadı.Text + "',teslimalan='" + txtteslimalan.Text + "',unvan='" + ünvancombo.Text +  "',teslimalmatarihi='" + txtteslimalmatarih.Text + "',teslimbirakmatarihi='" + txtteslimbırakmatarih.Text + "',teslimneden='" + txtteslimneden.Text + "'where konum='" + txtkonum.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update users set evrakadi='" + txtevrakadı.Text + "',teslimalan='" + txtteslimalan.Text + "',unvan='" + ünvancombo.Text +  "',teslimalmatarihi='" + txtteslimalmatarih.Text + "',teslimbirakmatarihi='" + txtteslimbırakmatarih.Text + "',teslimneden='" + txtteslimneden.Text + "' where konum='" + txtkonum.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close ();
@@ -135,7 +142,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void arabutton_Click(object sender, EventArgs e)
         {connection.Open();
-            MySqlCommand komut =new MySqlCommand("Select * from users where konum like%" +txtara.Text+"'%",connection);
+            MySqlCommand komut =new MySqlCommand("Select * from users where konum like '%" +txtara.Text+"%'",connection);
             MySqlDataAdapter da = new MySqlDataAdapter(komut);
             DataSet ds = new DataSet();
             da.Fill(ds);

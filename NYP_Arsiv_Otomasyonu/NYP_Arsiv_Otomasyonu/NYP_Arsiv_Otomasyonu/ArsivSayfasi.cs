@@ -54,6 +54,18 @@ namespace NYP_Arsiv_Otomasyonu
             tslm.ShowDialog();
             this.Close();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            eklearsiv eklarsv = new eklearsiv();
+            eklarsv.ShowDialog();
+            this.Close();
+        }
     }
     
 }
