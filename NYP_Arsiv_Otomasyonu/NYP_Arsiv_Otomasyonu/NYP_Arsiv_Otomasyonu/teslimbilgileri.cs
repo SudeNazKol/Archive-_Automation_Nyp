@@ -21,17 +21,11 @@ namespace NYP_Arsiv_Otomasyonu
         public teslimbilgileri()
         {
             InitializeComponent();
-            InitializeDataGridView();
+            
 
             this.Controls.Add(dgvKullanicilar);
         }
-        private void InitializeDataGridView()
-        {
-            // DataGridView'e sütunları ekle ve her bir sütunun "HeaderText" özelliğini belirle
-            dgvKullanicilar.Columns.Add("Column1", "Evrak Adı");
-            dgvKullanicilar.Columns.Add("Column2", "Teslim Alan");
-            dgvKullanicilar.Columns.Add("Column3", "Teslim Alma Tarihi");
-        }
+        
 
 
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
@@ -125,11 +119,12 @@ namespace NYP_Arsiv_Otomasyonu
         private void güncelbutton_Click(object sender, EventArgs e)
         {
             connection.Open ();
-            MySqlCommand komut = new MySqlCommand("update users set evrakadi='" + txtevrakadı.Text + "',teslimaalan'" + txtteslimalan.Text + "',unvan'" + ünvancombo.Text +  "',teslimalmatarihi'" + txtteslimalmatarih.Text + "',teslimbirakmatarihi'" + txtteslimbırakmatarih.Text + "',teslimneden'" + txtteslimneden.Text + "'where konum='" + txtkonum.Text + "'", connection);
-            komut.ExecuteNonQuery ();
+            MySqlCommand komut = new MySqlCommand("update users set evrakadi='" + txtevrakadı.Text + "',teslimalan='" + txtteslimalan.Text + "',unvan='" + ünvancombo.Text +  "',teslimalmatarihi='" + txtteslimalmatarih.Text + "',teslimbirakmatarihi='" + txtteslimbırakmatarih.Text + "',teslimneden='" + txtteslimneden.Text + "'where konum='" + txtkonum.Text + "'", connection);
+            komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
-            TabloyuDoldur();
             connection.Close ();
+            TabloyuDoldur();
+            
         }
 
 
@@ -140,7 +135,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void arabutton_Click(object sender, EventArgs e)
         {connection.Open();
-            MySqlCommand komut =new MySqlCommand("Select * from users where ad like%" +txtara.Text+"%'",connection);
+            MySqlCommand komut =new MySqlCommand("Select * from users where konum like%" +txtara.Text+"'%",connection);
             MySqlDataAdapter da = new MySqlDataAdapter(komut);
             DataSet ds = new DataSet();
             da.Fill(ds);
