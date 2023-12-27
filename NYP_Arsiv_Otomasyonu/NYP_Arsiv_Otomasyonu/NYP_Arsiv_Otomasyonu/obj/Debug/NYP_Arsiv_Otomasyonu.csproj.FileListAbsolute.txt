@@ -361,3 +361,5 @@ C:\Users\admin\Desktop\bulbulsenagit\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyon
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.ArsivSayfasi.resources
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.eklearsiv.resources
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.listeleme.resources
+C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.eklearsiv.resources
+C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.listeleme.resources

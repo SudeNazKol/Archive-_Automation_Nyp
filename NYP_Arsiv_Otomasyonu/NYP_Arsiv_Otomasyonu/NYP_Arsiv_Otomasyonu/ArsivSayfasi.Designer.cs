@@ -317,6 +317,7 @@
             this.Name = "ArsivSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ArsivSayfasi";
+            this.Load += new System.EventHandler(this.ArsivSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).EndInit();

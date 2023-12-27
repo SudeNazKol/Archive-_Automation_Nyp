@@ -52,6 +52,7 @@
             this.arabutton = new System.Windows.Forms.Button();
             this.txtara = new System.Windows.Forms.TextBox();
             this.aranacakKodTxt = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -286,11 +287,19 @@
             this.aranacakKodTxt.TabIndex = 31;
             this.aranacakKodTxt.Text = "Aranacak\r\n    Kod :";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(375, 146);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 32;
+            // 
             // teslimbilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.aranacakKodTxt);
             this.Controls.Add(this.txtara);
             this.Controls.Add(this.arabutton);
@@ -350,5 +359,6 @@
         private System.Windows.Forms.Button arabutton;
         private System.Windows.Forms.TextBox txtara;
         private System.Windows.Forms.Label aranacakKodTxt;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
