@@ -15,6 +15,8 @@ namespace NYP_Arsiv_Otomasyonu
         public eklearsiv()
         {
             InitializeComponent();
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace NYP_Arsiv_Otomasyonu
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
            unvanComboBox.ForeColor = Color.FromArgb(58, 86, 131);
             evrakEkleButton.BackColor = Color.FromArgb(58, 86, 131);
-
+           saatTxt.BackColor = Color.FromArgb(58, 86, 131);
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -109,6 +111,13 @@ namespace NYP_Arsiv_Otomasyonu
             /* ProfilSayfası profilsayfası = new ProfilSayfası();
             profilsayfasi.ShowDialog();
             this.Close();*/
+        }
+
+        private void arsivButton_Click(object sender, EventArgs e)
+        {
+            ArsivSayfasi arsivsayfası = new ArsivSayfasi();
+            arsivsayfası.ShowDialog();
+            this.Close();
         }
     }
 }

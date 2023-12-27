@@ -196,7 +196,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(95, 43);
+            this.pictureBox2.Location = new System.Drawing.Point(95, 63);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(897, 153);
             this.pictureBox2.TabIndex = 37;
@@ -205,7 +205,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(268, 55);
+            this.pictureBox3.Location = new System.Drawing.Point(268, 75);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -216,7 +216,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(478, 55);
+            this.pictureBox4.Location = new System.Drawing.Point(478, 75);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -226,7 +226,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(680, 55);
+            this.pictureBox5.Location = new System.Drawing.Point(680, 75);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +239,7 @@
             this.evrakEkleTxt.AutoSize = true;
             this.evrakEkleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakEkleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakEkleTxt.Location = new System.Drawing.Point(681, 158);
+            this.evrakEkleTxt.Location = new System.Drawing.Point(681, 178);
             this.evrakEkleTxt.Name = "evrakEkleTxt";
             this.evrakEkleTxt.Size = new System.Drawing.Size(94, 18);
             this.evrakEkleTxt.TabIndex = 41;
@@ -250,7 +250,7 @@
             this.evrakDuzenleTxt.AutoSize = true;
             this.evrakDuzenleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakDuzenleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakDuzenleTxt.Location = new System.Drawing.Point(468, 158);
+            this.evrakDuzenleTxt.Location = new System.Drawing.Point(468, 178);
             this.evrakDuzenleTxt.Name = "evrakDuzenleTxt";
             this.evrakDuzenleTxt.Size = new System.Drawing.Size(117, 18);
             this.evrakDuzenleTxt.TabIndex = 42;
@@ -261,18 +261,19 @@
             this.evrakGoruntuleTxt.AutoSize = true;
             this.evrakGoruntuleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakGoruntuleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakGoruntuleTxt.Location = new System.Drawing.Point(249, 158);
+            this.evrakGoruntuleTxt.Location = new System.Drawing.Point(249, 178);
             this.evrakGoruntuleTxt.Name = "evrakGoruntuleTxt";
             this.evrakGoruntuleTxt.Size = new System.Drawing.Size(130, 18);
             this.evrakGoruntuleTxt.TabIndex = 43;
             this.evrakGoruntuleTxt.Text = "Evrak Görüntüle";
+            this.evrakGoruntuleTxt.Click += new System.EventHandler(this.evrakGoruntuleTxt_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(646, 6);
+            this.pictureBox6.Location = new System.Drawing.Point(836, 12);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 45;
             this.pictureBox6.TabStop = false;
@@ -282,7 +283,7 @@
             this.saatTxt.AutoSize = true;
             this.saatTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.saatTxt.ForeColor = System.Drawing.Color.White;
-            this.saatTxt.Location = new System.Drawing.Point(684, 11);
+            this.saatTxt.Location = new System.Drawing.Point(874, 19);
             this.saatTxt.Name = "saatTxt";
             this.saatTxt.Size = new System.Drawing.Size(59, 20);
             this.saatTxt.TabIndex = 44;

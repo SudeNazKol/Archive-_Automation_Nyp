@@ -117,6 +117,12 @@
     <Compile Include="eklearsiv.Designer.cs">
       <DependentUpon>eklearsiv.cs</DependentUpon>
     </Compile>
+    <Compile Include="EvrakGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvrakGoruntule.Designer.cs">
+      <DependentUpon>EvrakGoruntule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eklearsiv.resx">
       <DependentUpon>eklearsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvrakGoruntule.resx">
+      <DependentUpon>EvrakGoruntule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisSayfası.resx">
       <DependentUpon>GirisSayfası.cs</DependentUpon>

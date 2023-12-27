@@ -22,7 +22,9 @@ namespace NYP_Arsiv_Otomasyonu
         public teslimbilgileri()
         {
             InitializeComponent();
-            
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+
 
             this.Controls.Add(dgvKullanicilar);
         }
@@ -66,20 +68,42 @@ namespace NYP_Arsiv_Otomasyonu
         { 
             int kayitsayisi =dgvKullanicilar.Rows.Count;
             label9.Text=kayitsayisi.ToString();
-            this.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
+            
+            ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
+            arsivButton.BackColor = Color.FromArgb(58, 86, 131);
+            teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
+            profilButton.BackColor = Color.FromArgb(58, 86, 131);
+            exitButton.BackColor = Color.FromArgb(58, 86, 131);
+            ajandaTxt.BackColor = Color.FromArgb(58, 86, 131);
+            arsivTxt.BackColor = Color.FromArgb(58, 86, 131);
+            teslimBilgileriTxt.BackColor = Color.FromArgb(58, 86, 131);
+            profilTxt.BackColor = Color.FromArgb(58, 86, 131);
+            personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
+            personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
+            evrakAdiTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtevrakadı.ForeColor = Color.FromArgb(58, 86, 131);
+            teslimAlanTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtteslimalan.ForeColor = Color.FromArgb(58, 86, 131);
+            unvanTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            ünvancombo.ForeColor = Color.FromArgb(58, 86, 131);
+            teslimAlmaTarihiTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtteslimalmatarih.ForeColor = Color.FromArgb(58, 86, 131);
+            teslimBırakmaTarihiTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtteslimbırakmatarih.ForeColor = Color.FromArgb(58, 86, 131);
+            teslimAlmaNedeniTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtteslimneden.ForeColor = Color.FromArgb(58, 86, 131);
+            kodTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtkonum.ForeColor = Color.FromArgb(58, 86, 131);
+            aranacakKodTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            txtara.ForeColor = Color.FromArgb(58, 86, 131);
             buttonekle.BackColor = Color.FromArgb(58, 86, 131);
             güncellebutton.BackColor = Color.FromArgb(58, 86, 131);
             silbutton.BackColor = Color.FromArgb(58, 86, 131);
             arabutton.BackColor = Color.FromArgb(58, 86, 131);
-            evrakAdiTxt.BackColor = Color.FromArgb(58, 86, 131);
-            teslimAlanTxt.BackColor = Color.FromArgb(58, 86, 131);
-            unvanTxt.BackColor = Color.FromArgb(58, 86, 131);
-            teslimAlmaTarihiTxt.BackColor = Color.FromArgb(58, 86, 131);
-            teslimBırakmaTarihiTxt.BackColor = Color.FromArgb(58, 86, 131);
-            teslimAlmaNedeniTxt.BackColor = Color.FromArgb(58, 86, 131);
-            arabutton.BackColor = Color.FromArgb(58, 86, 131);
-           kodTxt.BackColor = Color.FromArgb(58, 86, 131);
-           aranacakKodTxt.BackColor = Color.FromArgb(58, 86, 131);
+            katSayisiTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            label9.ForeColor = Color.FromArgb(58, 86, 131);
+            saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             TabloyuDoldur();
 
         }

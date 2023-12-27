@@ -56,7 +56,6 @@
             this.profilTxt = new System.Windows.Forms.Label();
             this.personelEkleTxt = new System.Windows.Forms.Label();
             this.personelEkleButton = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -146,7 +145,7 @@
             this.saatTxt.AutoSize = true;
             this.saatTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.saatTxt.ForeColor = System.Drawing.Color.White;
-            this.saatTxt.Location = new System.Drawing.Point(684, 11);
+            this.saatTxt.Location = new System.Drawing.Point(879, 19);
             this.saatTxt.Name = "saatTxt";
             this.saatTxt.Size = new System.Drawing.Size(59, 20);
             this.saatTxt.TabIndex = 8;
@@ -173,7 +172,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(646, 6);
+            this.pictureBox5.Location = new System.Drawing.Point(836, 12);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 31);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -322,15 +321,6 @@
             this.personelEkleButton.Visible = false;
             this.personelEkleButton.Click += new System.EventHandler(this.personelEkleButton_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(856, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "label1";
-            // 
             // anaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -338,7 +328,6 @@
             this.ClientSize = new System.Drawing.Size(991, 540);
             this.Controls.Add(this.personelEkleTxt);
             this.Controls.Add(this.personelEkleButton);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.profilTxt);
             this.Controls.Add(this.teslimBilgileriTxt);
             this.Controls.Add(this.arsivTxt);
@@ -412,7 +401,6 @@
         private System.Windows.Forms.Label profilTxt;
         private System.Windows.Forms.Label personelEkleTxt;
         private System.Windows.Forms.PictureBox personelEkleButton;
-        private System.Windows.Forms.Label label1;
     }
 }
 

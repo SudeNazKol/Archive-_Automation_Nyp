@@ -41,7 +41,9 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            EvrakGoruntule evrakGoruntule = new EvrakGoruntule();
+            evrakGoruntule.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -70,6 +72,17 @@ namespace NYP_Arsiv_Otomasyonu
             evrakDuzenleTxt.BackColor = Color.FromArgb(58, 86, 131);
             evrakEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox3.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox4.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox5.BackColor = Color.FromArgb(58, 86, 131);
+        }
+
+        private void evrakGoruntuleTxt_Click(object sender, EventArgs e)
+        {
+
+            EvrakGoruntule evrakGoruntule = new EvrakGoruntule();
+            evrakGoruntule.ShowDialog();
+            this.Close();
         }
     }
     

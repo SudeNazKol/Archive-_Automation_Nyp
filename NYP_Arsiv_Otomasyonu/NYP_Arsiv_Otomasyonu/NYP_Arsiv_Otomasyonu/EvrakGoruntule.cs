@@ -10,29 +10,18 @@ using System.Windows.Forms;
 
 namespace NYP_Arsiv_Otomasyonu
 {
-    public partial class personelEkle : Form
+    public partial class EvrakGoruntule : Form
     {
-        public personelEkle()
+        public EvrakGoruntule()
         {
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void personelEkle_Load(object sender, EventArgs e)
+        private void EvrakGoruntule_Load(object sender, EventArgs e)
         {
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
-           
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -44,19 +33,7 @@ namespace NYP_Arsiv_Otomasyonu
             profilTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
-            AdSoyad.ForeColor = Color.FromArgb(58, 86, 131);
-            adSoyadTxt.ForeColor = Color.FromArgb(58, 86, 131);
-            kullaniciAdi.ForeColor = Color.FromArgb(58, 86, 131);
-            kullaniciAdiTxt.ForeColor = Color.FromArgb(58, 86, 131);
-            unvan.ForeColor = Color.FromArgb(58, 86, 131);
-            unvanComboBox.ForeColor = Color.FromArgb(58, 86, 131);
-            sifre.ForeColor = Color.FromArgb(58, 86, 131);
-            SifreTxt.ForeColor = Color.FromArgb(58, 86, 131);
-            silButton.BackColor = Color.FromArgb(58, 86, 131);
-            düzenleButton.BackColor = Color.FromArgb(58, 86, 131);
-            ekleButton.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
-
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -75,15 +52,15 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivsayfası = new ArsivSayfasi();
-            arsivsayfası.ShowDialog();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            arsivSayfasi.ShowDialog();
             this.Close();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivsayfası = new ArsivSayfasi();
-            arsivsayfası.ShowDialog();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            arsivSayfasi.ShowDialog();
             this.Close();
         }
 
@@ -101,16 +78,30 @@ namespace NYP_Arsiv_Otomasyonu
             this.Close();
         }
 
+        private void personelEkleButton_Click(object sender, EventArgs e)
+        {
+            personelEkle personelekle = new personelEkle();
+            personelekle.ShowDialog();
+            this.Close();
+        }
+
+        private void personelEkleTxt_Click(object sender, EventArgs e)
+        {
+            personelEkle personelekle = new personelEkle();
+            personelekle.ShowDialog();
+            this.Close();
+        }
+
         private void profilButton_Click(object sender, EventArgs e)
         {
-          /*  ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+           /* ProfilSayfasi profilsayfasi = new ProfilSaufasi();
             profilsayfasi.ShowDialog();
             this.Close();*/
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            /*  ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+            /* ProfilSayfasi profilsayfasi = new ProfilSaufasi();
             profilsayfasi.ShowDialog();
             this.Close();*/
         }
