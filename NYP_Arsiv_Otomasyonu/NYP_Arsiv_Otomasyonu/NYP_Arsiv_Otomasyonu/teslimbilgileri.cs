@@ -181,6 +181,11 @@ namespace NYP_Arsiv_Otomasyonu
         {
 
         }
+
+        private void txtteslimbırakmatarih_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

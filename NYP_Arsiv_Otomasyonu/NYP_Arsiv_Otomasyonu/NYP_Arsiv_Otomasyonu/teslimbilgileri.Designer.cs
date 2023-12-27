@@ -115,6 +115,7 @@
             this.txtteslimbırakmatarih.Name = "txtteslimbırakmatarih";
             this.txtteslimbırakmatarih.Size = new System.Drawing.Size(136, 22);
             this.txtteslimbırakmatarih.TabIndex = 12;
+            this.txtteslimbırakmatarih.TextChanged += new System.EventHandler(this.txtteslimbırakmatarih_TextChanged);
             // 
             // txtteslimalmatarih
             // 
