@@ -110,7 +110,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO users (evrakadi,teslimalan,unvan,teslimalmatarihi,teslimbirakmatarihi,teslimneden,konum) VALUES (@p0,@p1,@p2,@p3,@p4,@p5,@p6)", connection);
+            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO users (Evrak_adi,Teslim_Alan,Unvan,Teslim_Alma_Tarihi,Teslim_Birakma_Tarihi,Teslim_Neden,Konum) VALUES (@p0,@p1,@p2,@p3,@p4,@p5,@p6)", connection);
             commandToAdd.Parameters.AddWithValue("@p0", txtevrakadı.Text);
             commandToAdd.Parameters.AddWithValue("@p1", txtteslimalan.Text);
             commandToAdd.Parameters.AddWithValue("@p2", ünvancombo.Text);
@@ -150,7 +150,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void güncelbutton_Click(object sender, EventArgs e)
         {
             connection.Open ();
-            MySqlCommand komut = new MySqlCommand("update users set evrakadi='" + txtevrakadı.Text + "',teslimalan='" + txtteslimalan.Text + "',unvan='" + ünvancombo.Text +  "',teslimalmatarihi='" + txtteslimalmatarih.Text + "',teslimbirakmatarihi='" + txtteslimbırakmatarih.Text + "',teslimneden='" + txtteslimneden.Text + "' where konum='" + txtkonum.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update users set Evrak_adi='" + txtevrakadı.Text + "',Teslim_Alan='" + txtteslimalan.Text + "',Unvan='" + ünvancombo.Text +  "',Teslim_Alma_Tarihi='" + txtteslimalmatarih.Text + "',Teslim_Birakma_Tarihi='" + txtteslimbırakmatarih.Text + "',Teslim_Neden='" + txtteslimneden.Text + "' where Konum='" + txtkonum.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close ();
@@ -180,20 +180,20 @@ namespace NYP_Arsiv_Otomasyonu
         private void dgvKullanicilar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int seçilialan = dgvKullanicilar.SelectedCells[0].RowIndex;
-            string evrakadi = dgvKullanicilar.Rows[seçilialan].Cells[1].Value.ToString();
-            string teslimalan = dgvKullanicilar.Rows[seçilialan].Cells[2].Value.ToString();
-            string unvan = dgvKullanicilar.Rows[seçilialan].Cells[3].Value.ToString();
-            string teslimalmatarihi = dgvKullanicilar.Rows[seçilialan].Cells[4].Value.ToString();
-            string teslimbirakmatarihi = dgvKullanicilar.Rows[seçilialan].Cells[5].Value.ToString();
-            string teslimneden = dgvKullanicilar.Rows[seçilialan].Cells[6].Value.ToString();
-            string konum = dgvKullanicilar.Rows[seçilialan].Cells[7].Value.ToString();
-            txtevrakadı.Text = evrakadi;
-            txtteslimalan.Text = teslimalan;
-            ünvancombo.Text = unvan;
-            txtteslimalmatarih.Text = teslimalmatarihi;
-            txtteslimbırakmatarih.Text = teslimbirakmatarihi;
-            txtteslimneden.Text = teslimneden;
-            txtkonum.Text = konum;
+            string Evrak_adi = dgvKullanicilar.Rows[seçilialan].Cells[1].Value.ToString();
+            string Teslim_Alan = dgvKullanicilar.Rows[seçilialan].Cells[2].Value.ToString();
+            string Unvan = dgvKullanicilar.Rows[seçilialan].Cells[3].Value.ToString();
+            string Teslim_Alma_Tarihi = dgvKullanicilar.Rows[seçilialan].Cells[4].Value.ToString();
+            string Teslim_Birakma_Tarihi = dgvKullanicilar.Rows[seçilialan].Cells[5].Value.ToString();
+            string Teslim_Neden = dgvKullanicilar.Rows[seçilialan].Cells[6].Value.ToString();
+            string Konum = dgvKullanicilar.Rows[seçilialan].Cells[7].Value.ToString();
+            txtevrakadı.Text = Evrak_adi;
+            txtteslimalan.Text = Teslim_Alan;
+            ünvancombo.Text = Unvan;
+            txtteslimalmatarih.Text = Teslim_Alma_Tarihi;
+            txtteslimbırakmatarih.Text = Teslim_Birakma_Tarihi;
+            txtteslimneden.Text = Teslim_Neden;
+            txtkonum.Text = Konum;
         }
 
         private void txtevrakadı_TextChanged(object sender, EventArgs e)
@@ -273,6 +273,11 @@ namespace NYP_Arsiv_Otomasyonu
             GirisSayfası girisSayfası = new GirisSayfası();
             girisSayfası.ShowDialog();
             this.Close();
+        }
+
+        private void dgvKullanicilar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

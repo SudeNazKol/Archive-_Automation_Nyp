@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,10 +18,15 @@ namespace NYP_Arsiv_Otomasyonu
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+            this.Controls.Add(evrakduzenledata);
         }
+
+        MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
+        private BindingSource bindingSource1 = new BindingSource();
 
         private void EvrakDüzenle_Load(object sender, EventArgs e)
         {
+            TabloyuDoldur();
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -35,16 +41,38 @@ namespace NYP_Arsiv_Otomasyonu
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             evrakAdi.ForeColor = Color.FromArgb(58, 86, 131);
-           evrakAdiTxt.ForeColor = Color.FromArgb(58, 86, 131);
+           evrakaditxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakDüzenlemeTarihi.ForeColor = Color.FromArgb(58, 86, 131);
-            evrakDuzenlemeTarihiDateTime.ForeColor = Color.FromArgb(58, 86, 131);
+            evrakduzenlemedate.ForeColor = Color.FromArgb(58, 86, 131);
             evrakKodu.ForeColor = Color.FromArgb(58, 86, 131);
-            evrakKoduTxt.ForeColor = Color.FromArgb(58, 86, 131);
+            evrakkodutxt.ForeColor = Color.FromArgb(58, 86, 131);
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
-            unvanComboBox.ForeColor = Color.FromArgb(58, 86, 131);
+            unvancombobox.ForeColor = Color.FromArgb(58, 86, 131);
             duzenlemeNedeni.ForeColor = Color.FromArgb(58, 86, 131);
-            duzenlemeNedeniTxt.ForeColor = Color.FromArgb(58, 86, 131);
-            evrakEkleButton.BackColor = Color.FromArgb(58, 86, 131);
+            duzenlemenedenitxt.ForeColor = Color.FromArgb(58, 86, 131);
+            evrakdüzeneklebutton.BackColor = Color.FromArgb(58, 86, 131);
+        }
+        private DataTable GetData(string sqlCommand)
+        {
+
+
+            MySqlCommand command = new MySqlCommand(sqlCommand, connection);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            adapter.SelectCommand = command;
+
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            return table;
+
+        }
+        void TabloyuDoldur()
+        {
+            connection.Open();
+            bindingSource1.DataSource = GetData("Select * From archives");
+            evrakduzenledata.DataSource = bindingSource1;
+            connection.Close();
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -124,6 +152,37 @@ namespace NYP_Arsiv_Otomasyonu
             GirisSayfası girisSAyfasi = new GirisSayfası();
             girisSAyfasi.ShowDialog();
             this.Close();
+        }
+
+        private void evrakAdiTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void evrakdüzeneklebutton_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "',Unvan='" +unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text + "',  where Konum='" + evrakkodutxt.Text + "'", connection);
+            komut.ExecuteNonQuery();
+            MessageBox.Show("Kayıt Güncellendi");
+            connection.Close();
+            TabloyuDoldur();
+        }
+
+        private void evrakduzenledata_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int seçilialan = evrakduzenledata.SelectedCells[0].RowIndex;
+            string Evrak_Adi = evrakduzenledata.Rows[seçilialan].Cells[1].Value.ToString();
+            string Unvan = evrakduzenledata.Rows[seçilialan].Cells[2].Value.ToString();
+            string Evrak_Tarih= evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
+            string Konum = evrakduzenledata.Rows[seçilialan].Cells[4].Value.ToString();
+            
+            evrakaditxt.Text = Evrak_Adi;
+            unvancombobox.Text = Unvan;
+            evrakduzenlemedate.Text = Evrak_Tarih;
+            evrakkodutxt.Text = Konum;
+            
+            
         }
     }
 }

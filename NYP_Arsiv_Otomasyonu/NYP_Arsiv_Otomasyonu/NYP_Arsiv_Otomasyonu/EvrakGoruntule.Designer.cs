@@ -42,7 +42,7 @@
             this.arsivButton = new System.Windows.Forms.PictureBox();
             this.ajandaButton = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.evrakGoruntuleGrid = new System.Windows.Forms.DataGridView();
+            this.evraklistelemedata = new System.Windows.Forms.DataGridView();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evrakGoruntuleGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evraklistelemedata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,15 +193,15 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
-            // evrakGoruntuleGrid
+            // evraklistelemedata
             // 
-            this.evrakGoruntuleGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.evrakGoruntuleGrid.Location = new System.Drawing.Point(106, 54);
-            this.evrakGoruntuleGrid.Name = "evrakGoruntuleGrid";
-            this.evrakGoruntuleGrid.RowHeadersWidth = 51;
-            this.evrakGoruntuleGrid.RowTemplate.Height = 24;
-            this.evrakGoruntuleGrid.Size = new System.Drawing.Size(873, 474);
-            this.evrakGoruntuleGrid.TabIndex = 49;
+            this.evraklistelemedata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.evraklistelemedata.Location = new System.Drawing.Point(106, 54);
+            this.evraklistelemedata.Name = "evraklistelemedata";
+            this.evraklistelemedata.RowHeadersWidth = 51;
+            this.evraklistelemedata.RowTemplate.Height = 24;
+            this.evraklistelemedata.Size = new System.Drawing.Size(873, 474);
+            this.evraklistelemedata.TabIndex = 49;
             // 
             // pictureBox6
             // 
@@ -231,7 +231,7 @@
             this.ClientSize = new System.Drawing.Size(991, 540);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.saatTxt);
-            this.Controls.Add(this.evrakGoruntuleGrid);
+            this.Controls.Add(this.evraklistelemedata);
             this.Controls.Add(this.personelEkleTxt);
             this.Controls.Add(this.personelEkleButton);
             this.Controls.Add(this.profilTxt);
@@ -255,7 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evrakGoruntuleGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evraklistelemedata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,7 +276,7 @@
         private System.Windows.Forms.PictureBox arsivButton;
         private System.Windows.Forms.PictureBox ajandaButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView evrakGoruntuleGrid;
+        private System.Windows.Forms.DataGridView evraklistelemedata;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;

@@ -254,6 +254,7 @@
             this.dgvKullanicilar.Size = new System.Drawing.Size(873, 289);
             this.dgvKullanicilar.TabIndex = 24;
             this.dgvKullanicilar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellClick);
+            this.dgvKullanicilar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellContentClick);
             // 
             // silbutton
             // 

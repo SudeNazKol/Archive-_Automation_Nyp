@@ -45,18 +45,18 @@
             this.ajandaButton = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.evrakDuzenlemeTarihiDateTime = new System.Windows.Forms.DateTimePicker();
+            this.evrakduzenlemedate = new System.Windows.Forms.DateTimePicker();
             this.unvan = new System.Windows.Forms.Label();
-            this.unvanComboBox = new System.Windows.Forms.ComboBox();
-            this.evrakEkleButton = new System.Windows.Forms.Button();
-            this.evrakKoduTxt = new System.Windows.Forms.TextBox();
-            this.evrakAdiTxt = new System.Windows.Forms.TextBox();
+            this.unvancombobox = new System.Windows.Forms.ComboBox();
+            this.evrakdüzeneklebutton = new System.Windows.Forms.Button();
+            this.evrakkodutxt = new System.Windows.Forms.TextBox();
+            this.evrakaditxt = new System.Windows.Forms.TextBox();
             this.evrakKodu = new System.Windows.Forms.Label();
             this.evrakDüzenlemeTarihi = new System.Windows.Forms.Label();
             this.evrakAdi = new System.Windows.Forms.Label();
             this.duzenlemeNedeni = new System.Windows.Forms.Label();
-            this.duzenlemeNedeniTxt = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.duzenlemenedenitxt = new System.Windows.Forms.TextBox();
+            this.evrakduzenledata = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evrakduzenledata)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox6
@@ -225,16 +225,16 @@
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
-            // evrakDuzenlemeTarihiDateTime
+            // evrakduzenlemedate
             // 
-            this.evrakDuzenlemeTarihiDateTime.CalendarForeColor = System.Drawing.Color.White;
-            this.evrakDuzenlemeTarihiDateTime.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.evrakDuzenlemeTarihiDateTime.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.evrakDuzenlemeTarihiDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.evrakDuzenlemeTarihiDateTime.Location = new System.Drawing.Point(264, 65);
-            this.evrakDuzenlemeTarihiDateTime.Name = "evrakDuzenlemeTarihiDateTime";
-            this.evrakDuzenlemeTarihiDateTime.Size = new System.Drawing.Size(267, 24);
-            this.evrakDuzenlemeTarihiDateTime.TabIndex = 68;
+            this.evrakduzenlemedate.CalendarForeColor = System.Drawing.Color.White;
+            this.evrakduzenlemedate.CalendarTitleBackColor = System.Drawing.Color.White;
+            this.evrakduzenlemedate.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.evrakduzenlemedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evrakduzenlemedate.Location = new System.Drawing.Point(264, 65);
+            this.evrakduzenlemedate.Name = "evrakduzenlemedate";
+            this.evrakduzenlemedate.Size = new System.Drawing.Size(267, 24);
+            this.evrakduzenlemedate.TabIndex = 68;
             // 
             // unvan
             // 
@@ -247,47 +247,49 @@
             this.unvan.TabIndex = 67;
             this.unvan.Text = "Unvan :";
             // 
-            // unvanComboBox
+            // unvancombobox
             // 
-            this.unvanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.unvanComboBox.ForeColor = System.Drawing.Color.White;
-            this.unvanComboBox.FormattingEnabled = true;
-            this.unvanComboBox.Items.AddRange(new object[] {
+            this.unvancombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.unvancombobox.ForeColor = System.Drawing.Color.White;
+            this.unvancombobox.FormattingEnabled = true;
+            this.unvancombobox.Items.AddRange(new object[] {
             "Admin ",
             "Öğrenci işleri",
             "Bölüm Sekreteri"});
-            this.unvanComboBox.Location = new System.Drawing.Point(264, 157);
-            this.unvanComboBox.Name = "unvanComboBox";
-            this.unvanComboBox.Size = new System.Drawing.Size(267, 26);
-            this.unvanComboBox.TabIndex = 66;
+            this.unvancombobox.Location = new System.Drawing.Point(264, 157);
+            this.unvancombobox.Name = "unvancombobox";
+            this.unvancombobox.Size = new System.Drawing.Size(267, 26);
+            this.unvancombobox.TabIndex = 66;
             // 
-            // evrakEkleButton
+            // evrakdüzeneklebutton
             // 
-            this.evrakEkleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.evrakEkleButton.ForeColor = System.Drawing.Color.White;
-            this.evrakEkleButton.Location = new System.Drawing.Point(864, 95);
-            this.evrakEkleButton.Name = "evrakEkleButton";
-            this.evrakEkleButton.Size = new System.Drawing.Size(115, 39);
-            this.evrakEkleButton.TabIndex = 65;
-            this.evrakEkleButton.Text = "Düzenle";
-            this.evrakEkleButton.UseVisualStyleBackColor = true;
+            this.evrakdüzeneklebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evrakdüzeneklebutton.ForeColor = System.Drawing.Color.White;
+            this.evrakdüzeneklebutton.Location = new System.Drawing.Point(864, 95);
+            this.evrakdüzeneklebutton.Name = "evrakdüzeneklebutton";
+            this.evrakdüzeneklebutton.Size = new System.Drawing.Size(115, 39);
+            this.evrakdüzeneklebutton.TabIndex = 65;
+            this.evrakdüzeneklebutton.Text = "Düzenle";
+            this.evrakdüzeneklebutton.UseVisualStyleBackColor = true;
+            this.evrakdüzeneklebutton.Click += new System.EventHandler(this.evrakdüzeneklebutton_Click);
             // 
-            // evrakKoduTxt
+            // evrakkodutxt
             // 
-            this.evrakKoduTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.evrakKoduTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakKoduTxt.Location = new System.Drawing.Point(264, 116);
-            this.evrakKoduTxt.Name = "evrakKoduTxt";
-            this.evrakKoduTxt.Size = new System.Drawing.Size(267, 24);
-            this.evrakKoduTxt.TabIndex = 64;
+            this.evrakkodutxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evrakkodutxt.ForeColor = System.Drawing.Color.White;
+            this.evrakkodutxt.Location = new System.Drawing.Point(264, 116);
+            this.evrakkodutxt.Name = "evrakkodutxt";
+            this.evrakkodutxt.Size = new System.Drawing.Size(267, 24);
+            this.evrakkodutxt.TabIndex = 64;
             // 
-            // evrakAdiTxt
+            // evrakaditxt
             // 
-            this.evrakAdiTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.evrakAdiTxt.Location = new System.Drawing.Point(264, 21);
-            this.evrakAdiTxt.Name = "evrakAdiTxt";
-            this.evrakAdiTxt.Size = new System.Drawing.Size(267, 24);
-            this.evrakAdiTxt.TabIndex = 63;
+            this.evrakaditxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evrakaditxt.Location = new System.Drawing.Point(264, 21);
+            this.evrakaditxt.Name = "evrakaditxt";
+            this.evrakaditxt.Size = new System.Drawing.Size(267, 24);
+            this.evrakaditxt.TabIndex = 63;
+            this.evrakaditxt.TextChanged += new System.EventHandler(this.evrakAdiTxt_TextChanged);
             // 
             // evrakKodu
             // 
@@ -333,40 +335,41 @@
             this.duzenlemeNedeni.TabIndex = 69;
             this.duzenlemeNedeni.Text = "Düzenleme\r\n   Nedeni  :";
             // 
-            // duzenlemeNedeniTxt
+            // duzenlemenedenitxt
             // 
-            this.duzenlemeNedeniTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.duzenlemeNedeniTxt.ForeColor = System.Drawing.Color.White;
-            this.duzenlemeNedeniTxt.Location = new System.Drawing.Point(653, 49);
-            this.duzenlemeNedeniTxt.Multiline = true;
-            this.duzenlemeNedeniTxt.Name = "duzenlemeNedeniTxt";
-            this.duzenlemeNedeniTxt.Size = new System.Drawing.Size(198, 126);
-            this.duzenlemeNedeniTxt.TabIndex = 70;
+            this.duzenlemenedenitxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.duzenlemenedenitxt.ForeColor = System.Drawing.Color.White;
+            this.duzenlemenedenitxt.Location = new System.Drawing.Point(653, 49);
+            this.duzenlemenedenitxt.Multiline = true;
+            this.duzenlemenedenitxt.Name = "duzenlemenedenitxt";
+            this.duzenlemenedenitxt.Size = new System.Drawing.Size(198, 126);
+            this.duzenlemenedenitxt.TabIndex = 70;
             // 
-            // dataGridView1
+            // evrakduzenledata
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(106, 209);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(873, 321);
-            this.dataGridView1.TabIndex = 71;
+            this.evrakduzenledata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.evrakduzenledata.Location = new System.Drawing.Point(106, 209);
+            this.evrakduzenledata.Name = "evrakduzenledata";
+            this.evrakduzenledata.RowHeadersWidth = 51;
+            this.evrakduzenledata.RowTemplate.Height = 24;
+            this.evrakduzenledata.Size = new System.Drawing.Size(873, 321);
+            this.evrakduzenledata.TabIndex = 71;
+            this.evrakduzenledata.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.evrakduzenledata_CellClick);
             // 
             // EvrakDüzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.duzenlemeNedeniTxt);
+            this.Controls.Add(this.evrakduzenledata);
+            this.Controls.Add(this.duzenlemenedenitxt);
             this.Controls.Add(this.duzenlemeNedeni);
-            this.Controls.Add(this.evrakDuzenlemeTarihiDateTime);
+            this.Controls.Add(this.evrakduzenlemedate);
             this.Controls.Add(this.unvan);
-            this.Controls.Add(this.unvanComboBox);
-            this.Controls.Add(this.evrakEkleButton);
-            this.Controls.Add(this.evrakKoduTxt);
-            this.Controls.Add(this.evrakAdiTxt);
+            this.Controls.Add(this.unvancombobox);
+            this.Controls.Add(this.evrakdüzeneklebutton);
+            this.Controls.Add(this.evrakkodutxt);
+            this.Controls.Add(this.evrakaditxt);
             this.Controls.Add(this.evrakKodu);
             this.Controls.Add(this.evrakDüzenlemeTarihi);
             this.Controls.Add(this.evrakAdi);
@@ -396,7 +399,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evrakduzenledata)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,17 +422,17 @@
         private System.Windows.Forms.PictureBox ajandaButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DateTimePicker evrakDuzenlemeTarihiDateTime;
+        private System.Windows.Forms.DateTimePicker evrakduzenlemedate;
         private System.Windows.Forms.Label unvan;
-        private System.Windows.Forms.ComboBox unvanComboBox;
-        private System.Windows.Forms.Button evrakEkleButton;
-        private System.Windows.Forms.TextBox evrakKoduTxt;
-        private System.Windows.Forms.TextBox evrakAdiTxt;
+        private System.Windows.Forms.ComboBox unvancombobox;
+        private System.Windows.Forms.Button evrakdüzeneklebutton;
+        private System.Windows.Forms.TextBox evrakkodutxt;
+        private System.Windows.Forms.TextBox evrakaditxt;
         private System.Windows.Forms.Label evrakKodu;
         private System.Windows.Forms.Label evrakDüzenlemeTarihi;
         private System.Windows.Forms.Label evrakAdi;
         private System.Windows.Forms.Label duzenlemeNedeni;
-        private System.Windows.Forms.TextBox duzenlemeNedeniTxt;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox duzenlemenedenitxt;
+        private System.Windows.Forms.DataGridView evrakduzenledata;
     }
 }

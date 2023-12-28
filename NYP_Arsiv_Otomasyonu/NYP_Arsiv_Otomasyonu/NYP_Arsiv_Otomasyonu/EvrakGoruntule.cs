@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,10 +18,39 @@ namespace NYP_Arsiv_Otomasyonu
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+
+        this.Controls.Add(evraklistelemedata);
+        }
+        MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
+        private BindingSource bindingSource1 = new BindingSource();
+
+        private DataTable GetData(string sqlCommand)
+        {
+
+
+            MySqlCommand command = new MySqlCommand(sqlCommand, connection);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            adapter.SelectCommand = command;
+
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            return table;
+
+        }
+
+        void TabloyuDoldur()
+        {
+            connection.Open();
+            bindingSource1.DataSource = GetData("Select * From archives");
+            evraklistelemedata.DataSource = bindingSource1;
+            connection.Close();
         }
 
         private void EvrakGoruntule_Load(object sender, EventArgs e)
         {
+            TabloyuDoldur();
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
