@@ -35,8 +35,6 @@
             this.teslimAlmaTarihiTxt = new System.Windows.Forms.Label();
             this.teslimBırakmaTarihiTxt = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtteslimbırakmatarih = new System.Windows.Forms.TextBox();
-            this.txtteslimalmatarih = new System.Windows.Forms.TextBox();
             this.txtteslimneden = new System.Windows.Forms.TextBox();
             this.txtteslimalan = new System.Windows.Forms.TextBox();
             this.txtevrakadı = new System.Windows.Forms.TextBox();
@@ -69,6 +67,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtteslimalmatarih = new System.Windows.Forms.DateTimePicker();
+            this.txtteslimbırakmatarih = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -132,23 +132,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 16);
             this.label5.TabIndex = 4;
-            // 
-            // txtteslimbırakmatarih
-            // 
-            this.txtteslimbırakmatarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtteslimbırakmatarih.Location = new System.Drawing.Point(537, 65);
-            this.txtteslimbırakmatarih.Name = "txtteslimbırakmatarih";
-            this.txtteslimbırakmatarih.Size = new System.Drawing.Size(136, 24);
-            this.txtteslimbırakmatarih.TabIndex = 12;
-            this.txtteslimbırakmatarih.TextChanged += new System.EventHandler(this.txtteslimbırakmatarih_TextChanged);
-            // 
-            // txtteslimalmatarih
-            // 
-            this.txtteslimalmatarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtteslimalmatarih.Location = new System.Drawing.Point(537, 25);
-            this.txtteslimalmatarih.Name = "txtteslimalmatarih";
-            this.txtteslimalmatarih.Size = new System.Drawing.Size(136, 24);
-            this.txtteslimalmatarih.TabIndex = 13;
             // 
             // txtteslimneden
             // 
@@ -485,11 +468,27 @@
             this.saatTxt.TabIndex = 44;
             this.saatTxt.Text = "label1";
             // 
+            // txtteslimalmatarih
+            // 
+            this.txtteslimalmatarih.Location = new System.Drawing.Point(525, 17);
+            this.txtteslimalmatarih.Name = "txtteslimalmatarih";
+            this.txtteslimalmatarih.Size = new System.Drawing.Size(200, 22);
+            this.txtteslimalmatarih.TabIndex = 46;
+            // 
+            // txtteslimbırakmatarih
+            // 
+            this.txtteslimbırakmatarih.Location = new System.Drawing.Point(525, 65);
+            this.txtteslimbırakmatarih.Name = "txtteslimbırakmatarih";
+            this.txtteslimbırakmatarih.Size = new System.Drawing.Size(176, 22);
+            this.txtteslimbırakmatarih.TabIndex = 47;
+            // 
             // teslimbilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.txtteslimbırakmatarih);
+            this.Controls.Add(this.txtteslimalmatarih);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.saatTxt);
             this.Controls.Add(this.arsivTxt);
@@ -521,8 +520,6 @@
             this.Controls.Add(this.txtevrakadı);
             this.Controls.Add(this.txtteslimalan);
             this.Controls.Add(this.txtteslimneden);
-            this.Controls.Add(this.txtteslimalmatarih);
-            this.Controls.Add(this.txtteslimbırakmatarih);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.teslimBırakmaTarihiTxt);
             this.Controls.Add(this.teslimAlmaTarihiTxt);
@@ -553,8 +550,6 @@
         private System.Windows.Forms.Label teslimAlmaTarihiTxt;
         private System.Windows.Forms.Label teslimBırakmaTarihiTxt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtteslimbırakmatarih;
-        private System.Windows.Forms.TextBox txtteslimalmatarih;
         private System.Windows.Forms.TextBox txtteslimneden;
         private System.Windows.Forms.TextBox txtteslimalan;
         private System.Windows.Forms.TextBox txtevrakadı;
@@ -587,5 +582,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DateTimePicker txtteslimalmatarih;
+        private System.Windows.Forms.DateTimePicker txtteslimbırakmatarih;
     }
 }

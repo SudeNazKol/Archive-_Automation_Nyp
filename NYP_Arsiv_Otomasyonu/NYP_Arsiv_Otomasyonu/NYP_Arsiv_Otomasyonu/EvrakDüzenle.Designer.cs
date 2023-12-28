@@ -54,9 +54,10 @@
             this.evrakKodu = new System.Windows.Forms.Label();
             this.evrakDüzenlemeTarihi = new System.Windows.Forms.Label();
             this.evrakAdi = new System.Windows.Forms.Label();
+            this.evrakduzenledata = new System.Windows.Forms.DataGridView();
             this.duzenlemeNedeni = new System.Windows.Forms.Label();
             this.duzenlemenedenitxt = new System.Windows.Forms.TextBox();
-            this.evrakduzenledata = new System.Windows.Forms.DataGridView();
+            this.evraksilbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -235,6 +236,7 @@
             this.evrakduzenlemedate.Name = "evrakduzenlemedate";
             this.evrakduzenlemedate.Size = new System.Drawing.Size(267, 24);
             this.evrakduzenlemedate.TabIndex = 68;
+            this.evrakduzenlemedate.ValueChanged += new System.EventHandler(this.evrakduzenlemedate_ValueChanged);
             // 
             // unvan
             // 
@@ -265,7 +267,7 @@
             // 
             this.evrakdüzeneklebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakdüzeneklebutton.ForeColor = System.Drawing.Color.White;
-            this.evrakdüzeneklebutton.Location = new System.Drawing.Point(864, 95);
+            this.evrakdüzeneklebutton.Location = new System.Drawing.Point(736, 150);
             this.evrakdüzeneklebutton.Name = "evrakdüzeneklebutton";
             this.evrakdüzeneklebutton.Size = new System.Drawing.Size(115, 39);
             this.evrakdüzeneklebutton.TabIndex = 65;
@@ -324,27 +326,6 @@
             this.evrakAdi.TabIndex = 60;
             this.evrakAdi.Text = "Evrak Adı :";
             // 
-            // duzenlemeNedeni
-            // 
-            this.duzenlemeNedeni.AutoSize = true;
-            this.duzenlemeNedeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.duzenlemeNedeni.ForeColor = System.Drawing.Color.White;
-            this.duzenlemeNedeni.Location = new System.Drawing.Point(543, 95);
-            this.duzenlemeNedeni.Name = "duzenlemeNedeni";
-            this.duzenlemeNedeni.Size = new System.Drawing.Size(92, 36);
-            this.duzenlemeNedeni.TabIndex = 69;
-            this.duzenlemeNedeni.Text = "Düzenleme\r\n   Nedeni  :";
-            // 
-            // duzenlemenedenitxt
-            // 
-            this.duzenlemenedenitxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.duzenlemenedenitxt.ForeColor = System.Drawing.Color.White;
-            this.duzenlemenedenitxt.Location = new System.Drawing.Point(653, 49);
-            this.duzenlemenedenitxt.Multiline = true;
-            this.duzenlemenedenitxt.Name = "duzenlemenedenitxt";
-            this.duzenlemenedenitxt.Size = new System.Drawing.Size(198, 126);
-            this.duzenlemenedenitxt.TabIndex = 70;
-            // 
             // evrakduzenledata
             // 
             this.evrakduzenledata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -356,11 +337,43 @@
             this.evrakduzenledata.TabIndex = 71;
             this.evrakduzenledata.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.evrakduzenledata_CellClick);
             // 
+            // duzenlemeNedeni
+            // 
+            this.duzenlemeNedeni.AutoSize = true;
+            this.duzenlemeNedeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.duzenlemeNedeni.ForeColor = System.Drawing.Color.White;
+            this.duzenlemeNedeni.Location = new System.Drawing.Point(537, 47);
+            this.duzenlemeNedeni.Name = "duzenlemeNedeni";
+            this.duzenlemeNedeni.Size = new System.Drawing.Size(92, 36);
+            this.duzenlemeNedeni.TabIndex = 69;
+            this.duzenlemeNedeni.Text = "Düzenleme\r\n   Nedeni  :";
+            // 
+            // duzenlemenedenitxt
+            // 
+            this.duzenlemenedenitxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.duzenlemenedenitxt.ForeColor = System.Drawing.Color.White;
+            this.duzenlemenedenitxt.Location = new System.Drawing.Point(632, 17);
+            this.duzenlemenedenitxt.Multiline = true;
+            this.duzenlemenedenitxt.Name = "duzenlemenedenitxt";
+            this.duzenlemenedenitxt.Size = new System.Drawing.Size(198, 126);
+            this.duzenlemenedenitxt.TabIndex = 70;
+            // 
+            // evraksilbutton
+            // 
+            this.evraksilbutton.Location = new System.Drawing.Point(564, 149);
+            this.evraksilbutton.Name = "evraksilbutton";
+            this.evraksilbutton.Size = new System.Drawing.Size(107, 34);
+            this.evraksilbutton.TabIndex = 72;
+            this.evraksilbutton.Text = "Evrak Silme";
+            this.evraksilbutton.UseVisualStyleBackColor = true;
+            this.evraksilbutton.Click += new System.EventHandler(this.evraksilbutton_Click);
+            // 
             // EvrakDüzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.evraksilbutton);
             this.Controls.Add(this.evrakduzenledata);
             this.Controls.Add(this.duzenlemenedenitxt);
             this.Controls.Add(this.duzenlemeNedeni);
@@ -431,8 +444,9 @@
         private System.Windows.Forms.Label evrakKodu;
         private System.Windows.Forms.Label evrakDüzenlemeTarihi;
         private System.Windows.Forms.Label evrakAdi;
+        private System.Windows.Forms.DataGridView evrakduzenledata;
         private System.Windows.Forms.Label duzenlemeNedeni;
         private System.Windows.Forms.TextBox duzenlemenedenitxt;
-        private System.Windows.Forms.DataGridView evrakduzenledata;
+        private System.Windows.Forms.Button evraksilbutton;
     }
 }

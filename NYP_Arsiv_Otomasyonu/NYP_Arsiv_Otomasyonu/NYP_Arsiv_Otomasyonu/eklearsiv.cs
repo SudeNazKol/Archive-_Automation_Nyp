@@ -19,6 +19,12 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
             this.Controls.Add(eklearsivdata);
+            InitializeDateTimePicker();
+        }
+         private void InitializeDateTimePicker()
+        {
+            evrakbırakmadate.Format = DateTimePickerFormat.Custom;
+            evrakbırakmadate.CustomFormat = "dd-MM-yyyy";
         }
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
@@ -159,6 +165,11 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void evrakAdiTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eklearsivdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

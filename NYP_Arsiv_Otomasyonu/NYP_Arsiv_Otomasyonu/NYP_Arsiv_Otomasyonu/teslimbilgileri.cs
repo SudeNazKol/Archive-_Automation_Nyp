@@ -27,8 +27,16 @@ namespace NYP_Arsiv_Otomasyonu
 
 
             this.Controls.Add(dgvKullanicilar);
+            InitializeDateTimePicker();
         }
-        
+        private void InitializeDateTimePicker()
+        {
+            txtteslimalmatarih.Format = DateTimePickerFormat.Custom;
+            txtteslimalmatarih.CustomFormat = "dd-MM-yyyy";
+            txtteslimbırakmatarih.Format = DateTimePickerFormat.Custom;
+            txtteslimbırakmatarih.CustomFormat = "dd-MM-yyyy";
+
+        }
 
 
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
@@ -154,6 +162,7 @@ namespace NYP_Arsiv_Otomasyonu
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close ();
+
             TabloyuDoldur();
             
         }
@@ -276,6 +285,11 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void dgvKullanicilar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtteslimalmatarih_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -46,6 +46,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.aratxt = new System.Windows.Forms.TextBox();
+            this.arabutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -224,11 +227,36 @@
             this.saatTxt.TabIndex = 50;
             this.saatTxt.Text = "label1";
             // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // aratxt
+            // 
+            this.aratxt.Location = new System.Drawing.Point(120, 17);
+            this.aratxt.Name = "aratxt";
+            this.aratxt.Size = new System.Drawing.Size(563, 22);
+            this.aratxt.TabIndex = 52;
+            this.aratxt.TextChanged += new System.EventHandler(this.aratxt_TextChanged);
+            // 
+            // arabutton
+            // 
+            this.arabutton.Location = new System.Drawing.Point(708, 14);
+            this.arabutton.Name = "arabutton";
+            this.arabutton.Size = new System.Drawing.Size(83, 29);
+            this.arabutton.TabIndex = 53;
+            this.arabutton.Text = "Ara";
+            this.arabutton.UseVisualStyleBackColor = true;
+            // 
             // EvrakGoruntule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.arabutton);
+            this.Controls.Add(this.aratxt);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.saatTxt);
             this.Controls.Add(this.evraklistelemedata);
@@ -280,5 +308,8 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.Windows.Forms.TextBox aratxt;
+        private System.Windows.Forms.Button arabutton;
     }
 }

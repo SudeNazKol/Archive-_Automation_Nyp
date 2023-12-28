@@ -142,5 +142,16 @@ namespace NYP_Arsiv_Otomasyonu
             girisSayfası.ShowDialog();
             this.Close();
         }
+
+        private void aratxt_TextChanged(object sender, EventArgs e)
+        {
+            connection.Open();
+            MySqlCommand komut = new MySqlCommand("Select * from archives where Konum like '%" + aratxt.Text + "%'", connection);
+            MySqlDataAdapter da = new MySqlDataAdapter(komut);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            evraklistelemedata.DataSource = ds.Tables[0];
+            connection.Close();
+        }
     }
 }

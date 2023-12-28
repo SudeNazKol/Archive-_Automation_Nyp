@@ -19,8 +19,13 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
             this.Controls.Add(evrakduzenledata);
+            InitializeDateTimePicker();
         }
-
+        private void InitializeDateTimePicker()
+        {
+            evrakduzenlemedate.Format = DateTimePickerFormat.Custom;
+            evrakduzenlemedate.CustomFormat = "dd-MM-yyyy";
+        }
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
 
@@ -41,7 +46,7 @@ namespace NYP_Arsiv_Otomasyonu
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             evrakAdi.ForeColor = Color.FromArgb(58, 86, 131);
-           evrakaditxt.ForeColor = Color.FromArgb(58, 86, 131);
+            evrakaditxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakDüzenlemeTarihi.ForeColor = Color.FromArgb(58, 86, 131);
             evrakduzenlemedate.ForeColor = Color.FromArgb(58, 86, 131);
             evrakKodu.ForeColor = Color.FromArgb(58, 86, 131);
@@ -135,9 +140,9 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-           /* ProfilSayfasi profilSayfasi = new ProfilSayfasi();
-            profilSayfasi.ShowDialog();
-            this.Close();*/
+            /* ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+             profilSayfasi.ShowDialog();
+             this.Close();*/
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
@@ -162,7 +167,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakdüzeneklebutton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "',Unvan='" +unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text + "',  where Konum='" + evrakkodutxt.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close();
@@ -174,15 +179,36 @@ namespace NYP_Arsiv_Otomasyonu
             int seçilialan = evrakduzenledata.SelectedCells[0].RowIndex;
             string Evrak_Adi = evrakduzenledata.Rows[seçilialan].Cells[1].Value.ToString();
             string Unvan = evrakduzenledata.Rows[seçilialan].Cells[2].Value.ToString();
-            string Evrak_Tarih= evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
+            string Evrak_Tarih = evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
             string Konum = evrakduzenledata.Rows[seçilialan].Cells[4].Value.ToString();
-            
+
             evrakaditxt.Text = Evrak_Adi;
             unvancombobox.Text = Unvan;
             evrakduzenlemedate.Text = Evrak_Tarih;
             evrakkodutxt.Text = Konum;
-            
-            
+
+
+        }
+
+        private void evraksilbutton_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string deleteSql = "DELETE FROM archives WHERE Konum = @3";
+            MySqlCommand deleteCommand = new MySqlCommand(deleteSql, connection);
+            if (connection.State == ConnectionState.Open)
+            {
+                deleteCommand.Parameters.AddWithValue
+                        ("@3", evrakkodutxt.Text);
+                deleteCommand.ExecuteNonQuery();
+                MessageBox.Show("Kayıt Silindi!");
+                connection.Close();
+                TabloyuDoldur();
+            }
+        }
+
+        private void evrakduzenlemedate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

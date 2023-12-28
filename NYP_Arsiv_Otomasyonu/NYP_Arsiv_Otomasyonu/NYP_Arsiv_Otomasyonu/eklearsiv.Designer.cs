@@ -308,6 +308,7 @@
             this.eklearsivdata.RowTemplate.Height = 24;
             this.eklearsivdata.Size = new System.Drawing.Size(873, 321);
             this.eklearsivdata.TabIndex = 38;
+            this.eklearsivdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.eklearsivdata_CellContentClick);
             // 
             // pictureBox6
             // 
