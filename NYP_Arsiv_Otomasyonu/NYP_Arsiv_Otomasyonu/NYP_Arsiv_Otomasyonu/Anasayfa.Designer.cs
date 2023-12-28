@@ -241,6 +241,7 @@
             this.profilButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilButton.TabIndex = 17;
             this.profilButton.TabStop = false;
+            this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // exitButton
             // 
@@ -274,6 +275,7 @@
             this.arsivTxt.Size = new System.Drawing.Size(45, 18);
             this.arsivTxt.TabIndex = 20;
             this.arsivTxt.Text = "Arşiv";
+            this.arsivTxt.Click += new System.EventHandler(this.arsivTxt_Click);
             // 
             // teslimBilgileriTxt
             // 
@@ -285,6 +287,7 @@
             this.teslimBilgileriTxt.Size = new System.Drawing.Size(68, 36);
             this.teslimBilgileriTxt.TabIndex = 21;
             this.teslimBilgileriTxt.Text = " Teslim \r\nBilgileri";
+            this.teslimBilgileriTxt.Click += new System.EventHandler(this.teslimBilgileriTxt_Click);
             // 
             // profilTxt
             // 
@@ -296,6 +299,7 @@
             this.profilTxt.Size = new System.Drawing.Size(48, 18);
             this.profilTxt.TabIndex = 22;
             this.profilTxt.Text = "Profil";
+            this.profilTxt.Click += new System.EventHandler(this.profilTxt_Click);
             // 
             // personelEkleTxt
             // 
@@ -308,6 +312,7 @@
             this.personelEkleTxt.TabIndex = 25;
             this.personelEkleTxt.Text = "Personel\r\n   Ekle";
             this.personelEkleTxt.Visible = false;
+            this.personelEkleTxt.Click += new System.EventHandler(this.personelEkleTxt_Click);
             // 
             // personelEkleButton
             // 

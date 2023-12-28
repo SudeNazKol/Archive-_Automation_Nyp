@@ -210,6 +210,70 @@ namespace NYP_Arsiv_Otomasyonu
         {
 
         }
+
+        private void ajandaButton_Click(object sender, EventArgs e)
+        {
+            anaSayfa anasayfa = new anaSayfa();
+            anasayfa.ShowDialog();
+            this.Close();
+        }
+
+        private void ajandaTxt_Click(object sender, EventArgs e)
+        {
+
+            anaSayfa anasayfa = new anaSayfa();
+            anasayfa.ShowDialog();
+            this.Close();
+        }
+
+        private void arsivButton_Click(object sender, EventArgs e)
+        {
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            arsivSayfasi.ShowDialog();
+            this.Close();
+        }
+
+        private void arsivTxt_Click(object sender, EventArgs e)
+        {
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            arsivSayfasi.ShowDialog();
+            this.Close();
+        }
+
+        private void personelEkleButton_Click(object sender, EventArgs e)
+        {
+            personelEkle personelekle = new personelEkle();
+            personelekle.ShowDialog();
+            this.Close();
+        }
+
+        private void personelEkleTxt_Click(object sender, EventArgs e)
+        {
+            personelEkle personelekle = new personelEkle();
+            personelekle.ShowDialog();
+            this.Close();
+        }
+
+        private void profilButton_Click(object sender, EventArgs e)
+        {
+           /* ProfilSayfasi profilSayfasi = new ProfilSayfası();
+            profilSayfasi.ShowDialog();
+            this.Close();*/
+        }
+
+        private void profilTxt_Click(object sender, EventArgs e)
+        {
+            /* ProfilSayfasi profilSayfasi = new ProfilSayfası();
+            profilSayfasi.ShowDialog();
+            this.Close();*/
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            GirisSayfası girisSayfası = new GirisSayfası();
+            girisSayfası.ShowDialog();
+            this.Close();
+        }
     }
 }
 

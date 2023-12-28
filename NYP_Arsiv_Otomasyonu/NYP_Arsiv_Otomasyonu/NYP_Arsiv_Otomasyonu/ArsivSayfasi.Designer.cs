@@ -76,6 +76,7 @@
             this.personelEkleButton.TabIndex = 31;
             this.personelEkleButton.TabStop = false;
             this.personelEkleButton.Visible = false;
+            this.personelEkleButton.Click += new System.EventHandler(this.personelEkleButton_Click);
             // 
             // exitButton
             // 
@@ -86,6 +87,7 @@
             this.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.exitButton.TabIndex = 30;
             this.exitButton.TabStop = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // profilButton
             // 
@@ -96,6 +98,7 @@
             this.profilButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilButton.TabIndex = 29;
             this.profilButton.TabStop = false;
+            this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // teslimBilgileriButton
             // 
@@ -149,6 +152,7 @@
             this.personelEkleTxt.TabIndex = 36;
             this.personelEkleTxt.Text = "Personel\r\n   Ekle";
             this.personelEkleTxt.Visible = false;
+            this.personelEkleTxt.Click += new System.EventHandler(this.personelEkleTxt_Click);
             // 
             // profilTxt
             // 
@@ -160,6 +164,7 @@
             this.profilTxt.Size = new System.Drawing.Size(48, 18);
             this.profilTxt.TabIndex = 35;
             this.profilTxt.Text = "Profil";
+            this.profilTxt.Click += new System.EventHandler(this.profilTxt_Click);
             // 
             // teslimBilgileriTxt
             // 
@@ -171,6 +176,7 @@
             this.teslimBilgileriTxt.Size = new System.Drawing.Size(68, 36);
             this.teslimBilgileriTxt.TabIndex = 34;
             this.teslimBilgileriTxt.Text = " Teslim \r\nBilgileri";
+            this.teslimBilgileriTxt.Click += new System.EventHandler(this.teslimBilgileriTxt_Click);
             // 
             // arsivTxt
             // 
@@ -193,6 +199,7 @@
             this.ajandaTxt.Size = new System.Drawing.Size(58, 18);
             this.ajandaTxt.TabIndex = 32;
             this.ajandaTxt.Text = "Ajanda";
+            this.ajandaTxt.Click += new System.EventHandler(this.ajandaTxt_Click);
             // 
             // pictureBox2
             // 
@@ -222,6 +229,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 39;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -244,6 +252,7 @@
             this.evrakEkleTxt.Size = new System.Drawing.Size(94, 18);
             this.evrakEkleTxt.TabIndex = 41;
             this.evrakEkleTxt.Text = "Evrak Ekle ";
+            this.evrakEkleTxt.Click += new System.EventHandler(this.evrakEkleTxt_Click);
             // 
             // evrakDuzenleTxt
             // 
@@ -255,6 +264,7 @@
             this.evrakDuzenleTxt.Size = new System.Drawing.Size(117, 18);
             this.evrakDuzenleTxt.TabIndex = 42;
             this.evrakDuzenleTxt.Text = "Evrak Düzenle";
+            this.evrakDuzenleTxt.Click += new System.EventHandler(this.evrakDuzenleTxt_Click);
             // 
             // evrakGoruntuleTxt
             // 

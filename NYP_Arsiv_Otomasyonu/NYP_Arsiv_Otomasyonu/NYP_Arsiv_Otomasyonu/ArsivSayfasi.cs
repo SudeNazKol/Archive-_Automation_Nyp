@@ -84,6 +84,76 @@ namespace NYP_Arsiv_Otomasyonu
             evrakGoruntule.ShowDialog();
             this.Close();
         }
+
+        private void ajandaTxt_Click(object sender, EventArgs e)
+        {
+            anaSayfa anasayfa = new anaSayfa();
+            anasayfa.ShowDialog();
+            this.Close();
+        }
+
+        private void teslimBilgileriTxt_Click(object sender, EventArgs e)
+        {
+            teslimbilgileri tslm = new teslimbilgileri();
+            tslm.ShowDialog();
+            this.Close();
+        }
+
+        private void personelEkleTxt_Click(object sender, EventArgs e)
+        {
+            personelEkle personelekle = new personelEkle();
+            personelekle.ShowDialog();
+            this.Close();
+        }
+
+        private void personelEkleButton_Click(object sender, EventArgs e)
+        {
+            personelEkle personelekle = new personelEkle();
+            personelekle.ShowDialog();
+            this.Close();
+        }
+
+        private void profilButton_Click(object sender, EventArgs e)
+        {
+           /* ProfilSayfasi profilsayfasi = new ProfilSayfası();
+            profilsayfasi.ShowDialog();
+            this.Close();*/
+        }
+
+        private void profilTxt_Click(object sender, EventArgs e)
+        {
+            /* ProfilSayfasi profilsayfasi = new ProfilSayfası();
+           profilsayfasi.ShowDialog();
+           this.Close();*/
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            GirisSayfası girisSayfasi = new GirisSayfası();
+            girisSayfasi.ShowDialog();
+            this.Close();
+        }
+
+        private void evrakEkleTxt_Click(object sender, EventArgs e)
+        {
+            eklearsiv eklarsv = new eklearsiv();
+            eklarsv.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            EvrakDüzenle evrakDüzenle = new EvrakDüzenle();
+            evrakDüzenle.ShowDialog();
+            this.Close();
+        }
+
+        private void evrakDuzenleTxt_Click(object sender, EventArgs e)
+        {
+            EvrakDüzenle evrakDüzenle = new EvrakDüzenle();
+            evrakDüzenle.ShowDialog();
+            this.Close();
+        }
     }
     
 }

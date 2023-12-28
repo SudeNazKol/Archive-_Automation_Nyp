@@ -340,6 +340,7 @@
             this.personelEkleTxt.TabIndex = 41;
             this.personelEkleTxt.Text = "Personel\r\n   Ekle";
             this.personelEkleTxt.Visible = false;
+            this.personelEkleTxt.Click += new System.EventHandler(this.personelEkleTxt_Click);
             // 
             // personelEkleButton
             // 
@@ -351,6 +352,7 @@
             this.personelEkleButton.TabIndex = 40;
             this.personelEkleButton.TabStop = false;
             this.personelEkleButton.Visible = false;
+            this.personelEkleButton.Click += new System.EventHandler(this.personelEkleButton_Click);
             // 
             // profilTxt
             // 
@@ -362,6 +364,7 @@
             this.profilTxt.Size = new System.Drawing.Size(48, 18);
             this.profilTxt.TabIndex = 39;
             this.profilTxt.Text = "Profil";
+            this.profilTxt.Click += new System.EventHandler(this.profilTxt_Click);
             // 
             // teslimBilgileriTxt
             // 
@@ -383,6 +386,7 @@
             this.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.exitButton.TabIndex = 37;
             this.exitButton.TabStop = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // profilButton
             // 
@@ -393,6 +397,7 @@
             this.profilButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilButton.TabIndex = 36;
             this.profilButton.TabStop = false;
+            this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // teslimBilgileriButton
             // 
@@ -413,6 +418,7 @@
             this.arsivButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.arsivButton.TabIndex = 34;
             this.arsivButton.TabStop = false;
+            this.arsivButton.Click += new System.EventHandler(this.arsivButton_Click);
             // 
             // ajandaButton
             // 
@@ -423,6 +429,7 @@
             this.ajandaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ajandaButton.TabIndex = 33;
             this.ajandaButton.TabStop = false;
+            this.ajandaButton.Click += new System.EventHandler(this.ajandaButton_Click);
             // 
             // pictureBox1
             // 
@@ -442,6 +449,7 @@
             this.arsivTxt.Size = new System.Drawing.Size(45, 18);
             this.arsivTxt.TabIndex = 43;
             this.arsivTxt.Text = "Arşiv";
+            this.arsivTxt.Click += new System.EventHandler(this.arsivTxt_Click);
             // 
             // ajandaTxt
             // 
@@ -453,6 +461,7 @@
             this.ajandaTxt.Size = new System.Drawing.Size(58, 18);
             this.ajandaTxt.TabIndex = 42;
             this.ajandaTxt.Text = "Ajanda";
+            this.ajandaTxt.Click += new System.EventHandler(this.ajandaTxt_Click);
             // 
             // pictureBox5
             // 
