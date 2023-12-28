@@ -369,3 +369,5 @@ C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Ar
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.EvrakGoruntule.resources
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.EvrakDüzenle.resources
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.EvrakDüzenle.resources
+C:\Users\admin\Desktop\bulbulsenagit\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.EvrakDüzenle.resources
+C:\Users\admin\Desktop\bulbulsenagit\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.EvrakGoruntule.resources

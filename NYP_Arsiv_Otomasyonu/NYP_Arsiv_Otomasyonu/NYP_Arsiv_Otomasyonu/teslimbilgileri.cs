@@ -293,6 +293,18 @@ namespace NYP_Arsiv_Otomasyonu
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void katSayisiTxt_Click(object sender, EventArgs e)
+        {
+            int kayitsayisi;
+            kayitsayisi = dgvKullanicilar.RowCount;
+            label9.Text = "Toplam Kayıt Sayısı: " + kayitsayisi.ToString();
+        }
     }
 }
 

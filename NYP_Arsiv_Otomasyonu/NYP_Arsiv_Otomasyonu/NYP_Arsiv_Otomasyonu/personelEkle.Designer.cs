@@ -56,7 +56,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.personelekledata = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personelekledata)).BeginInit();
             this.SuspendLayout();
             // 
             // adSoyadTxt
@@ -275,7 +275,8 @@
             this.unvanComboBox.Items.AddRange(new object[] {
             "Admin",
             "Öğrenci İşleri ",
-            "Bölüm Sekreteri"});
+            "Bölüm Sekreteri",
+            "Personel"});
             this.unvanComboBox.Location = new System.Drawing.Point(483, 42);
             this.unvanComboBox.Name = "unvanComboBox";
             this.unvanComboBox.Size = new System.Drawing.Size(169, 26);
@@ -291,6 +292,7 @@
             this.ekleButton.TabIndex = 60;
             this.ekleButton.Text = "Ekle";
             this.ekleButton.UseVisualStyleBackColor = true;
+            this.ekleButton.Click += new System.EventHandler(this.ekleButton_Click);
             // 
             // düzenleButton
             // 
@@ -302,6 +304,7 @@
             this.düzenleButton.TabIndex = 61;
             this.düzenleButton.Text = "Düzenle";
             this.düzenleButton.UseVisualStyleBackColor = true;
+            this.düzenleButton.Click += new System.EventHandler(this.düzenleButton_Click);
             // 
             // silButton
             // 
@@ -313,6 +316,7 @@
             this.silButton.TabIndex = 62;
             this.silButton.Text = "Sil";
             this.silButton.UseVisualStyleBackColor = true;
+            this.silButton.Click += new System.EventHandler(this.silButton_Click);
             // 
             // pictureBox6
             // 
@@ -335,22 +339,24 @@
             this.saatTxt.TabIndex = 63;
             this.saatTxt.Text = "label1";
             // 
-            // dataGridView1
+            // personelekledata
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(106, 154);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(873, 376);
-            this.dataGridView1.TabIndex = 65;
+            this.personelekledata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.personelekledata.Location = new System.Drawing.Point(106, 154);
+            this.personelekledata.Name = "personelekledata";
+            this.personelekledata.RowHeadersWidth = 51;
+            this.personelekledata.RowTemplate.Height = 24;
+            this.personelekledata.Size = new System.Drawing.Size(873, 376);
+            this.personelekledata.TabIndex = 65;
+            this.personelekledata.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.personelekledata_CellClick);
+            this.personelekledata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // personelEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.personelekledata);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.saatTxt);
             this.Controls.Add(this.silButton);
@@ -388,7 +394,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personelekledata)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,6 +428,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView personelekledata;
     }
 }

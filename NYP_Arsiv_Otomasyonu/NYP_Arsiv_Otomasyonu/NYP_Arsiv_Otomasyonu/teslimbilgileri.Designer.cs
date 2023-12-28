@@ -216,6 +216,7 @@
             this.katSayisiTxt.Size = new System.Drawing.Size(110, 18);
             this.katSayisiTxt.TabIndex = 22;
             this.katSayisiTxt.Text = " Kayıt Sayısı :";
+            this.katSayisiTxt.Click += new System.EventHandler(this.katSayisiTxt_Click);
             // 
             // label9
             // 
@@ -226,6 +227,7 @@
             this.label9.Size = new System.Drawing.Size(89, 18);
             this.label9.TabIndex = 23;
             this.label9.Text = "_________";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // dgvKullanicilar
             // 
