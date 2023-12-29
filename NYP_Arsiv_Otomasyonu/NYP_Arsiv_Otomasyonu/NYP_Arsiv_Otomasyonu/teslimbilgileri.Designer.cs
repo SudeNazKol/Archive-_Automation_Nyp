@@ -69,6 +69,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtteslimalmatarih = new System.Windows.Forms.DateTimePicker();
             this.txtteslimbırakmatarih = new System.Windows.Forms.DateTimePicker();
+            this.evragınTuruComboBox = new System.Windows.Forms.ComboBox();
+            this.evragınTuru = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -174,7 +176,7 @@
             // 
             this.buttonekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonekle.ForeColor = System.Drawing.Color.White;
-            this.buttonekle.Location = new System.Drawing.Point(344, 166);
+            this.buttonekle.Location = new System.Drawing.Point(543, 161);
             this.buttonekle.Name = "buttonekle";
             this.buttonekle.Size = new System.Drawing.Size(114, 30);
             this.buttonekle.TabIndex = 18;
@@ -245,7 +247,7 @@
             // 
             this.silbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.silbutton.ForeColor = System.Drawing.Color.White;
-            this.silbutton.Location = new System.Drawing.Point(624, 166);
+            this.silbutton.Location = new System.Drawing.Point(823, 161);
             this.silbutton.Name = "silbutton";
             this.silbutton.Size = new System.Drawing.Size(114, 30);
             this.silbutton.TabIndex = 25;
@@ -256,9 +258,9 @@
             // txtkonum
             // 
             this.txtkonum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtkonum.Location = new System.Drawing.Point(773, 56);
+            this.txtkonum.Location = new System.Drawing.Point(810, 56);
             this.txtkonum.Name = "txtkonum";
-            this.txtkonum.Size = new System.Drawing.Size(206, 24);
+            this.txtkonum.Size = new System.Drawing.Size(169, 24);
             this.txtkonum.TabIndex = 26;
             // 
             // kodTxt
@@ -266,7 +268,7 @@
             this.kodTxt.AutoSize = true;
             this.kodTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kodTxt.ForeColor = System.Drawing.Color.White;
-            this.kodTxt.Location = new System.Drawing.Point(707, 60);
+            this.kodTxt.Location = new System.Drawing.Point(748, 60);
             this.kodTxt.Name = "kodTxt";
             this.kodTxt.Size = new System.Drawing.Size(48, 18);
             this.kodTxt.TabIndex = 27;
@@ -276,7 +278,7 @@
             // 
             this.güncellebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.güncellebutton.ForeColor = System.Drawing.Color.White;
-            this.güncellebutton.Location = new System.Drawing.Point(484, 166);
+            this.güncellebutton.Location = new System.Drawing.Point(683, 161);
             this.güncellebutton.Name = "güncellebutton";
             this.güncellebutton.Size = new System.Drawing.Size(114, 30);
             this.güncellebutton.TabIndex = 28;
@@ -472,23 +474,44 @@
             // 
             // txtteslimalmatarih
             // 
-            this.txtteslimalmatarih.Location = new System.Drawing.Point(525, 17);
+            this.txtteslimalmatarih.Location = new System.Drawing.Point(543, 17);
             this.txtteslimalmatarih.Name = "txtteslimalmatarih";
-            this.txtteslimalmatarih.Size = new System.Drawing.Size(200, 22);
+            this.txtteslimalmatarih.Size = new System.Drawing.Size(176, 22);
             this.txtteslimalmatarih.TabIndex = 46;
             // 
             // txtteslimbırakmatarih
             // 
-            this.txtteslimbırakmatarih.Location = new System.Drawing.Point(525, 65);
+            this.txtteslimbırakmatarih.Location = new System.Drawing.Point(543, 65);
             this.txtteslimbırakmatarih.Name = "txtteslimbırakmatarih";
             this.txtteslimbırakmatarih.Size = new System.Drawing.Size(176, 22);
             this.txtteslimbırakmatarih.TabIndex = 47;
+            // 
+            // evragınTuruComboBox
+            // 
+            this.evragınTuruComboBox.FormattingEnabled = true;
+            this.evragınTuruComboBox.Location = new System.Drawing.Point(222, 160);
+            this.evragınTuruComboBox.Name = "evragınTuruComboBox";
+            this.evragınTuruComboBox.Size = new System.Drawing.Size(159, 24);
+            this.evragınTuruComboBox.TabIndex = 48;
+            // 
+            // evragınTuru
+            // 
+            this.evragınTuru.AutoSize = true;
+            this.evragınTuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evragınTuru.ForeColor = System.Drawing.Color.White;
+            this.evragınTuru.Location = new System.Drawing.Point(103, 153);
+            this.evragınTuru.Name = "evragınTuru";
+            this.evragınTuru.Size = new System.Drawing.Size(69, 36);
+            this.evragınTuru.TabIndex = 49;
+            this.evragınTuru.Text = "Evrağın \r\n  Türü :";
             // 
             // teslimbilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.evragınTuru);
+            this.Controls.Add(this.evragınTuruComboBox);
             this.Controls.Add(this.txtteslimbırakmatarih);
             this.Controls.Add(this.txtteslimalmatarih);
             this.Controls.Add(this.pictureBox5);
@@ -586,5 +609,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DateTimePicker txtteslimalmatarih;
         private System.Windows.Forms.DateTimePicker txtteslimbırakmatarih;
+        private System.Windows.Forms.ComboBox evragınTuruComboBox;
+        private System.Windows.Forms.Label evragınTuru;
     }
 }

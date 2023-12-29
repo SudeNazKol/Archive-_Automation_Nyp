@@ -115,16 +115,16 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-           /* ProfilSayfasi profilsayfasi = new ProfilSayfası();
+            ProfilSayfasi profilsayfasi = new ProfilSayfasi();
             profilsayfasi.ShowDialog();
-            this.Close();*/
+            this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            /* ProfilSayfasi profilsayfasi = new ProfilSayfası();
+             ProfilSayfasi profilsayfasi = new ProfilSayfasi();
            profilsayfasi.ShowDialog();
-           this.Close();*/
+           this.Close();
         }
 
         private void exitButton_Click(object sender, EventArgs e)

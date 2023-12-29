@@ -53,8 +53,10 @@ namespace NYP_Arsiv_Otomasyonu
             evrakkodutxt.ForeColor = Color.FromArgb(58, 86, 131);
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
             unvancombobox.ForeColor = Color.FromArgb(58, 86, 131);
-            duzenlemeNedeni.ForeColor = Color.FromArgb(58, 86, 131);
-            duzenlemenedenitxt.ForeColor = Color.FromArgb(58, 86, 131);
+            evraksilbutton.BackColor = Color.FromArgb(58, 86, 131);
+            evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
+            evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
+
             evrakdüzeneklebutton.BackColor = Color.FromArgb(58, 86, 131);
         }
         private DataTable GetData(string sqlCommand)
@@ -140,16 +142,16 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-            /* ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+             ProfilSayfasi profilSayfasi = new ProfilSayfasi();
              profilSayfasi.ShowDialog();
-             this.Close();*/
+             this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            /* ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+            ProfilSayfasi profilSayfasi = new ProfilSayfasi();
            profilSayfasi.ShowDialog();
-           this.Close();*/
+           this.Close();
         }
 
         private void exitButton_Click(object sender, EventArgs e)

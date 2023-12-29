@@ -1,6 +1,6 @@
 ﻿namespace NYP_Arsiv_Otomasyonu
 {
-    partial class EvrakGoruntule
+    partial class ProfilSayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvrakGoruntule));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfilSayfasi));
             this.personelEkleTxt = new System.Windows.Forms.Label();
             this.personelEkleButton = new System.Windows.Forms.PictureBox();
             this.profilTxt = new System.Windows.Forms.Label();
@@ -42,14 +42,14 @@
             this.arsivButton = new System.Windows.Forms.PictureBox();
             this.ajandaButton = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.evraklistelemedata = new System.Windows.Forms.DataGridView();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.aratxt = new System.Windows.Forms.TextBox();
+            this.avatar = new System.Windows.Forms.PictureBox();
+            this.adSoyad = new System.Windows.Forms.Label();
+            this.kullaniciAdi = new System.Windows.Forms.Label();
+            this.unvan = new System.Windows.Forms.Label();
+            this.sifre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -57,9 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evraklistelemedata)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // personelEkleTxt
@@ -70,7 +69,7 @@
             this.personelEkleTxt.Location = new System.Drawing.Point(14, 335);
             this.personelEkleTxt.Name = "personelEkleTxt";
             this.personelEkleTxt.Size = new System.Drawing.Size(75, 36);
-            this.personelEkleTxt.TabIndex = 48;
+            this.personelEkleTxt.TabIndex = 60;
             this.personelEkleTxt.Text = "Personel\r\n   Ekle";
             this.personelEkleTxt.Visible = false;
             this.personelEkleTxt.Click += new System.EventHandler(this.personelEkleTxt_Click);
@@ -82,7 +81,7 @@
             this.personelEkleButton.Name = "personelEkleButton";
             this.personelEkleButton.Size = new System.Drawing.Size(50, 50);
             this.personelEkleButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.personelEkleButton.TabIndex = 47;
+            this.personelEkleButton.TabIndex = 59;
             this.personelEkleButton.TabStop = false;
             this.personelEkleButton.Visible = false;
             this.personelEkleButton.Click += new System.EventHandler(this.personelEkleButton_Click);
@@ -95,9 +94,8 @@
             this.profilTxt.Location = new System.Drawing.Point(19, 463);
             this.profilTxt.Name = "profilTxt";
             this.profilTxt.Size = new System.Drawing.Size(48, 18);
-            this.profilTxt.TabIndex = 46;
+            this.profilTxt.TabIndex = 58;
             this.profilTxt.Text = "Profil";
-            this.profilTxt.Click += new System.EventHandler(this.profilTxt_Click);
             // 
             // teslimBilgileriTxt
             // 
@@ -107,7 +105,7 @@
             this.teslimBilgileriTxt.Location = new System.Drawing.Point(8, 229);
             this.teslimBilgileriTxt.Name = "teslimBilgileriTxt";
             this.teslimBilgileriTxt.Size = new System.Drawing.Size(68, 36);
-            this.teslimBilgileriTxt.TabIndex = 45;
+            this.teslimBilgileriTxt.TabIndex = 57;
             this.teslimBilgileriTxt.Text = " Teslim \r\nBilgileri";
             this.teslimBilgileriTxt.Click += new System.EventHandler(this.teslimBilgileriTxt_Click);
             // 
@@ -119,7 +117,7 @@
             this.arsivTxt.Location = new System.Drawing.Point(23, 143);
             this.arsivTxt.Name = "arsivTxt";
             this.arsivTxt.Size = new System.Drawing.Size(45, 18);
-            this.arsivTxt.TabIndex = 44;
+            this.arsivTxt.TabIndex = 56;
             this.arsivTxt.Text = "Arşiv";
             this.arsivTxt.Click += new System.EventHandler(this.arsivTxt_Click);
             // 
@@ -131,7 +129,7 @@
             this.ajandaTxt.Location = new System.Drawing.Point(14, 65);
             this.ajandaTxt.Name = "ajandaTxt";
             this.ajandaTxt.Size = new System.Drawing.Size(58, 18);
-            this.ajandaTxt.TabIndex = 43;
+            this.ajandaTxt.TabIndex = 55;
             this.ajandaTxt.Text = "Ajanda";
             this.ajandaTxt.Click += new System.EventHandler(this.ajandaTxt_Click);
             // 
@@ -142,7 +140,7 @@
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(35, 35);
             this.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.exitButton.TabIndex = 42;
+            this.exitButton.TabIndex = 54;
             this.exitButton.TabStop = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
@@ -153,9 +151,8 @@
             this.profilButton.Name = "profilButton";
             this.profilButton.Size = new System.Drawing.Size(50, 50);
             this.profilButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.profilButton.TabIndex = 41;
+            this.profilButton.TabIndex = 53;
             this.profilButton.TabStop = false;
-            this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // teslimBilgileriButton
             // 
@@ -164,7 +161,7 @@
             this.teslimBilgileriButton.Name = "teslimBilgileriButton";
             this.teslimBilgileriButton.Size = new System.Drawing.Size(50, 50);
             this.teslimBilgileriButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.teslimBilgileriButton.TabIndex = 40;
+            this.teslimBilgileriButton.TabIndex = 52;
             this.teslimBilgileriButton.TabStop = false;
             this.teslimBilgileriButton.Click += new System.EventHandler(this.teslimBilgileriButton_Click);
             // 
@@ -175,7 +172,7 @@
             this.arsivButton.Name = "arsivButton";
             this.arsivButton.Size = new System.Drawing.Size(50, 50);
             this.arsivButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.arsivButton.TabIndex = 39;
+            this.arsivButton.TabIndex = 51;
             this.arsivButton.TabStop = false;
             this.arsivButton.Click += new System.EventHandler(this.arsivButton_Click);
             // 
@@ -186,96 +183,103 @@
             this.ajandaButton.Name = "ajandaButton";
             this.ajandaButton.Size = new System.Drawing.Size(50, 50);
             this.ajandaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ajandaButton.TabIndex = 38;
+            this.ajandaButton.TabIndex = 50;
             this.ajandaButton.TabStop = false;
             this.ajandaButton.Click += new System.EventHandler(this.ajandaButton_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(102, 544);
-            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabIndex = 49;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // evraklistelemedata
+            // pictureBox5
             // 
-            this.evraklistelemedata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.evraklistelemedata.Location = new System.Drawing.Point(106, 54);
-            this.evraklistelemedata.Name = "evraklistelemedata";
-            this.evraklistelemedata.RowHeadersWidth = 51;
-            this.evraklistelemedata.RowTemplate.Height = 24;
-            this.evraklistelemedata.Size = new System.Drawing.Size(873, 474);
-            this.evraklistelemedata.TabIndex = 49;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(836, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 51;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(836, 12);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 62;
+            this.pictureBox5.TabStop = false;
             // 
             // saatTxt
             // 
             this.saatTxt.AutoSize = true;
             this.saatTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.saatTxt.ForeColor = System.Drawing.Color.White;
-            this.saatTxt.Location = new System.Drawing.Point(874, 19);
+            this.saatTxt.Location = new System.Drawing.Point(879, 19);
             this.saatTxt.Name = "saatTxt";
             this.saatTxt.Size = new System.Drawing.Size(59, 20);
-            this.saatTxt.TabIndex = 50;
+            this.saatTxt.TabIndex = 61;
             this.saatTxt.Text = "label1";
             // 
-            // directorySearcher1
+            // avatar
             // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.avatar.Location = new System.Drawing.Point(130, 29);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(135, 132);
+            this.avatar.TabIndex = 63;
+            this.avatar.TabStop = false;
             // 
-            // pictureBox4
+            // adSoyad
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(106, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 31);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 56;
-            this.pictureBox4.TabStop = false;
+            this.adSoyad.AutoSize = true;
+            this.adSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.adSoyad.ForeColor = System.Drawing.Color.White;
+            this.adSoyad.Location = new System.Drawing.Point(127, 210);
+            this.adSoyad.Name = "adSoyad";
+            this.adSoyad.Size = new System.Drawing.Size(108, 22);
+            this.adSoyad.TabIndex = 64;
+            this.adSoyad.Text = "Ad Soyad :";
             // 
-            // searchButton
+            // kullaniciAdi
             // 
-            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.searchButton.ForeColor = System.Drawing.Color.White;
-            this.searchButton.Location = new System.Drawing.Point(544, 6);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(95, 31);
-            this.searchButton.TabIndex = 55;
-            this.searchButton.Text = "SEARCH";
-            this.searchButton.UseVisualStyleBackColor = true;
+            this.kullaniciAdi.AutoSize = true;
+            this.kullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullaniciAdi.ForeColor = System.Drawing.Color.White;
+            this.kullaniciAdi.Location = new System.Drawing.Point(127, 249);
+            this.kullaniciAdi.Name = "kullaniciAdi";
+            this.kullaniciAdi.Size = new System.Drawing.Size(133, 22);
+            this.kullaniciAdi.TabIndex = 65;
+            this.kullaniciAdi.Text = "Kullanıcı Adı :";
             // 
-            // aratxt
+            // unvan
             // 
-            this.aratxt.Location = new System.Drawing.Point(144, 6);
-            this.aratxt.Multiline = true;
-            this.aratxt.Name = "aratxt";
-            this.aratxt.Size = new System.Drawing.Size(394, 31);
-            this.aratxt.TabIndex = 54;
+            this.unvan.AutoSize = true;
+            this.unvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.unvan.ForeColor = System.Drawing.Color.White;
+            this.unvan.Location = new System.Drawing.Point(126, 288);
+            this.unvan.Name = "unvan";
+            this.unvan.Size = new System.Drawing.Size(79, 22);
+            this.unvan.TabIndex = 66;
+            this.unvan.Text = "Unvan :";
             // 
-            // EvrakGoruntule
+            // sifre
+            // 
+            this.sifre.AutoSize = true;
+            this.sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifre.ForeColor = System.Drawing.Color.White;
+            this.sifre.Location = new System.Drawing.Point(127, 327);
+            this.sifre.Name = "sifre";
+            this.sifre.Size = new System.Drawing.Size(64, 22);
+            this.sifre.TabIndex = 67;
+            this.sifre.Text = "Şifre :";
+            // 
+            // ProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.aratxt);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.sifre);
+            this.Controls.Add(this.unvan);
+            this.Controls.Add(this.kullaniciAdi);
+            this.Controls.Add(this.adSoyad);
+            this.Controls.Add(this.avatar);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.saatTxt);
-            this.Controls.Add(this.evraklistelemedata);
             this.Controls.Add(this.personelEkleTxt);
             this.Controls.Add(this.personelEkleButton);
             this.Controls.Add(this.profilTxt);
@@ -288,10 +292,10 @@
             this.Controls.Add(this.arsivButton);
             this.Controls.Add(this.ajandaButton);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "EvrakGoruntule";
+            this.Name = "ProfilSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EvrakGoruntule";
-            this.Load += new System.EventHandler(this.EvrakGoruntule_Load);
+            this.Text = "ProfilSayfasi";
+            this.Load += new System.EventHandler(this.ProfilSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).EndInit();
@@ -299,9 +303,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.evraklistelemedata)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,13 +324,13 @@
         private System.Windows.Forms.PictureBox arsivButton;
         private System.Windows.Forms.PictureBox ajandaButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView evraklistelemedata;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.TextBox aratxt;
+        private System.Windows.Forms.PictureBox avatar;
+        private System.Windows.Forms.Label adSoyad;
+        private System.Windows.Forms.Label kullaniciAdi;
+        private System.Windows.Forms.Label unvan;
+        private System.Windows.Forms.Label sifre;
     }
 }

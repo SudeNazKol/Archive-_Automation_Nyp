@@ -92,6 +92,8 @@ namespace NYP_Arsiv_Otomasyonu
            unvancombobox.ForeColor = Color.FromArgb(58, 86, 131);
             evrakEkleButton.BackColor = Color.FromArgb(58, 86, 131);
            saatTxt.BackColor = Color.FromArgb(58, 86, 131);
+            evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
+            evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -124,9 +126,9 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-           /* ProfilSayfası profilsayfası = new ProfilSayfası();
+            ProfilSayfasi profilsayfasi = new ProfilSayfasi();
             profilsayfasi.ShowDialog();
-            this.Close();*/
+            this.Close();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
@@ -152,9 +154,9 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            /* ProfilSayfası profilsayfası = new ProfilSayfası();
+             ProfilSayfasi profilsayfasi = new ProfilSayfasi();
             profilsayfasi.ShowDialog();
-            this.Close();*/
+            this.Close();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)

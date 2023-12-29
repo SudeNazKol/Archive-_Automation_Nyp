@@ -62,12 +62,6 @@ namespace NYP_Arsiv_Otomasyonu
 
         }
 
-        private void bolumSekreteriRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            girisTuru = 3;
-
-
-        }
 
         private void adSoyadTxt_TextChanged(object sender, EventArgs e)
         {
@@ -76,7 +70,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void sifreTxt_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

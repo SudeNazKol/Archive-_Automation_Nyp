@@ -77,7 +77,9 @@ namespace NYP_Arsiv_Otomasyonu
             int kayitsayisi =dgvKullanicilar.Rows.Count;
             label9.Text=kayitsayisi.ToString();
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
-            
+            evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
+            evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
+
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -265,16 +267,16 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-           /* ProfilSayfasi profilSayfasi = new ProfilSayfası();
+           ProfilSayfasi profilSayfasi = new ProfilSayfasi();
             profilSayfasi.ShowDialog();
-            this.Close();*/
+            this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            /* ProfilSayfasi profilSayfasi = new ProfilSayfası();
+             ProfilSayfasi profilSayfasi = new ProfilSayfasi();
             profilSayfasi.ShowDialog();
-            this.Close();*/
+            this.Close();
         }
 
         private void exitButton_Click(object sender, EventArgs e)

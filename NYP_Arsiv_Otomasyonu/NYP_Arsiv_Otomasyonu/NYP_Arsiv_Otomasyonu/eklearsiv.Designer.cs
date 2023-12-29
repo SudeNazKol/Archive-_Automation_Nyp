@@ -55,6 +55,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.evragınTuru = new System.Windows.Forms.Label();
+            this.evragınTuruComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -120,7 +122,7 @@
             // evrakEkleButton
             // 
             this.evrakEkleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.evrakEkleButton.Location = new System.Drawing.Point(571, 81);
+            this.evrakEkleButton.Location = new System.Drawing.Point(647, 131);
             this.evrakEkleButton.Name = "evrakEkleButton";
             this.evrakEkleButton.Size = new System.Drawing.Size(142, 39);
             this.evrakEkleButton.TabIndex = 6;
@@ -137,9 +139,9 @@
             "Admin ",
             "Öğrenci işleri",
             "Bölüm Sekreteri"});
-            this.unvancombobox.Location = new System.Drawing.Point(251, 157);
+            this.unvancombobox.Location = new System.Drawing.Point(609, 19);
             this.unvancombobox.Name = "unvancombobox";
-            this.unvancombobox.Size = new System.Drawing.Size(267, 26);
+            this.unvancombobox.Size = new System.Drawing.Size(214, 26);
             this.unvancombobox.TabIndex = 7;
             // 
             // unvan
@@ -147,7 +149,7 @@
             this.unvan.AutoSize = true;
             this.unvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.unvan.ForeColor = System.Drawing.Color.White;
-            this.unvan.Location = new System.Drawing.Point(113, 157);
+            this.unvan.Location = new System.Drawing.Point(530, 24);
             this.unvan.Name = "unvan";
             this.unvan.Size = new System.Drawing.Size(65, 18);
             this.unvan.TabIndex = 8;
@@ -331,11 +333,34 @@
             this.saatTxt.TabIndex = 46;
             this.saatTxt.Text = "label1";
             // 
+            // evragınTuru
+            // 
+            this.evragınTuru.AutoSize = true;
+            this.evragınTuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evragınTuru.ForeColor = System.Drawing.Color.White;
+            this.evragınTuru.Location = new System.Drawing.Point(530, 70);
+            this.evragınTuru.Name = "evragınTuru";
+            this.evragınTuru.Size = new System.Drawing.Size(69, 36);
+            this.evragınTuru.TabIndex = 48;
+            this.evragınTuru.Text = "Evrağın \r\n  Türü :";
+            // 
+            // evragınTuruComboBox
+            // 
+            this.evragınTuruComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evragınTuruComboBox.ForeColor = System.Drawing.Color.White;
+            this.evragınTuruComboBox.FormattingEnabled = true;
+            this.evragınTuruComboBox.Location = new System.Drawing.Point(609, 75);
+            this.evragınTuruComboBox.Name = "evragınTuruComboBox";
+            this.evragınTuruComboBox.Size = new System.Drawing.Size(214, 26);
+            this.evragınTuruComboBox.TabIndex = 49;
+            // 
             // eklearsiv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.evragınTuruComboBox);
+            this.Controls.Add(this.evragınTuru);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.saatTxt);
             this.Controls.Add(this.eklearsivdata);
@@ -406,5 +431,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label evragınTuru;
+        private System.Windows.Forms.ComboBox evragınTuruComboBox;
     }
 }

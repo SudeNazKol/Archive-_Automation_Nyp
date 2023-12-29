@@ -37,8 +37,7 @@
             this.adSoyadTxt = new System.Windows.Forms.TextBox();
             this.sifreTxt = new System.Windows.Forms.TextBox();
             this.adminRadioButton = new System.Windows.Forms.RadioButton();
-            this.ogrenciIsleriRadioButton = new System.Windows.Forms.RadioButton();
-            this.bolumSekreteriRadioButton = new System.Windows.Forms.RadioButton();
+            this.personelRadioButton = new System.Windows.Forms.RadioButton();
             this.girisButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -133,33 +132,19 @@
             this.adminRadioButton.UseVisualStyleBackColor = true;
             this.adminRadioButton.CheckedChanged += new System.EventHandler(this.adminRadioButton_CheckedChanged);
             // 
-            // ogrenciIsleriRadioButton
+            // personelRadioButton
             // 
-            this.ogrenciIsleriRadioButton.AutoSize = true;
-            this.ogrenciIsleriRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciIsleriRadioButton.ForeColor = System.Drawing.Color.White;
-            this.ogrenciIsleriRadioButton.Location = new System.Drawing.Point(440, 379);
-            this.ogrenciIsleriRadioButton.Name = "ogrenciIsleriRadioButton";
-            this.ogrenciIsleriRadioButton.Size = new System.Drawing.Size(150, 26);
-            this.ogrenciIsleriRadioButton.TabIndex = 8;
-            this.ogrenciIsleriRadioButton.TabStop = true;
-            this.ogrenciIsleriRadioButton.Text = "Öğrenci İşleri";
-            this.ogrenciIsleriRadioButton.UseVisualStyleBackColor = true;
-            this.ogrenciIsleriRadioButton.CheckedChanged += new System.EventHandler(this.ogrenciIsleriRadioButton_CheckedChanged);
-            // 
-            // bolumSekreteriRadioButton
-            // 
-            this.bolumSekreteriRadioButton.AutoSize = true;
-            this.bolumSekreteriRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bolumSekreteriRadioButton.ForeColor = System.Drawing.Color.White;
-            this.bolumSekreteriRadioButton.Location = new System.Drawing.Point(440, 411);
-            this.bolumSekreteriRadioButton.Name = "bolumSekreteriRadioButton";
-            this.bolumSekreteriRadioButton.Size = new System.Drawing.Size(173, 26);
-            this.bolumSekreteriRadioButton.TabIndex = 9;
-            this.bolumSekreteriRadioButton.TabStop = true;
-            this.bolumSekreteriRadioButton.Text = "Bölüm Sekreteri";
-            this.bolumSekreteriRadioButton.UseVisualStyleBackColor = true;
-            this.bolumSekreteriRadioButton.CheckedChanged += new System.EventHandler(this.bolumSekreteriRadioButton_CheckedChanged);
+            this.personelRadioButton.AutoSize = true;
+            this.personelRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.personelRadioButton.ForeColor = System.Drawing.Color.White;
+            this.personelRadioButton.Location = new System.Drawing.Point(440, 379);
+            this.personelRadioButton.Name = "personelRadioButton";
+            this.personelRadioButton.Size = new System.Drawing.Size(110, 26);
+            this.personelRadioButton.TabIndex = 8;
+            this.personelRadioButton.TabStop = true;
+            this.personelRadioButton.Text = "Personel";
+            this.personelRadioButton.UseVisualStyleBackColor = true;
+            this.personelRadioButton.CheckedChanged += new System.EventHandler(this.ogrenciIsleriRadioButton_CheckedChanged);
             // 
             // girisButton
             // 
@@ -179,8 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
             this.Controls.Add(this.girisButton);
-            this.Controls.Add(this.bolumSekreteriRadioButton);
-            this.Controls.Add(this.ogrenciIsleriRadioButton);
+            this.Controls.Add(this.personelRadioButton);
             this.Controls.Add(this.adminRadioButton);
             this.Controls.Add(this.sifreTxt);
             this.Controls.Add(this.adSoyadTxt);
@@ -211,8 +195,7 @@
         private System.Windows.Forms.TextBox adSoyadTxt;
         private System.Windows.Forms.TextBox sifreTxt;
         private System.Windows.Forms.RadioButton adminRadioButton;
-        private System.Windows.Forms.RadioButton ogrenciIsleriRadioButton;
-        private System.Windows.Forms.RadioButton bolumSekreteriRadioButton;
+        private System.Windows.Forms.RadioButton personelRadioButton;
         private System.Windows.Forms.Button girisButton;
     }
 }
