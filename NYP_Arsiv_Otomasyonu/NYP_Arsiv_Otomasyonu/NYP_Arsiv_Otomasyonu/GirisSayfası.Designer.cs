@@ -64,6 +64,7 @@
             this.adSoyad.Size = new System.Drawing.Size(108, 22);
             this.adSoyad.TabIndex = 1;
             this.adSoyad.Text = "Ad Soyad :";
+            this.adSoyad.Click += new System.EventHandler(this.adSoyad_Click);
             // 
             // pictureBox2
             // 

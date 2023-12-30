@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,8 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class GirisSayfası : Form
     {
+        MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
+        private BindingSource bindingSource1 = new BindingSource();
         public GirisSayfası()
         {
             InitializeComponent();
@@ -28,30 +31,80 @@ namespace NYP_Arsiv_Otomasyonu
         public int girisTuru;
         private void girisButton_Click(object sender, EventArgs e)
         {
-            
-
             this.Hide();
 
-            if (girisTuru==0||girisTuru>3)
+
+            string kullaniciAdi = adSoyadTxt.Text;
+            string sifre = sifreTxt.Text;
+
+
+            if (AdminKontrol(kullaniciAdi, sifre))
             {
-                MessageBox.Show("Giriş Türü Seçiniz");
+                                
+                girisTuru = 1;
+                this.Hide(); 
+            }
+
+            if (GirisKontrol(kullaniciAdi, sifre))
+            {
+                MessageBox.Show("Giriş Başarılı!");
+                if (girisTuru == 0 || girisTuru > 3)
+                {
+                    MessageBox.Show("Giriş Türü Seçiniz");
+                }
+                else
+                {
+                    anaSayfa anasayfa = new anaSayfa();
+                    if (girisTuru == 1)
+                    {
+                        anasayfa.girisTuru = 1;
+                    }
+
+
+                    anasayfa.ShowDialog();
+                    this.Hide();
+                }
+
             }
             else
             {
-                anaSayfa anasayfa = new anaSayfa();
-                if (girisTuru == 1)
-                {
-                    anasayfa.girisTuru = 1;
-                }
-                
-
-                anasayfa.ShowDialog();
-                
+                MessageBox.Show("Giriş Başarısız!");
+                GirisSayfası girissayfası= new GirisSayfası();
+                girissayfası.ShowDialog(); 
             }
-        }
+            this.Hide();
 
+        }
+        private bool AdminKontrol(string kullaniciAdi, string sifre)
+        {
+            connection.Open();
+            string query = "SELECT COUNT(*) FROM personal WHERE Kullanici_Adi = @kullaniciAdi AND Parola = @sifre AND Kullanici_Adi= 'admin'";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            command.Parameters.AddWithValue("@kullaniciAdi", kullaniciAdi);
+            command.Parameters.AddWithValue("@sifre", sifre);
+
+            int count = Convert.ToInt32(command.ExecuteScalar());
+            connection.Close();
+
+            return count > 0;
+        }
+        private bool GirisKontrol(string kullaniciAdi, string sifre)
+        {
+            connection.Open();
+            string query = "SELECT COUNT(*) FROM personal WHERE Kullanici_Adi = @kullaniciAdi AND Parola = @sifre";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            command.Parameters.AddWithValue("@kullaniciAdi", kullaniciAdi);
+            command.Parameters.AddWithValue("@sifre", sifre);
+
+            int count = Convert.ToInt32(command.ExecuteScalar());
+            connection.Close();
+
+            return count > 0;
+
+        }
         private void adminRadioButton_CheckedChanged(object sender, EventArgs e)
         {
+            
             girisTuru = 1;
         }
 
@@ -71,6 +124,11 @@ namespace NYP_Arsiv_Otomasyonu
         private void sifreTxt_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void adSoyad_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
