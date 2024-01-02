@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,8 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class anaSayfa : Form
     {
+
+
         public anaSayfa()
         {
             InitializeComponent();
@@ -20,7 +23,7 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
-        public int girisTuru;
+        public string girisTuru;
         private void girisSayfası_Load(object sender, EventArgs e)
         {
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
@@ -38,11 +41,6 @@ namespace NYP_Arsiv_Otomasyonu
             profilTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
-            if(girisTuru==1)
-            {
-                personelEkleButton.Visible = true;
-                personelEkleTxt.Visible = true;
-            }
         }
 
         private void arsivButton_Click(object sender, EventArgs e)

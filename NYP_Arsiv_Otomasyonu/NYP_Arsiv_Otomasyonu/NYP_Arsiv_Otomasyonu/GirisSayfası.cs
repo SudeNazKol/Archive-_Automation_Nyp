@@ -28,7 +28,6 @@ namespace NYP_Arsiv_Otomasyonu
             sifreTxt.BackColor = Color.FromArgb(58, 86, 131);
             girisButton.ForeColor = Color.FromArgb(58, 86, 131);
         }
-        public int girisTuru;
         private void girisButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -40,30 +39,16 @@ namespace NYP_Arsiv_Otomasyonu
 
             if (AdminKontrol(kullaniciAdi, sifre))
             {
-                                
-                girisTuru = 1;
+                               
                 this.Hide(); 
             }
 
             if (GirisKontrol(kullaniciAdi, sifre))
             {
-                MessageBox.Show("Giriş Başarılı!");
-                if (girisTuru == 0 || girisTuru > 3)
-                {
-                    MessageBox.Show("Giriş Türü Seçiniz");
-                }
-                else
-                {
-                    anaSayfa anasayfa = new anaSayfa();
-                    if (girisTuru == 1)
-                    {
-                        anasayfa.girisTuru = 1;
-                    }
-
-
-                    anasayfa.ShowDialog();
-                    this.Hide();
-                }
+                //MessageBox.Show("Giriş Başarılı!");
+                anaSayfa anasayfa = new anaSayfa();
+                anasayfa.ShowDialog();
+                this.Hide();
 
             }
             else
@@ -105,13 +90,10 @@ namespace NYP_Arsiv_Otomasyonu
         private void adminRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             
-            girisTuru = 1;
         }
 
         private void ogrenciIsleriRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            girisTuru = 2;
-
 
         }
 

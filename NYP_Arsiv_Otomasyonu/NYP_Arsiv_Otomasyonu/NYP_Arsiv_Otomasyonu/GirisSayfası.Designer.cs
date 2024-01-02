@@ -106,6 +106,7 @@
             this.adSoyadTxt.Name = "adSoyadTxt";
             this.adSoyadTxt.Size = new System.Drawing.Size(219, 37);
             this.adSoyadTxt.TabIndex = 5;
+            this.adSoyadTxt.Text = "admin";
             this.adSoyadTxt.TextChanged += new System.EventHandler(this.adSoyadTxt_TextChanged);
             // 
             // sifreTxt
@@ -117,6 +118,7 @@
             this.sifreTxt.Name = "sifreTxt";
             this.sifreTxt.Size = new System.Drawing.Size(219, 35);
             this.sifreTxt.TabIndex = 6;
+            this.sifreTxt.Text = "9512357";
             this.sifreTxt.TextChanged += new System.EventHandler(this.sifreTxt_TextChanged);
             // 
             // adminRadioButton
