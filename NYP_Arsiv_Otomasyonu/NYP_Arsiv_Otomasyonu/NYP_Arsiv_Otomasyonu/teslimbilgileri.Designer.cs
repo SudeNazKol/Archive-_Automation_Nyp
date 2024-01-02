@@ -43,7 +43,7 @@
             this.unvanTxt = new System.Windows.Forms.Label();
             this.ünvancombo = new System.Windows.Forms.ComboBox();
             this.katSayisiTxt = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.dgvKullanicilar = new System.Windows.Forms.DataGridView();
             this.silbutton = new System.Windows.Forms.Button();
             this.txtkonum = new System.Windows.Forms.TextBox();
@@ -200,9 +200,7 @@
             this.ünvancombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ünvancombo.FormattingEnabled = true;
             this.ünvancombo.Items.AddRange(new object[] {
-            "Admin",
-            "Öğrenci İşleri",
-            "Bölüm Sekreteri"});
+            "Admin"});
             this.ünvancombo.Location = new System.Drawing.Point(222, 113);
             this.ünvancombo.Name = "ünvancombo";
             this.ünvancombo.Size = new System.Drawing.Size(159, 26);
@@ -220,16 +218,16 @@
             this.katSayisiTxt.Text = " Kayıt Sayısı :";
             this.katSayisiTxt.Click += new System.EventHandler(this.katSayisiTxt_Click);
             // 
-            // label9
+            // label
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(875, 515);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 18);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "_________";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label.Location = new System.Drawing.Point(875, 515);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(89, 18);
+            this.label.TabIndex = 23;
+            this.label.Text = "_________";
+            this.label.Click += new System.EventHandler(this.label9_Click);
             // 
             // dgvKullanicilar
             // 
@@ -489,10 +487,13 @@
             // evragınTuruComboBox
             // 
             this.evragınTuruComboBox.FormattingEnabled = true;
+            this.evragınTuruComboBox.Items.AddRange(new object[] {
+            "Sınav Belgeleri"});
             this.evragınTuruComboBox.Location = new System.Drawing.Point(222, 160);
             this.evragınTuruComboBox.Name = "evragınTuruComboBox";
             this.evragınTuruComboBox.Size = new System.Drawing.Size(159, 24);
             this.evragınTuruComboBox.TabIndex = 48;
+            this.evragınTuruComboBox.SelectedIndexChanged += new System.EventHandler(this.evragınTuruComboBox_SelectedIndexChanged);
             // 
             // evragınTuru
             // 
@@ -536,7 +537,7 @@
             this.Controls.Add(this.txtkonum);
             this.Controls.Add(this.silbutton);
             this.Controls.Add(this.dgvKullanicilar);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.katSayisiTxt);
             this.Controls.Add(this.ünvancombo);
             this.Controls.Add(this.unvanTxt);
@@ -583,7 +584,7 @@
         private System.Windows.Forms.Label unvanTxt;
         private System.Windows.Forms.ComboBox ünvancombo;
         private System.Windows.Forms.Label katSayisiTxt;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.DataGridView dgvKullanicilar;
         private System.Windows.Forms.Button silbutton;
         private System.Windows.Forms.TextBox txtkonum;

@@ -281,6 +281,7 @@
             this.unvanComboBox.Name = "unvanComboBox";
             this.unvanComboBox.Size = new System.Drawing.Size(169, 26);
             this.unvanComboBox.TabIndex = 59;
+            this.unvanComboBox.SelectedIndexChanged += new System.EventHandler(this.unvanComboBox_SelectedIndexChanged);
             // 
             // ekleButton
             // 

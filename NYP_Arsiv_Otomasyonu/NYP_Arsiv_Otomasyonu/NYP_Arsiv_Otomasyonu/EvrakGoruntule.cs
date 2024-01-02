@@ -66,6 +66,7 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             aratxt.ForeColor = Color.FromArgb(58, 86, 131);
             searchButton.BackColor = Color.FromArgb(58, 86, 131);
+            label2.Text = $"{evraklistelemedata.RowCount}";
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -158,6 +159,18 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void aratxt_TextChanged_1(object sender, EventArgs e)
+        {
+            connection.Open();
+            MySqlCommand komut = new MySqlCommand("Select * from archives where Konum like '%" + aratxt.Text + "%'", connection);
+            MySqlDataAdapter da = new MySqlDataAdapter(komut);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            evraklistelemedata.DataSource = ds.Tables[0];
+            connection.Close();
 
         }
     }

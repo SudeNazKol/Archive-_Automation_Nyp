@@ -1,5 +1,6 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,8 +60,11 @@ namespace NYP_Arsiv_Otomasyonu
 
             DataTable table = new DataTable();
             adapter.Fill(table);
+            dgvKullanicilar.DataSource = table;
             
             return table;
+           
+           
 
         }
 
@@ -74,8 +78,8 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimbilgileri_Load(object sender, EventArgs e)
         { 
-            int kayitsayisi =dgvKullanicilar.Rows.Count;
-            label9.Text=kayitsayisi.ToString();
+          
+            
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
             evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
@@ -112,23 +116,25 @@ namespace NYP_Arsiv_Otomasyonu
             silbutton.BackColor = Color.FromArgb(58, 86, 131);
             arabutton.BackColor = Color.FromArgb(58, 86, 131);
             katSayisiTxt.ForeColor = Color.FromArgb(58, 86, 131);
-            label9.ForeColor = Color.FromArgb(58, 86, 131);
+            label.ForeColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             TabloyuDoldur();
+            label.Text = $"{dgvKullanicilar.RowCount}";
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO users (Evrak_adi,Teslim_Alan,Unvan,Teslim_Alma_Tarihi,Teslim_Birakma_Tarihi,Teslim_Neden,Konum) VALUES (@p0,@p1,@p2,@p3,@p4,@p5,@p6)", connection);
+            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO users (Evrak_adi,Teslim_Alan,Unvan,Evrak_Turu,Teslim_Alma_Tarihi,Teslim_Birakma_Tarihi,Teslim_Neden,Konum) VALUES (@p0,@p1,@p2,@p3,@p4,@p5,@p6,@p7)", connection);
             commandToAdd.Parameters.AddWithValue("@p0", txtevrakadı.Text);
             commandToAdd.Parameters.AddWithValue("@p1", txtteslimalan.Text);
             commandToAdd.Parameters.AddWithValue("@p2", ünvancombo.Text);
-            commandToAdd.Parameters.AddWithValue("@p3", txtteslimalmatarih.Text);
-            commandToAdd.Parameters.AddWithValue("@p4", txtteslimbırakmatarih.Text);
-            commandToAdd.Parameters.AddWithValue("@p5", txtteslimneden.Text);
-            commandToAdd.Parameters.AddWithValue("@p6", txtkonum.Text);
-
+            commandToAdd.Parameters.AddWithValue("@p3", evragınTuruComboBox.Text);
+            commandToAdd.Parameters.AddWithValue("@p4", txtteslimalmatarih.Text);
+            commandToAdd.Parameters.AddWithValue("@p5", txtteslimbırakmatarih.Text);
+            commandToAdd.Parameters.AddWithValue("@p6", txtteslimneden.Text);
+            commandToAdd.Parameters.AddWithValue("@p7", txtkonum.Text);
+            
             commandToAdd.ExecuteNonQuery();
             connection.Close();
             TabloyuDoldur();
@@ -143,12 +149,12 @@ namespace NYP_Arsiv_Otomasyonu
         private void silbutton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string deleteSql = "DELETE FROM users WHERE konum = @6";
+            string deleteSql = "DELETE FROM users WHERE konum = @7";
             MySqlCommand deleteCommand = new MySqlCommand(deleteSql, connection);
             if (connection.State == ConnectionState.Open)
             {
                 deleteCommand.Parameters.AddWithValue
-                        ("@6", txtkonum.Text);
+                        ("@7", txtkonum.Text);
                 deleteCommand.ExecuteNonQuery();
                 MessageBox.Show("Kayıt Silindi!");
                 connection.Close();
@@ -160,7 +166,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void güncelbutton_Click(object sender, EventArgs e)
         {
             connection.Open ();
-            MySqlCommand komut = new MySqlCommand("update users set Evrak_adi='" + txtevrakadı.Text + "',Teslim_Alan='" + txtteslimalan.Text + "',Unvan='" + ünvancombo.Text +  "',Teslim_Alma_Tarihi='" + txtteslimalmatarih.Text + "',Teslim_Birakma_Tarihi='" + txtteslimbırakmatarih.Text + "',Teslim_Neden='" + txtteslimneden.Text + "' where Konum='" + txtkonum.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update users set Evrak_adi='" + txtevrakadı.Text + "',Teslim_Alan='" + txtteslimalan.Text + "',Unvan='" + ünvancombo.Text + "',Evrak_Turu='" + evragınTuruComboBox.Text+ "',Teslim_Alma_Tarihi='" + txtteslimalmatarih.Text + "',Teslim_Birakma_Tarihi='" + txtteslimbırakmatarih.Text + "',Teslim_Neden='" + txtteslimneden.Text + "' where Konum='" + txtkonum.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close ();
@@ -194,17 +200,21 @@ namespace NYP_Arsiv_Otomasyonu
             string Evrak_adi = dgvKullanicilar.Rows[seçilialan].Cells[1].Value.ToString();
             string Teslim_Alan = dgvKullanicilar.Rows[seçilialan].Cells[2].Value.ToString();
             string Unvan = dgvKullanicilar.Rows[seçilialan].Cells[3].Value.ToString();
-            string Teslim_Alma_Tarihi = dgvKullanicilar.Rows[seçilialan].Cells[4].Value.ToString();
-            string Teslim_Birakma_Tarihi = dgvKullanicilar.Rows[seçilialan].Cells[5].Value.ToString();
-            string Teslim_Neden = dgvKullanicilar.Rows[seçilialan].Cells[6].Value.ToString();
-            string Konum = dgvKullanicilar.Rows[seçilialan].Cells[7].Value.ToString();
+            string Evrak_Turu = dgvKullanicilar.Rows[seçilialan].Cells[4].Value.ToString();
+            string Teslim_Alma_Tarihi = dgvKullanicilar.Rows[seçilialan].Cells[5].Value.ToString();
+            string Teslim_Birakma_Tarihi = dgvKullanicilar.Rows[seçilialan].Cells[6].Value.ToString();
+            string Teslim_Neden = dgvKullanicilar.Rows[seçilialan].Cells[7].Value.ToString();
+            string Konum = dgvKullanicilar.Rows[seçilialan].Cells[8].Value.ToString();
+            
             txtevrakadı.Text = Evrak_adi;
             txtteslimalan.Text = Teslim_Alan;
             ünvancombo.Text = Unvan;
+            evragınTuruComboBox.Text = Evrak_Turu;
             txtteslimalmatarih.Text = Teslim_Alma_Tarihi;
             txtteslimbırakmatarih.Text = Teslim_Birakma_Tarihi;
             txtteslimneden.Text = Teslim_Neden;
             txtkonum.Text = Konum;
+            
         }
 
         private void txtevrakadı_TextChanged(object sender, EventArgs e)
@@ -305,7 +315,12 @@ namespace NYP_Arsiv_Otomasyonu
         {
             int kayitsayisi;
             kayitsayisi = dgvKullanicilar.RowCount;
-            label9.Text = "Toplam Kayıt Sayısı: " + kayitsayisi.ToString();
+            label.Text = "Toplam Kayıt Sayısı: " + kayitsayisi.ToString();
+        }
+
+        private void evragınTuruComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

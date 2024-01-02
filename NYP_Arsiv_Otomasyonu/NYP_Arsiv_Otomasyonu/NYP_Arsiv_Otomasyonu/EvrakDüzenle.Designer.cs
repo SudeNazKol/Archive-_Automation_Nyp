@@ -359,6 +359,7 @@
             this.evragınTuruComboBox.Name = "evragınTuruComboBox";
             this.evragınTuruComboBox.Size = new System.Drawing.Size(200, 26);
             this.evragınTuruComboBox.TabIndex = 74;
+            this.evragınTuruComboBox.SelectedIndexChanged += new System.EventHandler(this.evragınTuruComboBox_SelectedIndexChanged);
             // 
             // evragınTuru
             // 

@@ -169,7 +169,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakdüzeneklebutton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text +"',Evrak_Turu='" + evragınTuruComboBox + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close();
@@ -183,11 +183,14 @@ namespace NYP_Arsiv_Otomasyonu
             string Unvan = evrakduzenledata.Rows[seçilialan].Cells[2].Value.ToString();
             string Evrak_Tarih = evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
             string Konum = evrakduzenledata.Rows[seçilialan].Cells[4].Value.ToString();
+            string Evrak_Turu = evrakduzenledata.Rows[seçilialan].Cells[5].Value.ToString();
+
 
             evrakaditxt.Text = Evrak_Adi;
             unvancombobox.Text = Unvan;
             evrakduzenlemedate.Text = Evrak_Tarih;
             evrakkodutxt.Text = Konum;
+            evragınTuruComboBox.Text = Evrak_Turu;
 
 
         }
@@ -209,6 +212,11 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void evrakduzenlemedate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void evragınTuruComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

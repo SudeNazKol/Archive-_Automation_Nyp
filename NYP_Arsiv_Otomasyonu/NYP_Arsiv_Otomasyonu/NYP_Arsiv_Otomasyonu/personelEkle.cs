@@ -215,5 +215,10 @@ namespace NYP_Arsiv_Otomasyonu
             unvanComboBox.Text = Unvan;
             
         }
+
+        private void unvanComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,12 +32,13 @@ namespace NYP_Arsiv_Otomasyonu
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO archives (Evrak_Adi,Unvan,Evrak_Tarih,Konum) VALUES (@p0,@p1,@p2,@p3)", connection);
+            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO archives (Evrak_Adi,Unvan,Evrak_Tarih,Konum,Evrak_Turu) VALUES (@p0,@p1,@p2,@p3,@p4)", connection);
             commandToAdd.Parameters.AddWithValue("@p0", evrakaditxt.Text);
             commandToAdd.Parameters.AddWithValue("@p1", unvancombobox.Text);
             commandToAdd.Parameters.AddWithValue("@p2", evrakbırakmadate.Text);
             commandToAdd.Parameters.AddWithValue("@p3", evrakkodutxt.Text);
-            
+            commandToAdd.Parameters.AddWithValue("@p4", evragınTuruComboBox.Text);
+
 
             commandToAdd.ExecuteNonQuery();
             connection.Close();
@@ -172,6 +173,11 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void eklearsivdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void evrakkodutxt_TextChanged(object sender, EventArgs e)
         {
 
         }

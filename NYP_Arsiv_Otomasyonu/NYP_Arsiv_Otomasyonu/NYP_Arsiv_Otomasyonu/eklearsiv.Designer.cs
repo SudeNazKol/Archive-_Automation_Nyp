@@ -118,6 +118,7 @@
             this.evrakkodutxt.Name = "evrakkodutxt";
             this.evrakkodutxt.Size = new System.Drawing.Size(267, 24);
             this.evrakkodutxt.TabIndex = 4;
+            this.evrakkodutxt.TextChanged += new System.EventHandler(this.evrakkodutxt_TextChanged);
             // 
             // evrakEkleButton
             // 
