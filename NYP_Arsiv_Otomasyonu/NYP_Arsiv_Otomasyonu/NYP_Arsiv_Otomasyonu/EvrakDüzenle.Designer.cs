@@ -58,6 +58,8 @@
             this.evraksilbutton = new System.Windows.Forms.Button();
             this.evragınTuruComboBox = new System.Windows.Forms.ComboBox();
             this.evragınTuru = new System.Windows.Forms.Label();
+            this.rafNoTxt = new System.Windows.Forms.TextBox();
+            this.rafNo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -226,6 +228,10 @@
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // evrakduzenlemedate
             // 
             this.evrakduzenlemedate.CalendarForeColor = System.Drawing.Color.White;
@@ -256,8 +262,7 @@
             this.unvancombobox.FormattingEnabled = true;
             this.unvancombobox.Items.AddRange(new object[] {
             "Admin ",
-            "Öğrenci işleri",
-            "Bölüm Sekreteri"});
+            "Personel"});
             this.unvancombobox.Location = new System.Drawing.Point(620, 19);
             this.unvancombobox.Name = "unvancombobox";
             this.unvancombobox.Size = new System.Drawing.Size(198, 26);
@@ -268,7 +273,7 @@
             // 
             this.evrakdüzeneklebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakdüzeneklebutton.ForeColor = System.Drawing.Color.White;
-            this.evrakdüzeneklebutton.Location = new System.Drawing.Point(577, 122);
+            this.evrakdüzeneklebutton.Location = new System.Drawing.Point(606, 122);
             this.evrakdüzeneklebutton.Name = "evrakdüzeneklebutton";
             this.evrakdüzeneklebutton.Size = new System.Drawing.Size(115, 39);
             this.evrakdüzeneklebutton.TabIndex = 65;
@@ -342,7 +347,7 @@
             // 
             this.evraksilbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evraksilbutton.ForeColor = System.Drawing.Color.White;
-            this.evraksilbutton.Location = new System.Drawing.Point(764, 122);
+            this.evraksilbutton.Location = new System.Drawing.Point(793, 122);
             this.evraksilbutton.Name = "evraksilbutton";
             this.evraksilbutton.Size = new System.Drawing.Size(115, 39);
             this.evraksilbutton.TabIndex = 72;
@@ -355,6 +360,21 @@
             this.evragınTuruComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evragınTuruComboBox.ForeColor = System.Drawing.Color.White;
             this.evragınTuruComboBox.FormattingEnabled = true;
+            this.evragınTuruComboBox.Items.AddRange(new object[] {
+            "Sınav Belgeleri",
+            "Akademik Tez Belgeleri",
+            "Muhasebe Kayıtları",
+            "Sınav Sonuçları ",
+            "Yoklama Kayıtları ",
+            "Öğrenci Kayıtları",
+            "Mezuniyet Belgeleri",
+            "Araştırma Raporları",
+            "Yönetim Kurulu Kararları",
+            "Ders Programları ",
+            "Diplomalar",
+            "Makaleler",
+            "Öğrenci Kulüp Belgeleri",
+            "Sosyal Etkinlik Belgeleri"});
             this.evragınTuruComboBox.Location = new System.Drawing.Point(618, 62);
             this.evragınTuruComboBox.Name = "evragınTuruComboBox";
             this.evragınTuruComboBox.Size = new System.Drawing.Size(200, 26);
@@ -372,11 +392,33 @@
             this.evragınTuru.TabIndex = 73;
             this.evragınTuru.Text = "Evrağın \r\n  Türü :";
             // 
+            // rafNoTxt
+            // 
+            this.rafNoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rafNoTxt.ForeColor = System.Drawing.Color.White;
+            this.rafNoTxt.Location = new System.Drawing.Point(264, 161);
+            this.rafNoTxt.Name = "rafNoTxt";
+            this.rafNoTxt.Size = new System.Drawing.Size(267, 24);
+            this.rafNoTxt.TabIndex = 76;
+            // 
+            // rafNo
+            // 
+            this.rafNo.AutoSize = true;
+            this.rafNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rafNo.ForeColor = System.Drawing.Color.White;
+            this.rafNo.Location = new System.Drawing.Point(106, 161);
+            this.rafNo.Name = "rafNo";
+            this.rafNo.Size = new System.Drawing.Size(71, 18);
+            this.rafNo.TabIndex = 75;
+            this.rafNo.Text = "Raf No :";
+            // 
             // EvrakDüzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 540);
+            this.ClientSize = new System.Drawing.Size(991, 577);
+            this.Controls.Add(this.rafNoTxt);
+            this.Controls.Add(this.rafNo);
             this.Controls.Add(this.evragınTuruComboBox);
             this.Controls.Add(this.evragınTuru);
             this.Controls.Add(this.evraksilbutton);
@@ -452,5 +494,7 @@
         private System.Windows.Forms.Button evraksilbutton;
         private System.Windows.Forms.ComboBox evragınTuruComboBox;
         private System.Windows.Forms.Label evragınTuru;
+        private System.Windows.Forms.TextBox rafNoTxt;
+        private System.Windows.Forms.Label rafNo;
     }
 }

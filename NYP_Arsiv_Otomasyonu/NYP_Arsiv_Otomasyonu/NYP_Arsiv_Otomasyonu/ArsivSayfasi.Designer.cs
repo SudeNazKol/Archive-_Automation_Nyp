@@ -299,6 +299,11 @@
             this.saatTxt.TabIndex = 44;
             this.saatTxt.Text = "label1";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // ArsivSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

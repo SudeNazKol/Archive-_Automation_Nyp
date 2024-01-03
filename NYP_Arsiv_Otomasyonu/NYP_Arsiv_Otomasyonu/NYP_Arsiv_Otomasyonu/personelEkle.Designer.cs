@@ -275,8 +275,6 @@
             this.unvanComboBox.FormattingEnabled = true;
             this.unvanComboBox.Items.AddRange(new object[] {
             "Admin",
-            "Öğrenci İşleri ",
-            "Bölüm Sekreteri",
             "Personel"});
             this.unvanComboBox.Location = new System.Drawing.Point(483, 42);
             this.unvanComboBox.Name = "unvanComboBox";
@@ -340,6 +338,10 @@
             this.saatTxt.Size = new System.Drawing.Size(59, 20);
             this.saatTxt.TabIndex = 63;
             this.saatTxt.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // personelekledata
             // 

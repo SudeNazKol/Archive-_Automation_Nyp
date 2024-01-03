@@ -15,8 +15,7 @@ namespace NYP_Arsiv_Otomasyonu
         public ProfilSayfasi()
         {
             InitializeComponent();
-            saatTxt.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
+            
         }
 
         private void ProfilSayfasi_Load(object sender, EventArgs e)
@@ -104,6 +103,12 @@ namespace NYP_Arsiv_Otomasyonu
             GirisSayfası girisSayfası = new GirisSayfası();
             girisSayfası.ShowDialog();
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

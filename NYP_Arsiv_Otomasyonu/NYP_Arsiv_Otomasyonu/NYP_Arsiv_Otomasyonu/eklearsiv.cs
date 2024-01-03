@@ -32,12 +32,13 @@ namespace NYP_Arsiv_Otomasyonu
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO archives (Evrak_Adi,Unvan,Evrak_Tarih,Konum,Evrak_Turu) VALUES (@p0,@p1,@p2,@p3,@p4)", connection);
+            MySqlCommand commandToAdd = new MySqlCommand("INSERT INTO archives (Evrak_Adi,Unvan,Evrak_Tarih,Konum,Evrak_Turu,Raf_No) VALUES (@p0,@p1,@p2,@p3,@p4,@p5)", connection);
             commandToAdd.Parameters.AddWithValue("@p0", evrakaditxt.Text);
             commandToAdd.Parameters.AddWithValue("@p1", unvancombobox.Text);
             commandToAdd.Parameters.AddWithValue("@p2", evrakbırakmadate.Text);
             commandToAdd.Parameters.AddWithValue("@p3", evrakkodutxt.Text);
             commandToAdd.Parameters.AddWithValue("@p4", evragınTuruComboBox.Text);
+            commandToAdd.Parameters.AddWithValue("@p5", rafNoTxt.Text);
 
 
             commandToAdd.ExecuteNonQuery();
@@ -45,6 +46,7 @@ namespace NYP_Arsiv_Otomasyonu
             TabloyuDoldur();
 
             MessageBox.Show("Evrak Eklendi!");
+            
         }
         private DataTable GetData(string sqlCommand)
         {
@@ -82,7 +84,8 @@ namespace NYP_Arsiv_Otomasyonu
             teslimBilgileriTxt.BackColor = Color.FromArgb(58, 86, 131);
             profilTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
-
+            rafNo.ForeColor = Color.FromArgb(58, 86, 131);
+            rafNoTxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakaditxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakAdi.ForeColor = Color.FromArgb(58, 86, 131);
             evrakbırakmadate.ForeColor = Color.FromArgb(58, 86, 131);
@@ -95,6 +98,9 @@ namespace NYP_Arsiv_Otomasyonu
            saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
             evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
+            eklearsivdata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
+            
+           // eklearsivdata.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 9pt, FontStyle.Bold);
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -180,6 +186,12 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakkodutxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

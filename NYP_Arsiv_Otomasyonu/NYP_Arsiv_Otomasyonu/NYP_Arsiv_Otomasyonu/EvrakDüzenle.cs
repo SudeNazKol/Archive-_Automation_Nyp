@@ -56,8 +56,10 @@ namespace NYP_Arsiv_Otomasyonu
             evraksilbutton.BackColor = Color.FromArgb(58, 86, 131);
             evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
             evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
-
+            rafNo.ForeColor = Color.FromArgb(58, 86, 131);
+            rafNoTxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakdüzeneklebutton.BackColor = Color.FromArgb(58, 86, 131);
+            evrakduzenledata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
         }
         private DataTable GetData(string sqlCommand)
         {
@@ -169,7 +171,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakdüzeneklebutton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text +"',Evrak_Turu='" + evragınTuruComboBox + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text +"',Evrak_Turu='" + evragınTuruComboBox + "',Raf_No='" + rafNoTxt.Text + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close();
@@ -184,6 +186,7 @@ namespace NYP_Arsiv_Otomasyonu
             string Evrak_Tarih = evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
             string Konum = evrakduzenledata.Rows[seçilialan].Cells[4].Value.ToString();
             string Evrak_Turu = evrakduzenledata.Rows[seçilialan].Cells[5].Value.ToString();
+            string Raf_No = evrakduzenledata.Rows[seçilialan].Cells[6].Value.ToString();
 
 
             evrakaditxt.Text = Evrak_Adi;
@@ -191,6 +194,7 @@ namespace NYP_Arsiv_Otomasyonu
             evrakduzenlemedate.Text = Evrak_Tarih;
             evrakkodutxt.Text = Konum;
             evragınTuruComboBox.Text = Evrak_Turu;
+            rafNoTxt.Text = Raf_No;
 
 
         }
@@ -219,6 +223,12 @@ namespace NYP_Arsiv_Otomasyonu
         private void evragınTuruComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

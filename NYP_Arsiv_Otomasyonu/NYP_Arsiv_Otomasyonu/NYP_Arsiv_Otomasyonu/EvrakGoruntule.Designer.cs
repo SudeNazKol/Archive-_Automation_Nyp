@@ -232,6 +232,10 @@
             this.saatTxt.TabIndex = 50;
             this.saatTxt.Text = "label1";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // directorySearcher1
             // 
             this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");

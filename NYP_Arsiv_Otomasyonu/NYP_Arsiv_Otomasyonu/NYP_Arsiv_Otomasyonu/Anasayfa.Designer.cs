@@ -151,6 +151,11 @@
             this.saatTxt.TabIndex = 8;
             this.saatTxt.Text = "label1";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // avatar
             // 
             this.avatar.Location = new System.Drawing.Point(512, 56);

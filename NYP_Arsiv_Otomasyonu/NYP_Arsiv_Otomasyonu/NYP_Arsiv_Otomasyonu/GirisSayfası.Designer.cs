@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisSayfası));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.adSoyad = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.adminRadioButton = new System.Windows.Forms.RadioButton();
             this.personelRadioButton = new System.Windows.Forms.RadioButton();
             this.girisButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -159,6 +161,11 @@
             this.girisButton.UseVisualStyleBackColor = true;
             this.girisButton.Click += new System.EventHandler(this.girisButton_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // GirisSayfası
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,5 +205,6 @@
         private System.Windows.Forms.RadioButton adminRadioButton;
         private System.Windows.Forms.RadioButton personelRadioButton;
         private System.Windows.Forms.Button girisButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }

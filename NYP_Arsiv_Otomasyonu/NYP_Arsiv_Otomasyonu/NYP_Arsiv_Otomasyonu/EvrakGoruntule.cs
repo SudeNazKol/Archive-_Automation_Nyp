@@ -66,6 +66,7 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             aratxt.ForeColor = Color.FromArgb(58, 86, 131);
             searchButton.BackColor = Color.FromArgb(58, 86, 131);
+            evraklistelemedata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
             label2.Text = $"{evraklistelemedata.RowCount}";
         }
 
@@ -155,6 +156,7 @@ namespace NYP_Arsiv_Otomasyonu
             da.Fill(ds);
             evraklistelemedata.DataSource = ds.Tables[0];
             connection.Close();
+            label2.Text = $"{evraklistelemedata.RowCount}";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -172,6 +174,13 @@ namespace NYP_Arsiv_Otomasyonu
             evraklistelemedata.DataSource = ds.Tables[0];
             connection.Close();
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

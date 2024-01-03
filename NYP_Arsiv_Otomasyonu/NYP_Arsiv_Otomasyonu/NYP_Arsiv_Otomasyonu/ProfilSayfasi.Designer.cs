@@ -216,6 +216,10 @@
             this.saatTxt.TabIndex = 61;
             this.saatTxt.Text = "label1";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // avatar
             // 
             this.avatar.Location = new System.Drawing.Point(130, 29);

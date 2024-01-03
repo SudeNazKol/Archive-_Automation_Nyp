@@ -45,7 +45,7 @@ namespace NYP_Arsiv_Otomasyonu
 
             if (GirisKontrol(kullaniciAdi, sifre))
             {
-                MessageBox.Show("Giriş Başarılı!");
+                //MessageBox.Show("Giriş Başarılı!");
                 anaSayfa anasayfa = new anaSayfa();
                 anasayfa.ShowDialog();
                 this.Hide();
@@ -109,6 +109,11 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void adSoyad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }

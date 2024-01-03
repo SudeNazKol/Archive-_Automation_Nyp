@@ -16,8 +16,7 @@ namespace NYP_Arsiv_Otomasyonu
         public personelEkle()
         {
             InitializeComponent();
-            saatTxt.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
+           
             this.Controls.Add(personelekledata);
         }
 
@@ -86,6 +85,7 @@ namespace NYP_Arsiv_Otomasyonu
             düzenleButton.BackColor = Color.FromArgb(58, 86, 131);
             ekleButton.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
+            personelekledata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
 
         }
 
@@ -219,6 +219,12 @@ namespace NYP_Arsiv_Otomasyonu
         private void unvanComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

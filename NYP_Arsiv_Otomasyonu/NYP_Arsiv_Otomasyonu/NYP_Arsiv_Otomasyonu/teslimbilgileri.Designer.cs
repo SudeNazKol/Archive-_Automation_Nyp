@@ -71,6 +71,8 @@
             this.txtteslimbırakmatarih = new System.Windows.Forms.DateTimePicker();
             this.evragınTuruComboBox = new System.Windows.Forms.ComboBox();
             this.evragınTuru = new System.Windows.Forms.Label();
+            this.rafNoTxt = new System.Windows.Forms.TextBox();
+            this.rafNo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -176,7 +178,7 @@
             // 
             this.buttonekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonekle.ForeColor = System.Drawing.Color.White;
-            this.buttonekle.Location = new System.Drawing.Point(543, 161);
+            this.buttonekle.Location = new System.Drawing.Point(333, 209);
             this.buttonekle.Name = "buttonekle";
             this.buttonekle.Size = new System.Drawing.Size(114, 30);
             this.buttonekle.TabIndex = 18;
@@ -200,7 +202,8 @@
             this.ünvancombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ünvancombo.FormattingEnabled = true;
             this.ünvancombo.Items.AddRange(new object[] {
-            "Admin"});
+            "Admin",
+            "Personel"});
             this.ünvancombo.Location = new System.Drawing.Point(222, 113);
             this.ünvancombo.Name = "ünvancombo";
             this.ünvancombo.Size = new System.Drawing.Size(159, 26);
@@ -232,11 +235,11 @@
             // dgvKullanicilar
             // 
             this.dgvKullanicilar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKullanicilar.Location = new System.Drawing.Point(106, 212);
+            this.dgvKullanicilar.Location = new System.Drawing.Point(106, 245);
             this.dgvKullanicilar.Name = "dgvKullanicilar";
             this.dgvKullanicilar.RowHeadersWidth = 51;
             this.dgvKullanicilar.RowTemplate.Height = 24;
-            this.dgvKullanicilar.Size = new System.Drawing.Size(873, 289);
+            this.dgvKullanicilar.Size = new System.Drawing.Size(873, 256);
             this.dgvKullanicilar.TabIndex = 24;
             this.dgvKullanicilar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellClick);
             this.dgvKullanicilar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellContentClick);
@@ -245,7 +248,7 @@
             // 
             this.silbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.silbutton.ForeColor = System.Drawing.Color.White;
-            this.silbutton.Location = new System.Drawing.Point(823, 161);
+            this.silbutton.Location = new System.Drawing.Point(613, 209);
             this.silbutton.Name = "silbutton";
             this.silbutton.Size = new System.Drawing.Size(114, 30);
             this.silbutton.TabIndex = 25;
@@ -256,7 +259,7 @@
             // txtkonum
             // 
             this.txtkonum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtkonum.Location = new System.Drawing.Point(810, 56);
+            this.txtkonum.Location = new System.Drawing.Point(795, 105);
             this.txtkonum.Name = "txtkonum";
             this.txtkonum.Size = new System.Drawing.Size(169, 24);
             this.txtkonum.TabIndex = 26;
@@ -266,7 +269,7 @@
             this.kodTxt.AutoSize = true;
             this.kodTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kodTxt.ForeColor = System.Drawing.Color.White;
-            this.kodTxt.Location = new System.Drawing.Point(748, 60);
+            this.kodTxt.Location = new System.Drawing.Point(733, 109);
             this.kodTxt.Name = "kodTxt";
             this.kodTxt.Size = new System.Drawing.Size(48, 18);
             this.kodTxt.TabIndex = 27;
@@ -276,7 +279,7 @@
             // 
             this.güncellebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.güncellebutton.ForeColor = System.Drawing.Color.White;
-            this.güncellebutton.Location = new System.Drawing.Point(683, 161);
+            this.güncellebutton.Location = new System.Drawing.Point(473, 209);
             this.güncellebutton.Name = "güncellebutton";
             this.güncellebutton.Size = new System.Drawing.Size(114, 30);
             this.güncellebutton.TabIndex = 28;
@@ -288,7 +291,7 @@
             // 
             this.arabutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.arabutton.ForeColor = System.Drawing.Color.White;
-            this.arabutton.Location = new System.Drawing.Point(897, 100);
+            this.arabutton.Location = new System.Drawing.Point(908, 153);
             this.arabutton.Name = "arabutton";
             this.arabutton.Size = new System.Drawing.Size(75, 36);
             this.arabutton.TabIndex = 29;
@@ -299,7 +302,7 @@
             // txtara
             // 
             this.txtara.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtara.Location = new System.Drawing.Point(781, 107);
+            this.txtara.Location = new System.Drawing.Point(792, 160);
             this.txtara.Name = "txtara";
             this.txtara.Size = new System.Drawing.Size(108, 24);
             this.txtara.TabIndex = 30;
@@ -309,7 +312,7 @@
             this.aranacakKodTxt.AutoSize = true;
             this.aranacakKodTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.aranacakKodTxt.ForeColor = System.Drawing.Color.White;
-            this.aranacakKodTxt.Location = new System.Drawing.Point(691, 100);
+            this.aranacakKodTxt.Location = new System.Drawing.Point(702, 153);
             this.aranacakKodTxt.Name = "aranacakKodTxt";
             this.aranacakKodTxt.Size = new System.Drawing.Size(78, 36);
             this.aranacakKodTxt.TabIndex = 31;
@@ -470,6 +473,10 @@
             this.saatTxt.TabIndex = 44;
             this.saatTxt.Text = "label1";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // txtteslimalmatarih
             // 
             this.txtteslimalmatarih.Location = new System.Drawing.Point(543, 17);
@@ -486,12 +493,26 @@
             // 
             // evragınTuruComboBox
             // 
+            this.evragınTuruComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evragınTuruComboBox.FormattingEnabled = true;
             this.evragınTuruComboBox.Items.AddRange(new object[] {
-            "Sınav Belgeleri"});
+            "Sınav Belgeleri",
+            "Akademik Tez Belgeleri",
+            "Muhasebe Kayıtları",
+            "Sınav Sonuçları ",
+            "Yoklama Kayıtları ",
+            "Öğrenci Kayıtları",
+            "Mezuniyet Belgeleri",
+            "Araştırma Raporları",
+            "Yönetim Kurulu Kararları",
+            "Ders Programları ",
+            "Diplomalar",
+            "Makaleler",
+            "Öğrenci Kulüp Belgeleri",
+            "Sosyal Etkinlik Belgeleri"});
             this.evragınTuruComboBox.Location = new System.Drawing.Point(222, 160);
             this.evragınTuruComboBox.Name = "evragınTuruComboBox";
-            this.evragınTuruComboBox.Size = new System.Drawing.Size(159, 24);
+            this.evragınTuruComboBox.Size = new System.Drawing.Size(159, 26);
             this.evragınTuruComboBox.TabIndex = 48;
             this.evragınTuruComboBox.SelectedIndexChanged += new System.EventHandler(this.evragınTuruComboBox_SelectedIndexChanged);
             // 
@@ -506,11 +527,32 @@
             this.evragınTuru.TabIndex = 49;
             this.evragınTuru.Text = "Evrağın \r\n  Türü :";
             // 
+            // rafNoTxt
+            // 
+            this.rafNoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rafNoTxt.Location = new System.Drawing.Point(527, 160);
+            this.rafNoTxt.Name = "rafNoTxt";
+            this.rafNoTxt.Size = new System.Drawing.Size(159, 24);
+            this.rafNoTxt.TabIndex = 51;
+            // 
+            // rafNo
+            // 
+            this.rafNo.AutoSize = true;
+            this.rafNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rafNo.ForeColor = System.Drawing.Color.White;
+            this.rafNo.Location = new System.Drawing.Point(408, 164);
+            this.rafNo.Name = "rafNo";
+            this.rafNo.Size = new System.Drawing.Size(71, 18);
+            this.rafNo.TabIndex = 50;
+            this.rafNo.Text = "Raf No :";
+            // 
             // teslimbilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.rafNoTxt);
+            this.Controls.Add(this.rafNo);
             this.Controls.Add(this.evragınTuru);
             this.Controls.Add(this.evragınTuruComboBox);
             this.Controls.Add(this.txtteslimbırakmatarih);
@@ -612,5 +654,7 @@
         private System.Windows.Forms.DateTimePicker txtteslimbırakmatarih;
         private System.Windows.Forms.ComboBox evragınTuruComboBox;
         private System.Windows.Forms.Label evragınTuru;
+        private System.Windows.Forms.TextBox rafNoTxt;
+        private System.Windows.Forms.Label rafNo;
     }
 }

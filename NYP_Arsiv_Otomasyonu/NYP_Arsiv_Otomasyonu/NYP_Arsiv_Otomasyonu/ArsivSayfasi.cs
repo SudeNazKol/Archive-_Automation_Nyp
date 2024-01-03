@@ -154,6 +154,12 @@ namespace NYP_Arsiv_Otomasyonu
             evrakDüzenle.ShowDialog();
             this.Close();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+        }
     }
     
 }
