@@ -144,6 +144,7 @@
             // 
             // personelEkleButton
             // 
+            this.personelEkleButton.Enabled = false;
             this.personelEkleButton.Image = ((System.Drawing.Image)(resources.GetObject("personelEkleButton.Image")));
             this.personelEkleButton.Location = new System.Drawing.Point(22, 284);
             this.personelEkleButton.Name = "personelEkleButton";

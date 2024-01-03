@@ -30,18 +30,18 @@ namespace NYP_Arsiv_Otomasyonu
         }
         private void girisButton_Click(object sender, EventArgs e)
         {
-            
 
+            
 
             string kullaniciAdi = adSoyadTxt.Text;
             string sifre = sifreTxt.Text;
 
 
-           /* if (AdminKontrol(kullaniciAdi, sifre))
+            if (AdminKontrol(kullaniciAdi, sifre))
             {
                 this.Hide();               
                 
-            }*/
+            }
 
             if (GirisKontrol(kullaniciAdi, sifre))
             {
@@ -57,7 +57,7 @@ namespace NYP_Arsiv_Otomasyonu
                 GirisSayfası girissayfası= new GirisSayfası();
                 girissayfası.ShowDialog(); 
             }
-            
+            this.Hide();
 
         }
         private bool AdminKontrol(string kullaniciAdi, string sifre)
