@@ -18,6 +18,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         public anaSayfa()
         {
+
             InitializeComponent();
             webBrowser1.Navigate("http://uludag.edu.tr/duyuru/index");
             saatTxt.Text = DateTime.Now.ToLongTimeString();
@@ -66,6 +67,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
+            
             personelEkle prs = new personelEkle();
             prs.ShowDialog();
             this.Close();
@@ -112,5 +114,6 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
+        
     }
 }

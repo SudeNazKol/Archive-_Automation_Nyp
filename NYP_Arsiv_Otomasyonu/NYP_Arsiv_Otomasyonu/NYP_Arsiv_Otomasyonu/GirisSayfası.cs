@@ -14,10 +14,12 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class GirisSayfası : Form
     {
+        private Button personelEkleButton;
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
         public GirisSayfası()
         {
+           
             InitializeComponent();
         }
 
@@ -27,6 +29,7 @@ namespace NYP_Arsiv_Otomasyonu
             adSoyadTxt.BackColor = Color.FromArgb(58, 86, 131);
             sifreTxt.BackColor = Color.FromArgb(58, 86, 131);
             girisButton.ForeColor = Color.FromArgb(58, 86, 131);
+         
         }
         private void girisButton_Click(object sender, EventArgs e)
         {
@@ -47,9 +50,18 @@ namespace NYP_Arsiv_Otomasyonu
             {
                 //MessageBox.Show("Giriş Başarılı!");
                 anaSayfa anasayfa = new anaSayfa();
+                
+                //personel ekle butonu gösterme görünmemesi
+               /* if(adminRadioButton.Checked)
+                {
+                    personelEkleButton.Visible=true;
+                }
+                else
+                {
+                    this.personelEkleButton.Visible = false;
+                }*/
                 anasayfa.ShowDialog();
                 this.Hide();
-
             }
             else
             {
@@ -89,12 +101,12 @@ namespace NYP_Arsiv_Otomasyonu
         }
         private void adminRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void ogrenciIsleriRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+           
         }
 
 
@@ -108,14 +120,15 @@ namespace NYP_Arsiv_Otomasyonu
             
         }
 
-        private void adSoyad_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
 
         }
+
+        private void adSoyad_Click(object sender, EventArgs e)
+        {
+
+        }
+       
     }
 }
