@@ -30,22 +30,22 @@ namespace NYP_Arsiv_Otomasyonu
         }
         private void girisButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
 
 
             string kullaniciAdi = adSoyadTxt.Text;
             string sifre = sifreTxt.Text;
 
 
-            if (AdminKontrol(kullaniciAdi, sifre))
+           /* if (AdminKontrol(kullaniciAdi, sifre))
             {
-                               
-                this.Hide(); 
-            }
+                this.Hide();               
+                
+            }*/
 
             if (GirisKontrol(kullaniciAdi, sifre))
             {
-                //MessageBox.Show("Giriş Başarılı!");
+                MessageBox.Show("Giriş Başarılı!");
                 anaSayfa anasayfa = new anaSayfa();
                 anasayfa.ShowDialog();
                 this.Hide();
@@ -57,7 +57,7 @@ namespace NYP_Arsiv_Otomasyonu
                 GirisSayfası girissayfası= new GirisSayfası();
                 girissayfası.ShowDialog(); 
             }
-            this.Hide();
+            
 
         }
         private bool AdminKontrol(string kullaniciAdi, string sifre)
