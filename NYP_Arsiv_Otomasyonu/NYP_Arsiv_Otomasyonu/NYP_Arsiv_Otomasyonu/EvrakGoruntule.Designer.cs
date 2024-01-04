@@ -210,6 +210,7 @@
             this.evraklistelemedata.RowTemplate.Height = 24;
             this.evraklistelemedata.Size = new System.Drawing.Size(873, 474);
             this.evraklistelemedata.TabIndex = 49;
+            this.evraklistelemedata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.evraklistelemedata_CellContentClick);
             // 
             // pictureBox6
             // 

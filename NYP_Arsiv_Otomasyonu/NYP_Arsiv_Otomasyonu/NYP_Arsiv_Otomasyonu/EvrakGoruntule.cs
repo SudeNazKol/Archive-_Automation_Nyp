@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -166,13 +167,15 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void aratxt_TextChanged_1(object sender, EventArgs e)
         {
-            connection.Open();
+             connection.Open();
             MySqlCommand komut = new MySqlCommand("Select * from archives where Konum like '%" + aratxt.Text + "%'", connection);
             MySqlDataAdapter da = new MySqlDataAdapter(komut);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            evraklistelemedata.DataSource = ds.Tables[0];
-            connection.Close();
+             evraklistelemedata.DataSource = ds.Tables[0];
+            connection.Close(); 
+           
+
 
         }
 
@@ -181,6 +184,11 @@ namespace NYP_Arsiv_Otomasyonu
 
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void evraklistelemedata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
