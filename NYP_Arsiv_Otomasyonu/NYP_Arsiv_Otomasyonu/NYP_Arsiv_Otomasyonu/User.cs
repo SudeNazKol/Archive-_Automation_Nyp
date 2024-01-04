@@ -13,11 +13,5 @@ namespace NYP_Arsiv_Otomasyonu
         public string Sifre { get; set; }
         public string Unvan { get; set; }
     }
-    /*public User(string adSoyad, string kullaniciAdi, string sifre, string unvan)
-    {
-        AdSoyad = adSoyad;
-        KullaniciAdi = kullaniciAdi;
-        Sifre = sifre;
-        Unvan = unvan;
-    }*/
+    
 }

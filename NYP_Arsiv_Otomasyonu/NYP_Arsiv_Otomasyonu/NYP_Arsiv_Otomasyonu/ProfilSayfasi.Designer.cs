@@ -47,7 +47,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.avatar = new System.Windows.Forms.PictureBox();
             this.adSoyad = new System.Windows.Forms.Label();
-            this.kullaniciAdi = new System.Windows.Forms.Label();
+            this.kullaniciAdiTxt = new System.Windows.Forms.Label();
             this.unvan = new System.Windows.Forms.Label();
             this.sifre = new System.Windows.Forms.Label();
             this.labelAdSoyad = new System.Windows.Forms.Label();
@@ -243,16 +243,17 @@
             this.adSoyad.TabIndex = 64;
             this.adSoyad.Text = "Ad Soyad :";
             // 
-            // kullaniciAdi
+            // kullaniciAdiTxt
             // 
-            this.kullaniciAdi.AutoSize = true;
-            this.kullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kullaniciAdi.ForeColor = System.Drawing.Color.White;
-            this.kullaniciAdi.Location = new System.Drawing.Point(127, 249);
-            this.kullaniciAdi.Name = "kullaniciAdi";
-            this.kullaniciAdi.Size = new System.Drawing.Size(133, 22);
-            this.kullaniciAdi.TabIndex = 65;
-            this.kullaniciAdi.Text = "Kullanıcı Adı :";
+            this.kullaniciAdiTxt.AutoSize = true;
+            this.kullaniciAdiTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullaniciAdiTxt.ForeColor = System.Drawing.Color.White;
+            this.kullaniciAdiTxt.Location = new System.Drawing.Point(127, 249);
+            this.kullaniciAdiTxt.Name = "kullaniciAdiTxt";
+            this.kullaniciAdiTxt.Size = new System.Drawing.Size(133, 22);
+            this.kullaniciAdiTxt.TabIndex = 65;
+            this.kullaniciAdiTxt.Text = "Kullanıcı Adı :";
+            this.kullaniciAdiTxt.Click += new System.EventHandler(this.kullaniciAdi_Click);
             // 
             // unvan
             // 
@@ -281,18 +282,19 @@
             this.labelAdSoyad.AutoSize = true;
             this.labelAdSoyad.Location = new System.Drawing.Point(277, 215);
             this.labelAdSoyad.Name = "labelAdSoyad";
-            this.labelAdSoyad.Size = new System.Drawing.Size(26, 16);
+            this.labelAdSoyad.Size = new System.Drawing.Size(16, 16);
             this.labelAdSoyad.TabIndex = 68;
-            this.labelAdSoyad.Text = "adı";
+            this.labelAdSoyad.Text = "...";
+            this.labelAdSoyad.Click += new System.EventHandler(this.labelAdSoyad_Click);
             // 
             // labelKullaniciAdi
             // 
             this.labelKullaniciAdi.AutoSize = true;
             this.labelKullaniciAdi.Location = new System.Drawing.Point(277, 254);
             this.labelKullaniciAdi.Name = "labelKullaniciAdi";
-            this.labelKullaniciAdi.Size = new System.Drawing.Size(77, 16);
+            this.labelKullaniciAdi.Size = new System.Drawing.Size(22, 16);
             this.labelKullaniciAdi.TabIndex = 69;
-            this.labelKullaniciAdi.Text = "kullanıcı adı";
+            this.labelKullaniciAdi.Text = ".....";
             this.labelKullaniciAdi.Click += new System.EventHandler(this.labelKullaniciAdi_Click);
             // 
             // labelUnvan
@@ -300,18 +302,20 @@
             this.labelUnvan.AutoSize = true;
             this.labelUnvan.Location = new System.Drawing.Point(277, 294);
             this.labelUnvan.Name = "labelUnvan";
-            this.labelUnvan.Size = new System.Drawing.Size(46, 16);
+            this.labelUnvan.Size = new System.Drawing.Size(16, 16);
             this.labelUnvan.TabIndex = 70;
-            this.labelUnvan.Text = "unvanı";
+            this.labelUnvan.Text = "...";
+            this.labelUnvan.Click += new System.EventHandler(this.labelUnvan_Click);
             // 
             // labelSifre
             // 
             this.labelSifre.AutoSize = true;
             this.labelSifre.Location = new System.Drawing.Point(277, 337);
             this.labelSifre.Name = "labelSifre";
-            this.labelSifre.Size = new System.Drawing.Size(42, 16);
+            this.labelSifre.Size = new System.Drawing.Size(13, 16);
             this.labelSifre.TabIndex = 71;
-            this.labelSifre.Text = "şifresi";
+            this.labelSifre.Text = "..";
+            this.labelSifre.Click += new System.EventHandler(this.labelSifre_Click);
             // 
             // ProfilSayfasi
             // 
@@ -324,7 +328,7 @@
             this.Controls.Add(this.labelAdSoyad);
             this.Controls.Add(this.sifre);
             this.Controls.Add(this.unvan);
-            this.Controls.Add(this.kullaniciAdi);
+            this.Controls.Add(this.kullaniciAdiTxt);
             this.Controls.Add(this.adSoyad);
             this.Controls.Add(this.avatar);
             this.Controls.Add(this.pictureBox5);
@@ -378,7 +382,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox avatar;
         private System.Windows.Forms.Label adSoyad;
-        private System.Windows.Forms.Label kullaniciAdi;
+        private System.Windows.Forms.Label kullaniciAdiTxt;
         private System.Windows.Forms.Label unvan;
         private System.Windows.Forms.Label sifre;
         private System.Windows.Forms.Label labelAdSoyad;
