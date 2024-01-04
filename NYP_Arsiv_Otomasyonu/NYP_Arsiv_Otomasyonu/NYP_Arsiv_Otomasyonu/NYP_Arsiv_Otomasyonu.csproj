@@ -167,6 +167,7 @@
     <Compile Include="teslimbilgileri.Designer.cs">
       <DependentUpon>teslimbilgileri.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>

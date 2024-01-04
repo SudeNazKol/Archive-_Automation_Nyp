@@ -50,6 +50,10 @@
             this.kullaniciAdi = new System.Windows.Forms.Label();
             this.unvan = new System.Windows.Forms.Label();
             this.sifre = new System.Windows.Forms.Label();
+            this.labelAdSoyad = new System.Windows.Forms.Label();
+            this.labelKullaniciAdi = new System.Windows.Forms.Label();
+            this.labelUnvan = new System.Windows.Forms.Label();
+            this.labelSifre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -272,11 +276,52 @@
             this.sifre.TabIndex = 67;
             this.sifre.Text = "Şifre :";
             // 
+            // labelAdSoyad
+            // 
+            this.labelAdSoyad.AutoSize = true;
+            this.labelAdSoyad.Location = new System.Drawing.Point(277, 215);
+            this.labelAdSoyad.Name = "labelAdSoyad";
+            this.labelAdSoyad.Size = new System.Drawing.Size(26, 16);
+            this.labelAdSoyad.TabIndex = 68;
+            this.labelAdSoyad.Text = "adı";
+            // 
+            // labelKullaniciAdi
+            // 
+            this.labelKullaniciAdi.AutoSize = true;
+            this.labelKullaniciAdi.Location = new System.Drawing.Point(277, 254);
+            this.labelKullaniciAdi.Name = "labelKullaniciAdi";
+            this.labelKullaniciAdi.Size = new System.Drawing.Size(77, 16);
+            this.labelKullaniciAdi.TabIndex = 69;
+            this.labelKullaniciAdi.Text = "kullanıcı adı";
+            this.labelKullaniciAdi.Click += new System.EventHandler(this.labelKullaniciAdi_Click);
+            // 
+            // labelUnvan
+            // 
+            this.labelUnvan.AutoSize = true;
+            this.labelUnvan.Location = new System.Drawing.Point(277, 294);
+            this.labelUnvan.Name = "labelUnvan";
+            this.labelUnvan.Size = new System.Drawing.Size(46, 16);
+            this.labelUnvan.TabIndex = 70;
+            this.labelUnvan.Text = "unvanı";
+            // 
+            // labelSifre
+            // 
+            this.labelSifre.AutoSize = true;
+            this.labelSifre.Location = new System.Drawing.Point(277, 337);
+            this.labelSifre.Name = "labelSifre";
+            this.labelSifre.Size = new System.Drawing.Size(42, 16);
+            this.labelSifre.TabIndex = 71;
+            this.labelSifre.Text = "şifresi";
+            // 
             // ProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.labelSifre);
+            this.Controls.Add(this.labelUnvan);
+            this.Controls.Add(this.labelKullaniciAdi);
+            this.Controls.Add(this.labelAdSoyad);
             this.Controls.Add(this.sifre);
             this.Controls.Add(this.unvan);
             this.Controls.Add(this.kullaniciAdi);
@@ -336,5 +381,9 @@
         private System.Windows.Forms.Label kullaniciAdi;
         private System.Windows.Forms.Label unvan;
         private System.Windows.Forms.Label sifre;
+        private System.Windows.Forms.Label labelAdSoyad;
+        private System.Windows.Forms.Label labelKullaniciAdi;
+        private System.Windows.Forms.Label labelUnvan;
+        private System.Windows.Forms.Label labelSifre;
     }
 }

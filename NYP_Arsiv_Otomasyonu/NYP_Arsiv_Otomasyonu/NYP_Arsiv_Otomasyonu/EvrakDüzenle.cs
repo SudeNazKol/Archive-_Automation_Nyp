@@ -136,10 +136,10 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
-
+            
             personelEkle personelekle = new personelEkle();
             personelekle.ShowDialog();
-            this.Close();
+            this.Close();            
         }
 
         private void profilButton_Click(object sender, EventArgs e)
@@ -151,7 +151,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+           ProfilSayfasi profilSayfasi = new ProfilSayfasi();
            profilSayfasi.ShowDialog();
            this.Close();
         }
@@ -229,6 +229,16 @@ namespace NYP_Arsiv_Otomasyonu
         {
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void evrakduzenledata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void evrakkodutxt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -289,6 +289,7 @@
             this.evrakkodutxt.Name = "evrakkodutxt";
             this.evrakkodutxt.Size = new System.Drawing.Size(267, 24);
             this.evrakkodutxt.TabIndex = 64;
+            this.evrakkodutxt.TextChanged += new System.EventHandler(this.evrakkodutxt_TextChanged);
             // 
             // evrakaditxt
             // 
@@ -342,6 +343,7 @@
             this.evrakduzenledata.Size = new System.Drawing.Size(873, 321);
             this.evrakduzenledata.TabIndex = 71;
             this.evrakduzenledata.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.evrakduzenledata_CellClick);
+            this.evrakduzenledata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.evrakduzenledata_CellContentClick);
             // 
             // evraksilbutton
             // 

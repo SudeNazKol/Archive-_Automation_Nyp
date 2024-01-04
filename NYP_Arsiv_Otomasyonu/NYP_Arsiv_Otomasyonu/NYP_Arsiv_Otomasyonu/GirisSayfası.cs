@@ -14,7 +14,7 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class GirisSayfası : Form
     {
-        private Button personelEkleButton;
+       
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
         public GirisSayfası()
@@ -31,6 +31,7 @@ namespace NYP_Arsiv_Otomasyonu
             girisButton.ForeColor = Color.FromArgb(58, 86, 131);
          
         }
+        public int girisTuru;
         private void girisButton_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +43,9 @@ namespace NYP_Arsiv_Otomasyonu
 
             if (AdminKontrol(kullaniciAdi, sifre))
             {
+                anaSayfa anasayfa = new anaSayfa();
+                //anasayfa.girisTuru = 1;
+                anasayfa.ShowDialog();
                 this.Hide();               
                 
             }

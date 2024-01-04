@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,50 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class ProfilSayfasi : Form
     {
+        private MySqlConnection connection;
+        private User loggedInUser;
+
         public ProfilSayfasi()
         {
             InitializeComponent();
             
         }
+
+
+        public ProfilSayfasi(MySqlConnection connection, User user)
+        {
+            this.connection = connection;
+            this.loggedInUser = user;
+            InitializeComponent();
+            DisplayUserInfo();
+        }
+
+        private void DisplayUserInfo()
+        {
+            // Kullanıcının bilgilerini form kontrollerine atayarak görüntüleme yapabilirsiniz.
+            // Örneğin:
+            labelAdSoyad.Text = "Ad Soyad: " + loggedInUser.AdSoyad;
+            labelKullaniciAdi.Text = "Kullanıcı Adı: " + loggedInUser.KullaniciAdi;
+            labelUnvan.Text = "Unvan: " + loggedInUser.Unvan;
+            labelSifre.Text = "Şifre: " + loggedInUser.Sifre;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void ProfilSayfasi_Load(object sender, EventArgs e)
         {
@@ -109,6 +149,11 @@ namespace NYP_Arsiv_Otomasyonu
         {
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void labelKullaniciAdi_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
