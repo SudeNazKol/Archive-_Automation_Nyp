@@ -73,6 +73,7 @@
             this.evragınTuru = new System.Windows.Forms.Label();
             this.rafNoTxt = new System.Windows.Forms.TextBox();
             this.rafNo = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -82,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // evrakAdiTxt
@@ -140,9 +142,9 @@
             // txtteslimneden
             // 
             this.txtteslimneden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtteslimneden.Location = new System.Drawing.Point(537, 115);
+            this.txtteslimneden.Location = new System.Drawing.Point(527, 115);
             this.txtteslimneden.Name = "txtteslimneden";
-            this.txtteslimneden.Size = new System.Drawing.Size(136, 24);
+            this.txtteslimneden.Size = new System.Drawing.Size(159, 24);
             this.txtteslimneden.TabIndex = 14;
             // 
             // txtteslimalan
@@ -239,7 +241,7 @@
             this.dgvKullanicilar.Name = "dgvKullanicilar";
             this.dgvKullanicilar.RowHeadersWidth = 51;
             this.dgvKullanicilar.RowTemplate.Height = 24;
-            this.dgvKullanicilar.Size = new System.Drawing.Size(873, 256);
+            this.dgvKullanicilar.Size = new System.Drawing.Size(873, 266);
             this.dgvKullanicilar.TabIndex = 24;
             this.dgvKullanicilar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellClick);
             this.dgvKullanicilar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellContentClick);
@@ -546,11 +548,21 @@
             this.rafNo.TabIndex = 50;
             this.rafNo.Text = "Raf No :";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox7.Location = new System.Drawing.Point(-2, 171);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(102, 101);
+            this.pictureBox7.TabIndex = 52;
+            this.pictureBox7.TabStop = false;
+            // 
             // teslimbilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.rafNoTxt);
             this.Controls.Add(this.rafNo);
             this.Controls.Add(this.evragınTuru);
@@ -606,6 +618,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -656,5 +669,6 @@
         private System.Windows.Forms.Label evragınTuru;
         private System.Windows.Forms.TextBox rafNoTxt;
         private System.Windows.Forms.Label rafNo;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -15,7 +16,6 @@ namespace NYP_Arsiv_Otomasyonu
     public partial class anaSayfa : Form
     {
 
-
         public anaSayfa()
         {
 
@@ -24,31 +24,69 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
-        public string girisTuru;
+        public int girisTuru;
+        public string ad;
+
+        
         private void girisSayfası_Load(object sender, EventArgs e)
         {
+            if(girisTuru==1)
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             notlarTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             searchButton.BackColor = Color.FromArgb(58, 86, 131);
-            ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
+            textBox1.ForeColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
             profilButton.BackColor = Color.FromArgb(58, 86, 131);
            exitButton.BackColor= Color.FromArgb(58, 86, 131);
-            ajandaTxt.BackColor = Color.FromArgb(58, 86, 131);
+            kaydetButton.BackColor = Color.FromArgb(58, 86, 131);
             arsivTxt.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriTxt.BackColor = Color.FromArgb(58, 86, 131);
             profilTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            ajandaButton.BackColor = Color.FromArgb(43, 67, 106);
+            ajandaTxt.BackColor = Color.FromArgb(43, 67, 106);
+            ajandaButton.BringToFront();
+            ajandaTxt.BringToFront();
+            /*
+            connection.Open();
+                // SQL sorgusu
+                string query = "SELECT notlar FROM notlar WHERE notlar";
+
+                // SQL bağlantısını açın
+                
+
+                // SQL komutunu oluşturun
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    // Veriyi okuyun
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    // Veriyi TextBox'a yükleyin
+                    if (reader.Read())
+                    {
+                        textBox1.Text = reader["notlar"].ToString();
+                    }
+
+                    // Okuyucuyu kapatın
+                    reader.Close();
+                }
+                */
+        
         }
+        
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
             arsivSayfasi.ShowDialog();
-           this.Close();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -62,7 +100,6 @@ namespace NYP_Arsiv_Otomasyonu
         {
             teslimbilgileri tslm = new teslimbilgileri();
             tslm.ShowDialog();
-            this.Close();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
@@ -70,35 +107,30 @@ namespace NYP_Arsiv_Otomasyonu
             
             personelEkle prs = new personelEkle();
             prs.ShowDialog();
-            this.Close();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
             arsivSayfasi.ShowDialog();
-            this.Close();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
             teslimbilgileri tslm = new teslimbilgileri();
             tslm.ShowDialog();
-            this.Close();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
             personelEkle prs = new personelEkle();
             prs.ShowDialog();
-            this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
             ProfilSayfasi profilsayfasi = new ProfilSayfasi();
             profilsayfasi.ShowDialog();
-            this.Close();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
@@ -106,7 +138,6 @@ namespace NYP_Arsiv_Otomasyonu
 
             ProfilSayfasi profilsayfasi = new ProfilSayfasi ();
             profilsayfasi.ShowDialog();
-            this.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -114,6 +145,34 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
-        
+
+        private void ajandaButton_Click(object sender, EventArgs e)
+        {
+
+        }
+        MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
+        private BindingSource bindingSource1 = new BindingSource();
+       
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string sqlCommand = "SELECT name FROM mytable WHERE not = 1";
+            TextBox textBox1 = new TextBox();
+            connection.Close();
+            
+        }
+
+        private void kaydetButton_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string kaydet = "INSERT INTO notlar (notlar) VALUES (@p1)";
+            MySqlCommand insertCommand = new MySqlCommand(kaydet, connection);
+            if (connection.State == ConnectionState.Open)
+            {
+                insertCommand.Parameters.AddWithValue("@p1", textBox1.Text);
+                insertCommand.ExecuteNonQuery();
+                MessageBox.Show("Not Kaydedildi!");
+                connection.Close();
+            }
+        }
     }
 }

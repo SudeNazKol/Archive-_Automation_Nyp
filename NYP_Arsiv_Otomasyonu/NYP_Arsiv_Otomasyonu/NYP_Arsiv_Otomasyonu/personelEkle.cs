@@ -86,6 +86,11 @@ namespace NYP_Arsiv_Otomasyonu
             ekleButton.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelekledata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            personelEkleButton.BackColor = Color.FromArgb(43, 67, 106);
+            personelEkleTxt.BackColor = Color.FromArgb(43, 67, 106);
+            personelEkleButton.BringToFront();
+            personelEkleTxt.BringToFront();
 
         }
 

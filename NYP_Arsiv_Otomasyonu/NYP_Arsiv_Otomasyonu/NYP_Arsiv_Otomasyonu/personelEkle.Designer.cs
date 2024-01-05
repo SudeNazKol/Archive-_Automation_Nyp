@@ -57,6 +57,7 @@
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.personelekledata = new System.Windows.Forms.DataGridView();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelekledata)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // adSoyadTxt
@@ -355,11 +357,21 @@
             this.personelekledata.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.personelekledata_CellClick);
             this.personelekledata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox7.Location = new System.Drawing.Point(-2, 277);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(102, 105);
+            this.pictureBox7.TabIndex = 78;
+            this.pictureBox7.TabStop = false;
+            // 
             // personelEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.personelekledata);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.saatTxt);
@@ -399,6 +411,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelekledata)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -433,5 +446,6 @@
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridView personelekledata;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

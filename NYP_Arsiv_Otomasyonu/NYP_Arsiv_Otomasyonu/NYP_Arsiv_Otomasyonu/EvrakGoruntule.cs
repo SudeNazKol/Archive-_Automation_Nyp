@@ -68,6 +68,11 @@ namespace NYP_Arsiv_Otomasyonu
             aratxt.ForeColor = Color.FromArgb(58, 86, 131);
             searchButton.BackColor = Color.FromArgb(58, 86, 131);
             evraklistelemedata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            arsivTxt.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BringToFront();
+            arsivTxt.BringToFront();
             label2.Text = $"{evraklistelemedata.RowCount}";
         }
 

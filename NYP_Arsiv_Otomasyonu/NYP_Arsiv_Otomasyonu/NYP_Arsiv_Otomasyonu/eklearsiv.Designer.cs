@@ -59,6 +59,7 @@
             this.evragınTuruComboBox = new System.Windows.Forms.ComboBox();
             this.rafNoTxt = new System.Windows.Forms.TextBox();
             this.rafNo = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eklearsivdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // evrakAdi
@@ -273,7 +275,7 @@
             // arsivButton
             // 
             this.arsivButton.Image = ((System.Drawing.Image)(resources.GetObject("arsivButton.Image")));
-            this.arsivButton.Location = new System.Drawing.Point(22, 94);
+            this.arsivButton.Location = new System.Drawing.Point(22, 96);
             this.arsivButton.Name = "arsivButton";
             this.arsivButton.Size = new System.Drawing.Size(50, 50);
             this.arsivButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -395,11 +397,21 @@
             this.rafNo.TabIndex = 50;
             this.rafNo.Text = "Raf No :";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox7.Location = new System.Drawing.Point(-2, 90);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(102, 78);
+            this.pictureBox7.TabIndex = 52;
+            this.pictureBox7.TabStop = false;
+            // 
             // eklearsiv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.rafNoTxt);
             this.Controls.Add(this.rafNo);
             this.Controls.Add(this.evragınTuruComboBox);
@@ -442,6 +454,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eklearsivdata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,5 +491,6 @@
         private System.Windows.Forms.ComboBox evragınTuruComboBox;
         private System.Windows.Forms.TextBox rafNoTxt;
         private System.Windows.Forms.Label rafNo;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

@@ -60,6 +60,11 @@ namespace NYP_Arsiv_Otomasyonu
             rafNoTxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakdüzeneklebutton.BackColor = Color.FromArgb(58, 86, 131);
             evrakduzenledata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            arsivTxt.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BringToFront();
+            arsivTxt.BringToFront();
         }
         private DataTable GetData(string sqlCommand)
         {

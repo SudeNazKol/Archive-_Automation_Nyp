@@ -34,9 +34,6 @@ namespace NYP_Arsiv_Otomasyonu
         public int girisTuru;
         private void girisButton_Click(object sender, EventArgs e)
         {
-
-            
-
             string kullaniciAdi = adSoyadTxt.Text;
             string sifre = sifreTxt.Text;
 
@@ -44,26 +41,16 @@ namespace NYP_Arsiv_Otomasyonu
             if (AdminKontrol(kullaniciAdi, sifre))
             {
                 anaSayfa anasayfa = new anaSayfa();
-                //anasayfa.girisTuru = 1;
+                anasayfa.girisTuru = 1;
                 anasayfa.ShowDialog();
                 this.Hide();               
                 
             }
-
             if (GirisKontrol(kullaniciAdi, sifre))
             {
                 //MessageBox.Show("Giriş Başarılı!");
                 anaSayfa anasayfa = new anaSayfa();
-                
                 //personel ekle butonu gösterme görünmemesi
-               /* if(adminRadioButton.Checked)
-                {
-                    personelEkleButton.Visible=true;
-                }
-                else
-                {
-                    this.personelEkleButton.Visible = false;
-                }*/
                 anasayfa.ShowDialog();
                 this.Hide();
             }
@@ -105,7 +92,7 @@ namespace NYP_Arsiv_Otomasyonu
         }
         private void adminRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void ogrenciIsleriRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -121,7 +108,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void sifreTxt_TextChanged(object sender, EventArgs e)
         {
-            
+           sifreTxt.PasswordChar = '*';
         }
 
         private void timer1_Tick(object sender, EventArgs e)

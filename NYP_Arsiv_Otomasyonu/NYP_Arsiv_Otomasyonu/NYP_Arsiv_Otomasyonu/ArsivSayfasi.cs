@@ -27,8 +27,6 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void ajandaButton_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
-            anasayfa.ShowDialog();
             this.Close();
         }
 
@@ -57,7 +55,7 @@ namespace NYP_Arsiv_Otomasyonu
         {
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             pictureBox2.BackColor = Color.FromArgb(58, 86, 131);
-            ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
+            arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
             profilButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -75,6 +73,12 @@ namespace NYP_Arsiv_Otomasyonu
             pictureBox3.BackColor = Color.FromArgb(58, 86, 131);
             pictureBox4.BackColor = Color.FromArgb(58, 86, 131);
             pictureBox5.BackColor = Color.FromArgb(58, 86, 131);
+            ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            arsivTxt.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BringToFront();
+            arsivTxt.BringToFront();
         }
 
         private void evrakGoruntuleTxt_Click(object sender, EventArgs e)

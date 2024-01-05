@@ -56,6 +56,8 @@
             this.profilTxt = new System.Windows.Forms.Label();
             this.personelEkleTxt = new System.Windows.Forms.Label();
             this.personelEkleButton = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.kaydetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -118,8 +121,9 @@
             this.textBox1.Location = new System.Drawing.Point(645, 283);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 245);
+            this.textBox1.Size = new System.Drawing.Size(314, 204);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -207,6 +211,7 @@
             // 
             // ajandaButton
             // 
+            this.ajandaButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ajandaButton.Image = ((System.Drawing.Image)(resources.GetObject("ajandaButton.Image")));
             this.ajandaButton.Location = new System.Drawing.Point(22, 12);
             this.ajandaButton.Name = "ajandaButton";
@@ -214,6 +219,7 @@
             this.ajandaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ajandaButton.TabIndex = 14;
             this.ajandaButton.TabStop = false;
+            this.ajandaButton.Click += new System.EventHandler(this.ajandaButton_Click);
             // 
             // arsivButton
             // 
@@ -262,9 +268,10 @@
             // ajandaTxt
             // 
             this.ajandaTxt.AutoSize = true;
+            this.ajandaTxt.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ajandaTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ajandaTxt.ForeColor = System.Drawing.Color.White;
-            this.ajandaTxt.Location = new System.Drawing.Point(14, 65);
+            this.ajandaTxt.Location = new System.Drawing.Point(14, 62);
             this.ajandaTxt.Name = "ajandaTxt";
             this.ajandaTxt.Size = new System.Drawing.Size(58, 18);
             this.ajandaTxt.TabIndex = 19;
@@ -331,11 +338,34 @@
             this.personelEkleButton.Visible = false;
             this.personelEkleButton.Click += new System.EventHandler(this.personelEkleButton_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox7.Location = new System.Drawing.Point(-2, 10);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(102, 78);
+            this.pictureBox7.TabIndex = 26;
+            this.pictureBox7.TabStop = false;
+            // 
+            // kaydetButton
+            // 
+            this.kaydetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kaydetButton.ForeColor = System.Drawing.Color.White;
+            this.kaydetButton.Location = new System.Drawing.Point(645, 493);
+            this.kaydetButton.Name = "kaydetButton";
+            this.kaydetButton.Size = new System.Drawing.Size(314, 34);
+            this.kaydetButton.TabIndex = 27;
+            this.kaydetButton.Text = "KAYDET";
+            this.kaydetButton.UseVisualStyleBackColor = true;
+            this.kaydetButton.Click += new System.EventHandler(this.kaydetButton_Click);
+            // 
             // anaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.kaydetButton);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.personelEkleTxt);
             this.Controls.Add(this.personelEkleButton);
             this.Controls.Add(this.profilTxt);
@@ -378,6 +408,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,6 +442,8 @@
         private System.Windows.Forms.Label profilTxt;
         private System.Windows.Forms.Label personelEkleTxt;
         private System.Windows.Forms.PictureBox personelEkleButton;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button kaydetButton;
     }
 }
 

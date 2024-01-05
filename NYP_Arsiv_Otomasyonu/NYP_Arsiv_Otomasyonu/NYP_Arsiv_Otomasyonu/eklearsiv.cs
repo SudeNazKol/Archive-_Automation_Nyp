@@ -99,14 +99,17 @@ namespace NYP_Arsiv_Otomasyonu
             evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
             evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
             eklearsivdata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
-            
-           // eklearsivdata.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 9pt, FontStyle.Bold);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            arsivTxt.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BackColor = Color.FromArgb(43, 67, 106);
+            arsivButton.BringToFront();
+            arsivTxt.BringToFront();
+
+            // eklearsivdata.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 9pt, FontStyle.Bold);
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
-            anasayfa.ShowDialog();
             this.Close();
         }
 
