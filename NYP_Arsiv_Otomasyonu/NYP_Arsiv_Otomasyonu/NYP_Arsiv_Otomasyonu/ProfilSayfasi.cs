@@ -13,50 +13,6 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class ProfilSayfasi : Form
     {
-       /* private string kullaniciAdi;
-        private MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
-
-        public ProfilSayfasi(string kullaniciAdi)
-        {
-            InitializeComponent();
-            this.kullaniciAdi = kullaniciAdi;
-        }
-
-
-        private void VeritabanindanBilgileriCek()
-        {
-            try
-            {
-                connection.Open();
-                string query = "SELECT Adi_Soyadi, Unvan FROM personal WHERE Kullanici_Adi = @labelKullaniciAdi";
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@kullaniciAdi", labelullaniciAdi);
-
-                using (MySqlDataReader reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        string adSoyad = reader["Adi_Soyadi"].ToString();
-                        string unvan = reader["Unvan"].ToString();
-
-                        labelAdSoyad.Text = "Ad Soyad: " + adSoyad;
-                        labelUnvan.Text = "Unvan: " + unvan;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veritabanından bilgileri çekerken bir hata oluştu: " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
-
-
-    
-        */
 
 
         private void ProfilSayfasi_Load(object sender, EventArgs e)
@@ -82,8 +38,6 @@ namespace NYP_Arsiv_Otomasyonu
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
             sifre.ForeColor = Color.FromArgb(58, 86, 131);
 
-            //labelKullaniciAdi.Text = "Kullanıcı Adı: " + kullaniciAdi;
-           // VeritabanindanBilgileriCek();
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
