@@ -55,31 +55,35 @@ namespace NYP_Arsiv_Otomasyonu
             ajandaTxt.BackColor = Color.FromArgb(43, 67, 106);
             ajandaButton.BringToFront();
             ajandaTxt.BringToFront();
-            /*
-            connection.Open();
+            
+            
                 // SQL sorgusu
-                string query = "SELECT notlar FROM notlar WHERE notlar";
+                string query = "SELECT * FROM notlar";
 
-                // SQL bağlantısını açın
-                
+            // SQL bağlantısını açın
 
-                // SQL komutunu oluşturun
-                using (MySqlCommand command = new MySqlCommand(query, connection))
+            connection.Open();
+
+            // SQL komutunu oluşturun
+            using (MySqlCommand command = new MySqlCommand(query, connection))
+
+            {
+                // Veriyi okuyun
+                MySqlDataReader reader = command.ExecuteReader();
                 {
-                    // Veriyi okuyun
-                    MySqlDataReader reader = command.ExecuteReader();
-
                     // Veriyi TextBox'a yükleyin
-                    if (reader.Read())
+                    while (reader.Read() );
                     {
-                        textBox1.Text = reader["notlar"].ToString();
+                        textBox1.Text += reader["notlar"].ToString() + Environment.NewLine;
                     }
 
                     // Okuyucuyu kapatın
                     reader.Close();
                 }
-                */
-        
+
+            }
+                
+        connection.Close();
         }
         
 
@@ -155,7 +159,7 @@ namespace NYP_Arsiv_Otomasyonu
        
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string sqlCommand = "SELECT name FROM mytable WHERE not = 1";
+            string MysqlCommand = "SELECT name FROM mytable WHERE not = 1";
             TextBox textBox1 = new TextBox();
             connection.Close();
             
