@@ -56,7 +56,7 @@
             this.evrakAdi = new System.Windows.Forms.Label();
             this.evrakduzenledata = new System.Windows.Forms.DataGridView();
             this.evraksilbutton = new System.Windows.Forms.Button();
-            this.evragınTuruComboBox = new System.Windows.Forms.ComboBox();
+            this.evraginTuruComboBox = new System.Windows.Forms.ComboBox();
             this.evragınTuru = new System.Windows.Forms.Label();
             this.rafNoTxt = new System.Windows.Forms.TextBox();
             this.rafNo = new System.Windows.Forms.Label();
@@ -359,12 +359,12 @@
             this.evraksilbutton.UseVisualStyleBackColor = true;
             this.evraksilbutton.Click += new System.EventHandler(this.evraksilbutton_Click);
             // 
-            // evragınTuruComboBox
+            // evraginTuruComboBox
             // 
-            this.evragınTuruComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.evragınTuruComboBox.ForeColor = System.Drawing.Color.White;
-            this.evragınTuruComboBox.FormattingEnabled = true;
-            this.evragınTuruComboBox.Items.AddRange(new object[] {
+            this.evraginTuruComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.evraginTuruComboBox.ForeColor = System.Drawing.Color.White;
+            this.evraginTuruComboBox.FormattingEnabled = true;
+            this.evraginTuruComboBox.Items.AddRange(new object[] {
             "Sınav Belgeleri",
             "Akademik Tez Belgeleri",
             "Muhasebe Kayıtları",
@@ -379,11 +379,11 @@
             "Makaleler",
             "Öğrenci Kulüp Belgeleri",
             "Sosyal Etkinlik Belgeleri"});
-            this.evragınTuruComboBox.Location = new System.Drawing.Point(618, 62);
-            this.evragınTuruComboBox.Name = "evragınTuruComboBox";
-            this.evragınTuruComboBox.Size = new System.Drawing.Size(200, 26);
-            this.evragınTuruComboBox.TabIndex = 74;
-            this.evragınTuruComboBox.SelectedIndexChanged += new System.EventHandler(this.evragınTuruComboBox_SelectedIndexChanged);
+            this.evraginTuruComboBox.Location = new System.Drawing.Point(618, 62);
+            this.evraginTuruComboBox.Name = "evraginTuruComboBox";
+            this.evraginTuruComboBox.Size = new System.Drawing.Size(200, 26);
+            this.evraginTuruComboBox.TabIndex = 74;
+            this.evraginTuruComboBox.SelectedIndexChanged += new System.EventHandler(this.evragınTuruComboBox_SelectedIndexChanged);
             // 
             // evragınTuru
             // 
@@ -433,7 +433,7 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.rafNoTxt);
             this.Controls.Add(this.rafNo);
-            this.Controls.Add(this.evragınTuruComboBox);
+            this.Controls.Add(this.evraginTuruComboBox);
             this.Controls.Add(this.evragınTuru);
             this.Controls.Add(this.evraksilbutton);
             this.Controls.Add(this.evrakduzenledata);
@@ -507,7 +507,7 @@
         private System.Windows.Forms.Label evrakAdi;
         private System.Windows.Forms.DataGridView evrakduzenledata;
         private System.Windows.Forms.Button evraksilbutton;
-        private System.Windows.Forms.ComboBox evragınTuruComboBox;
+        private System.Windows.Forms.ComboBox evraginTuruComboBox;
         private System.Windows.Forms.Label evragınTuru;
         private System.Windows.Forms.TextBox rafNoTxt;
         private System.Windows.Forms.Label rafNo;

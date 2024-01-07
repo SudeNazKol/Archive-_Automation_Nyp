@@ -55,7 +55,7 @@ namespace NYP_Arsiv_Otomasyonu
             unvancombobox.ForeColor = Color.FromArgb(58, 86, 131);
             evraksilbutton.BackColor = Color.FromArgb(58, 86, 131);
             evragınTuru.ForeColor = Color.FromArgb(58, 86, 131);
-            evragınTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
+            evraginTuruComboBox.ForeColor = Color.FromArgb(58, 86, 131);
             rafNo.ForeColor = Color.FromArgb(58, 86, 131);
             rafNoTxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakdüzeneklebutton.BackColor = Color.FromArgb(58, 86, 131);
@@ -176,7 +176,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakdüzeneklebutton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text +"',Evrak_Turu='" + evragınTuruComboBox + "',Raf_No='" + rafNoTxt.Text + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
+            MySqlCommand komut = new MySqlCommand("update archives set Evrak_Adi='" + evrakaditxt.Text + "', Unvan='" + unvancombobox.Text + "', Evrak_Tarih='" + evrakduzenlemedate.Text +"',Evrak_Turu='" + evraginTuruComboBox + "',Raf_No='" + rafNoTxt.Text + "'  where Konum='" + evrakkodutxt.Text + "'", connection);
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Güncellendi");
             connection.Close();
@@ -198,9 +198,9 @@ namespace NYP_Arsiv_Otomasyonu
             unvancombobox.Text = Unvan;
             evrakduzenlemedate.Text = Evrak_Tarih;
             evrakkodutxt.Text = Konum;
-            evragınTuruComboBox.Text = Evrak_Turu;
+            evraginTuruComboBox.Text = Evrak_Turu;
             rafNoTxt.Text = Raf_No;
-
+            
 
         }
 

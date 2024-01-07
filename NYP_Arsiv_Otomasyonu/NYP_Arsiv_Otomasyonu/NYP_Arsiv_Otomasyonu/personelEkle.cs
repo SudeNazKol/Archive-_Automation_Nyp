@@ -208,11 +208,11 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void personelekledata_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int seçilialan = personelekledata.SelectedCells[0].RowIndex;
-            string Adi_Soyadi = personelekledata.Rows[seçilialan].Cells[1].Value.ToString();
-            string Kullanici_Adi = personelekledata.Rows[seçilialan].Cells[2].Value.ToString();
-            string Parola = personelekledata.Rows[seçilialan].Cells[3].Value.ToString();
-            string Unvan = personelekledata.Rows[seçilialan].Cells[4].Value.ToString();
+            int seçilenalan = personelekledata.SelectedCells[0].RowIndex;
+            string Adi_Soyadi = personelekledata.Rows[seçilenalan].Cells[1].Value.ToString();
+            string Kullanici_Adi = personelekledata.Rows[seçilenalan].Cells[2].Value.ToString();
+            string Parola = personelekledata.Rows[seçilenalan].Cells[3].Value.ToString();
+            string Unvan = personelekledata.Rows[seçilenalan].Cells[4].Value.ToString();
            
             adSoyadTxt.Text = Adi_Soyadi;
             kullaniciAdiTxt.Text = Kullanici_Adi;

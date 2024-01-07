@@ -72,7 +72,7 @@ namespace NYP_Arsiv_Otomasyonu
                 MySqlDataReader reader = command.ExecuteReader();
                 {
                     // Veriyi TextBox'a yükleyin
-                    while (reader.Read() );
+                    while (reader.Read());
                     {
                         textBox1.Text += reader["notlar"].ToString() + Environment.NewLine;
                     }
