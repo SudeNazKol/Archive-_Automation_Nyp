@@ -78,6 +78,12 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimbilgileri_Load(object sender, EventArgs e)
         {
+            if (girisTuru == 1)
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
             pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
             teslimBilgileriButton.BackColor = Color.FromArgb(43, 67, 106);
             teslimBilgileriTxt.BackColor = Color.FromArgb(43, 67, 106);
@@ -252,7 +258,7 @@ namespace NYP_Arsiv_Otomasyonu
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
 
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa("");
             anasayfa.ShowDialog();
             this.Close();
         }

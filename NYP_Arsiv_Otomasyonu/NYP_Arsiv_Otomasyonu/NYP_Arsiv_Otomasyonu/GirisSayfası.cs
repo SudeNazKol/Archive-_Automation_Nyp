@@ -40,7 +40,7 @@ namespace NYP_Arsiv_Otomasyonu
 
             if (AdminKontrol(kullaniciAdi, sifre))
             {
-                anaSayfa anasayfa = new anaSayfa();
+                anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
                 anasayfa.girisTuru = 1;
                 anasayfa.ShowDialog();
                 this.Hide();               

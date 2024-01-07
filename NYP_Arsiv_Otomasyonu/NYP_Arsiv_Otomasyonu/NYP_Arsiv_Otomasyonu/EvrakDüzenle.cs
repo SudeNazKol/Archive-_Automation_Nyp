@@ -89,6 +89,8 @@ namespace NYP_Arsiv_Otomasyonu
             connection.Close();
         }
 
+      
+
         private void ajandaButton_Click(object sender, EventArgs e)
         {
             anaSayfa anasayfa = new anaSayfa();
@@ -156,9 +158,9 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-           ProfilSayfasi profilSayfasi = new ProfilSayfasi();
-           profilSayfasi.ShowDialog();
-           this.Close();
+           //ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+           //profilSayfasi.ShowDialog();
+           //this.Close();
         }
 
         private void exitButton_Click(object sender, EventArgs e)

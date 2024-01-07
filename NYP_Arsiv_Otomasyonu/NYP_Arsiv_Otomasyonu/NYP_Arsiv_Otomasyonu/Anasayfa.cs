@@ -15,21 +15,63 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class anaSayfa : Form
     {
-
-        public anaSayfa()
+        private string kullaniciAdi;
+        private string rol;
+        public anaSayfa(string kullaniciAdi)
         {
 
             InitializeComponent();
             webBrowser1.Navigate("http://uludag.edu.tr/duyuru/index");
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+            this.kullaniciAdi = kullaniciAdi;
+            lblKullaniciAdi.Text = kullaniciAdi;
         }
+
+        /*
+         1- SQL select sorgusu yazacağız.
+         2- Koşul olacak. koşul kullanici adi olacak.
+         Yani: "SELECT * FROM personal WHERE Kullanici_Adi=kullaniciAdi"
+         Bu sorgu sadece istediğimiz kullanici adina sahip olan kişinin verilerini getirecek.
+         1 tane veri gelecek.
+         veri[0]: id, veri[1]: adsoyad, veri[2]: Kullanici_Adi
+         lblKullaniciAdi.Text = veri[1].ToString();
+         
+         */
+
+        /* BUNU BİRLİKTE YAZDIK */
+        void personelVerileriniGetir()
+        {
+            connection.Open();
+            veri = GetData("Select * From personal WHERE Kullanici_Adi="+kullaniciAdi); //ADMIN
+            lblKullaniciAdi.Text = veri[1].ToString();
+            rol = veri[3].ToString; //rol değişkeinin değeri ADMIN oldu.
+            connection.Close();
+            /*
+             verinin içinde adsouyad, rol, kullaniciadi, parola
+             */
+        }
+
+        public anaSayfa()
+        {
+
+        }
+
+        //constructor: class çalışıtğı anda ilk çalışan metod.
+        //sınıf ismi aynı isimde ola n bir metod.
+
         public int girisTuru;
         public string ad;
 
         
         private void girisSayfası_Load(object sender, EventArgs e)
         {
+            if(rol == "ADMIN")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
             if(girisTuru==1)
             {
                 personelEkleButton.Visible = true;

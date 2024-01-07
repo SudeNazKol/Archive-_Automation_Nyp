@@ -14,7 +14,7 @@ namespace NYP_Arsiv_Otomasyonu
     public partial class ProfilSayfasi : Form
     {
 
-
+        //kullaniciAdi
         private void ProfilSayfasi_Load(object sender, EventArgs e)
         {
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
@@ -38,6 +38,19 @@ namespace NYP_Arsiv_Otomasyonu
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
             sifre.ForeColor = Color.FromArgb(58, 86, 131);
 
+            personelVerileriniGetir();
+
+        }
+
+        /* BUNU BİRLİKTE YAZDIK */
+        void personelVerileriniGetir()
+        {
+            connection.Open();
+            veri = GetData("Select * From personal WHERE Kullanici_Adi=" +kullaniciAdi );
+            lblKullaniciAdi.Text = veri[1].ToString();
+            pictureBox5.DataSource = veri[2].ToString();
+
+            connection.Close();
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)

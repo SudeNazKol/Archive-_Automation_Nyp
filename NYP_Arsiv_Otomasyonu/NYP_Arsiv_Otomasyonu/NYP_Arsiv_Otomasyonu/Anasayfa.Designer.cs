@@ -58,6 +58,7 @@
             this.personelEkleButton = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.kaydetButton = new System.Windows.Forms.Button();
+            this.lblKullaniciAdi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -359,11 +360,21 @@
             this.kaydetButton.UseVisualStyleBackColor = true;
             this.kaydetButton.Click += new System.EventHandler(this.kaydetButton_Click);
             // 
+            // lblKullaniciAdi
+            // 
+            this.lblKullaniciAdi.AutoSize = true;
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(304, 103);
+            this.lblKullaniciAdi.Name = "lblKullaniciAdi";
+            this.lblKullaniciAdi.Size = new System.Drawing.Size(44, 16);
+            this.lblKullaniciAdi.TabIndex = 28;
+            this.lblKullaniciAdi.Text = "label1";
+            // 
             // anaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.lblKullaniciAdi);
             this.Controls.Add(this.kaydetButton);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.personelEkleTxt);
@@ -444,6 +455,7 @@
         private System.Windows.Forms.PictureBox personelEkleButton;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button kaydetButton;
+        private System.Windows.Forms.Label lblKullaniciAdi;
     }
 }
 

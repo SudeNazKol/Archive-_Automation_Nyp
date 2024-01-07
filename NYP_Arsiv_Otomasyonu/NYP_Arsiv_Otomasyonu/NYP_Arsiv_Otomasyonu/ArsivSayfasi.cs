@@ -91,7 +91,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa("");
             anasayfa.ShowDialog();
             this.Close();
         }

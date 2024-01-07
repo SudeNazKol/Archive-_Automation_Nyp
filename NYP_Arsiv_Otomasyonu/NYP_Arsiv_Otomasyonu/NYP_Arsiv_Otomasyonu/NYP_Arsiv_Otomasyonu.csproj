@@ -147,6 +147,7 @@
     <Compile Include="listeleme.Designer.cs">
       <DependentUpon>listeleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personel.cs" />
     <Compile Include="personelEkle.cs">
       <SubType>Form</SubType>
     </Compile>
