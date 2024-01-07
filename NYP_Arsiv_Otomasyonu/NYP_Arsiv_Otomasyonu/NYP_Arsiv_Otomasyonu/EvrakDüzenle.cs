@@ -185,6 +185,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void evrakduzenledata_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             int seçilialan = evrakduzenledata.SelectedCells[0].RowIndex;
             string Evrak_Adi = evrakduzenledata.Rows[seçilialan].Cells[1].Value.ToString();
             string Unvan = evrakduzenledata.Rows[seçilialan].Cells[2].Value.ToString();
