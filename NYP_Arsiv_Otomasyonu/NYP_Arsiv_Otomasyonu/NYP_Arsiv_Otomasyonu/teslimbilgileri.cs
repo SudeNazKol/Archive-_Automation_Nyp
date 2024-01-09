@@ -20,15 +20,23 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class teslimbilgileri : Form
     {
-        public teslimbilgileri()
+        private string kullaniciAdi;
+        public string KullaniciAdi { get => kullaniciAdi; set => kullaniciAdi = value; }
+
+        public teslimbilgileri(string kullaniciAdi)
         {
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
 
-
+            this.kullaniciAdi= kullaniciAdi;
             this.Controls.Add(dgvKullanicilar);
             InitializeDateTimePicker();
+
+        }
+        public teslimbilgileri()
+        {
+            InitializeComponent();
         }
         private void InitializeDateTimePicker()
         {
@@ -75,14 +83,27 @@ namespace NYP_Arsiv_Otomasyonu
             dgvKullanicilar.DataSource = bindingSource1;
             connection.Close();
         }
+        public int girisTuru;
+        private User user;
+       
 
+        internal User User { get => user; set => user = value; }
         private void teslimbilgileri_Load(object sender, EventArgs e)
         {
-            //if (girisTuru == 1)
-            //{
-            //    personelEkleButton.Visible = true;
-            //    personelEkleTxt.Visible = true;
-            //}
+            User user = new User(kullaniciAdi);
+
+            if (user.user_name == "admin")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
+
+            /*if (girisTuru == 1)
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }*/
 
             pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
             teslimBilgileriButton.BackColor = Color.FromArgb(43, 67, 106);
@@ -258,49 +279,49 @@ namespace NYP_Arsiv_Otomasyonu
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
 
-            anaSayfa anasayfa = new anaSayfa("");
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
             this.Close();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
             this.Close();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-           ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+           ProfilSayfasi profilSayfasi = new ProfilSayfasi(kullaniciAdi);
             profilSayfasi.ShowDialog();
             this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-             ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+             ProfilSayfasi profilSayfasi = new ProfilSayfasi(kullaniciAdi);
             profilSayfasi.ShowDialog();
             this.Close();
         }

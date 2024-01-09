@@ -14,6 +14,10 @@ namespace NYP_Arsiv_Otomasyonu
         private string isim_soyisim;
         private string veri;
         private string rol;
+        private User user;
+        internal User User { get => user; set => user = value; }
+
+
         public anaSayfa(string kullaniciAdi)
         {
 
@@ -24,6 +28,12 @@ namespace NYP_Arsiv_Otomasyonu
             this.kullaniciAdi = kullaniciAdi;
             //lblKullaniciAdi.Text = "Hoşgeldin "+kullaniciAdi;
             getUserData(kullaniciAdi);
+
+            var user = new User(kullaniciAdi);
+        }
+        public anaSayfa()
+        {
+
         }
 
         /*
@@ -37,7 +47,7 @@ namespace NYP_Arsiv_Otomasyonu
          
          */
 
-        /* BUNU BİRLİKTE YAZDIK */
+
 
         public void getUserData(string kullaniciAdi)
         {
@@ -68,8 +78,8 @@ namespace NYP_Arsiv_Otomasyonu
                             {
                                 // Örneğin, verilerin bir TextBox'a yazdırılması
                                 isim_soyisim = reader["Adi_Soyadi"].ToString();
-                                Console.WriteLine(isim_soyisim);
-                                MessageBox.Show(isim_soyisim);
+                                //Console.WriteLine(isim_soyisim);
+                                //MessageBox.Show(isim_soyisim);
 
                                 lblKullaniciAdi.Text = reader["Adi_Soyadi"].ToString();
                             }
@@ -84,25 +94,32 @@ namespace NYP_Arsiv_Otomasyonu
             }
         }
 
-        public anaSayfa()
-        {
 
-        }
 
+       
         //constructor: class çalışıtğı anda ilk çalışan metod.
-        //sınıf ismi aynı isimde ola n bir metod.
+        //sınıf ismi aynı isimde olan bir metod.
 
-        public int girisTuru;
-        public string ad;
+        //public int girisTuru;
+        //public string ad;
 
         
         private void girisSayfası_Load(object sender, EventArgs e)
-        {
-            if(rol == "admin")
+        { 
+            var user = new User(kullaniciAdi);
+            if (user.user_name =="admin")
             {
                 personelEkleButton.Visible = true;
                 personelEkleTxt.Visible = true;
             }
+            
+
+
+           /* if(rol == "admin")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }*/
 
             /*if(girisTuru==1)
             {
@@ -163,7 +180,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
         }
 
@@ -176,45 +193,45 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
-            teslimbilgileri tslm = new teslimbilgileri();
+            teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
             
-            personelEkle prs = new personelEkle();
+            personelEkle prs = new personelEkle(kullaniciAdi);
             prs.ShowDialog();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
-            teslimbilgileri tslm = new teslimbilgileri();
+            teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
-            personelEkle prs = new personelEkle();
+            personelEkle prs = new personelEkle(kullaniciAdi);
             prs.ShowDialog();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-            ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+            ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
 
-            ProfilSayfasi profilsayfasi = new ProfilSayfasi ();
+            ProfilSayfasi profilsayfasi = new ProfilSayfasi (kullaniciAdi);
             profilsayfasi.ShowDialog();
         }
 
@@ -230,7 +247,9 @@ namespace NYP_Arsiv_Otomasyonu
         }
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
-       
+
+        
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string MysqlCommand = "SELECT name FROM mytable WHERE not = 1";
@@ -251,6 +270,16 @@ namespace NYP_Arsiv_Otomasyonu
                 MessageBox.Show("Not Kaydedildi!");
                 connection.Close();
             }
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void avatar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

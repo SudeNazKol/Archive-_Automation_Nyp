@@ -13,12 +13,17 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class eklearsiv : Form
     {
-        public eklearsiv()
+        private string kullaniciAdi;
+        public string KullaniciAdi { get => kullaniciAdi; set => kullaniciAdi = value; }
+
+        public eklearsiv(string kullaniciAdi)
         {
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
             this.Controls.Add(eklearsivdata);
+
+            this.kullaniciAdi=kullaniciAdi;
             InitializeDateTimePicker();
         }
          private void InitializeDateTimePicker()
@@ -70,8 +75,19 @@ namespace NYP_Arsiv_Otomasyonu
             eklearsivdata.DataSource = bindingSource1;
             connection.Close();
         }
+        public int girisTuru;
+
         private void eklearsiv_Load(object sender, EventArgs e)
         {
+            var user = new User(kullaniciAdi);
+
+            if (user.user_name == "admin")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
+
             TabloyuDoldur();
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -115,14 +131,14 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
-            teslimbilgileri teslimBilgileri = new teslimbilgileri();
+            teslimbilgileri teslimBilgileri = new teslimbilgileri(kullaniciAdi);
             teslimBilgileri.ShowDialog();
             this.Close();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
@@ -136,42 +152,42 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-            ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+            ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
             this.Close();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
-            teslimbilgileri teslimBilgileri = new teslimbilgileri();
+            teslimbilgileri teslimBilgileri = new teslimbilgileri(kullaniciAdi);
             teslimBilgileri.ShowDialog();
             this.Close();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-             ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+             ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
             this.Close();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivsayfası = new ArsivSayfasi();
+            ArsivSayfasi arsivsayfası = new ArsivSayfasi(kullaniciAdi);
             arsivsayfası.ShowDialog();
             this.Close();
         }

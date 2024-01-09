@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,70 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class ArsivSayfasi : Form
     {
-        public ArsivSayfasi()
+        private string kullaniciAdi;
+        public string KullaniciAdi { get => kullaniciAdi; set => kullaniciAdi = value; }
+
+
+        public ArsivSayfasi(string kullaniciAdi)
         {
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+            this.kullaniciAdi = kullaniciAdi;
+
+            getUserData(kullaniciAdi);
+        }
+
+        public ArsivSayfasi()
+        {
+            InitializeComponent();
+        }
+
+        public void getUserData(string kullaniciAdi)
+        {
+            // SQL Server bağlantı dizesi
+            string connectionString = "Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;";
+
+            // SqlConnection nesnesi oluşturulması
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Bağlantı açılır
+                    connection.Open();
+
+                    // SQL sorgusu
+                    //string sqlQuery = @"SELECT * FROM personal WHERE Kullanici_Adi='${kullaniciAdi}'";
+                    string sqlQuery = "SELECT * FROM personal WHERE Kullanici_Adi='" + kullaniciAdi + "'";
+
+
+                    // SqlCommand nesnesi oluşturulması
+                    using (MySqlCommand command = new MySqlCommand(sqlQuery, connection))
+                    {
+                        // SqlDataReader nesnesi ile verilerin okunması
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Verilerin işlenmesi
+                            while (reader.Read())
+                            {
+                                string isim;
+                                
+                                // Örneğin, verilerin bir TextBox'a yazdırılması
+                                isim = reader["Adi_Soyadi"].ToString();
+                                //Console.WriteLine(isim_soyisim);
+                                //MessageBox.Show(isim_soyisim);
+
+                                
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Hata durumu
+                    MessageBox.Show("Hata: " + ex.Message);
+                }
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -32,27 +92,43 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
-            teslimbilgileri tslm = new teslimbilgileri();
+            teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
             this.Close();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            EvrakGoruntule evrakGoruntule = new EvrakGoruntule();
+            EvrakGoruntule evrakGoruntule = new EvrakGoruntule(kullaniciAdi);
             evrakGoruntule.ShowDialog();
             this.Close();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            eklearsiv eklarsv = new eklearsiv();
+            eklearsiv eklarsv = new eklearsiv(kullaniciAdi);
             eklarsv.ShowDialog();
             this.Close();
         }
+        
 
         private void ArsivSayfasi_Load(object sender, EventArgs e)
         {
+           var user = new User(kullaniciAdi);
+
+            if (user.user_name == "admin")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
+            /*if (girisTuru == 1)
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+            */
+
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             pictureBox2.BackColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -84,49 +160,49 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakGoruntuleTxt_Click(object sender, EventArgs e)
         {
 
-            EvrakGoruntule evrakGoruntule = new EvrakGoruntule();
+            EvrakGoruntule evrakGoruntule = new EvrakGoruntule(kullaniciAdi);
             evrakGoruntule.ShowDialog();
             this.Close();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa("");
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
-            teslimbilgileri tslm = new teslimbilgileri();
+            teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
             this.Close();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-            ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+            ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
             this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-             ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+             ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
            profilsayfasi.ShowDialog();
            this.Close();
         }
@@ -140,21 +216,21 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void evrakEkleTxt_Click(object sender, EventArgs e)
         {
-            eklearsiv eklarsv = new eklearsiv();
+            eklearsiv eklarsv = new eklearsiv(kullaniciAdi);
             eklarsv.ShowDialog();
             this.Close();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            EvrakDüzenle evrakDüzenle = new EvrakDüzenle();
+            EvrakDüzenle evrakDüzenle = new EvrakDüzenle(kullaniciAdi);
             evrakDüzenle.ShowDialog();
             this.Close();
         }
 
         private void evrakDuzenleTxt_Click(object sender, EventArgs e)
         {
-            EvrakDüzenle evrakDüzenle = new EvrakDüzenle();
+            EvrakDüzenle evrakDüzenle = new EvrakDüzenle(kullaniciAdi);
             evrakDüzenle.ShowDialog();
             this.Close();
         }
@@ -163,6 +239,11 @@ namespace NYP_Arsiv_Otomasyonu
         {
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

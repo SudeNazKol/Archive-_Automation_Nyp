@@ -13,12 +13,17 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class EvrakDüzenle : Form
     {
-        public EvrakDüzenle()
+        private string kullaniciAdi;
+        public string KullaniciAdi { get => kullaniciAdi; set => kullaniciAdi = value; }
+
+        public EvrakDüzenle(string kullaniciAdi)
         {
             InitializeComponent();
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
             this.Controls.Add(evrakduzenledata);
+
+            this.kullaniciAdi=kullaniciAdi;
             InitializeDateTimePicker();
         }
         private void InitializeDateTimePicker()
@@ -29,8 +34,20 @@ namespace NYP_Arsiv_Otomasyonu
         MySqlConnection connection = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
         private BindingSource bindingSource1 = new BindingSource();
 
+
+        public int girisTuru;
+
         private void EvrakDüzenle_Load(object sender, EventArgs e)
         {
+            var user = new User(kullaniciAdi);
+
+            if (user.user_name == "admin")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
+
             TabloyuDoldur();
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
@@ -93,7 +110,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void ajandaButton_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
@@ -101,42 +118,42 @@ namespace NYP_Arsiv_Otomasyonu
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
 
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
             this.Close();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivSayfasi = new ArsivSayfasi();
+            ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
             this.Close();
         }
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
-            teslimbilgileri TeslimBilgileri = new teslimbilgileri();
+            teslimbilgileri TeslimBilgileri = new teslimbilgileri(kullaniciAdi);
             TeslimBilgileri.ShowDialog();
             this.Close();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
-            teslimbilgileri TeslimBilgileri = new teslimbilgileri();
+            teslimbilgileri TeslimBilgileri = new teslimbilgileri(kullaniciAdi);
             TeslimBilgileri.ShowDialog();
             this.Close();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();
         }
@@ -144,21 +161,21 @@ namespace NYP_Arsiv_Otomasyonu
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
             
-            personelEkle personelekle = new personelEkle();
+            personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
             this.Close();            
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-             ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+             ProfilSayfasi profilSayfasi = new ProfilSayfasi(kullaniciAdi);
              profilSayfasi.ShowDialog();
              this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-           //ProfilSayfasi profilSayfasi = new ProfilSayfasi();
+           //ProfilSayfasi profilSayfasi = new ProfilSayfasi(kullaniciAdi);
            //profilSayfasi.ShowDialog();
            //this.Close();
         }

@@ -46,7 +46,7 @@
             this.arsivButton = new System.Windows.Forms.PictureBox();
             this.ajandaButton = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kullaniciAdi = new System.Windows.Forms.Label();
+            this.kullaniciAdilabel = new System.Windows.Forms.Label();
             this.unvan = new System.Windows.Forms.Label();
             this.kullaniciAdiTxt = new System.Windows.Forms.TextBox();
             this.unvanComboBox = new System.Windows.Forms.ComboBox();
@@ -243,15 +243,15 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
-            // kullaniciAdi
+            // kullaniciAdilabel
             // 
-            this.kullaniciAdi.AutoSize = true;
-            this.kullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kullaniciAdi.Location = new System.Drawing.Point(134, 81);
-            this.kullaniciAdi.Name = "kullaniciAdi";
-            this.kullaniciAdi.Size = new System.Drawing.Size(71, 36);
-            this.kullaniciAdi.TabIndex = 56;
-            this.kullaniciAdi.Text = "Kullanıcı\r\n    Adı :";
+            this.kullaniciAdilabel.AutoSize = true;
+            this.kullaniciAdilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullaniciAdilabel.Location = new System.Drawing.Point(134, 81);
+            this.kullaniciAdilabel.Name = "kullaniciAdilabel";
+            this.kullaniciAdilabel.Size = new System.Drawing.Size(71, 36);
+            this.kullaniciAdilabel.TabIndex = 56;
+            this.kullaniciAdilabel.Text = "Kullanıcı\r\n    Adı :";
             // 
             // unvan
             // 
@@ -381,7 +381,7 @@
             this.Controls.Add(this.unvanComboBox);
             this.Controls.Add(this.kullaniciAdiTxt);
             this.Controls.Add(this.unvan);
-            this.Controls.Add(this.kullaniciAdi);
+            this.Controls.Add(this.kullaniciAdilabel);
             this.Controls.Add(this.arsivTxt);
             this.Controls.Add(this.ajandaTxt);
             this.Controls.Add(this.personelEkleTxt);
@@ -435,7 +435,7 @@
         private System.Windows.Forms.PictureBox arsivButton;
         private System.Windows.Forms.PictureBox ajandaButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label kullaniciAdi;
+        private System.Windows.Forms.Label kullaniciAdilabel;
         private System.Windows.Forms.Label unvan;
         private System.Windows.Forms.TextBox kullaniciAdiTxt;
         private System.Windows.Forms.ComboBox unvanComboBox;

@@ -13,11 +13,82 @@ namespace NYP_Arsiv_Otomasyonu
 {
     public partial class personelEkle : Form
     {
+        private string kullaniciAdi;
+         public string KullaniciAdi { get => kullaniciAdi; set => kullaniciAdi = value; }
+
+        private User user;
+        internal User User { get => user; set => user = value; }
         public personelEkle()
         {
             InitializeComponent();
            
             this.Controls.Add(personelekledata);
+        }
+
+        public personelEkle(string kullaniciAdi)
+        {
+            InitializeComponent();
+
+            this.Controls.Add(personelekledata);
+        
+            this.kullaniciAdi = kullaniciAdi;
+        }
+        /*
+        public personelEkle(string kullaniciAdi)
+        {
+            InitializeComponent();
+
+            this.Controls.Add(personelekledata);
+           //this.kullaniciAdi = kullaniciAdi;
+
+            
+        }*/
+
+        public void getUserData(string kullaniciAdi)
+        {
+            // SQL Server bağlantı dizesi
+            string connectionString = "Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;";
+
+            // SqlConnection nesnesi oluşturulması
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Bağlantı açılır
+                    connection.Open();
+
+                    // SQL sorgusu
+                    //string sqlQuery = @"SELECT * FROM personal WHERE Kullanici_Adi='${kullaniciAdi}'";
+                    string sqlQuery = "SELECT * FROM personal WHERE Kullanici_Adi='" + kullaniciAdi + "'";
+
+
+                    // SqlCommand nesnesi oluşturulması
+                    using (MySqlCommand command = new MySqlCommand(sqlQuery, connection))
+                    {
+                        // SqlDataReader nesnesi ile verilerin okunması
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Verilerin işlenmesi
+                            while (reader.Read())
+                            {
+                                string isim;
+
+                                // Örneğin, verilerin bir TextBox'a yazdırılması
+                                isim = reader["Adi_Soyadi"].ToString();
+                                //Console.WriteLine(isim_soyisim);
+                                //MessageBox.Show(isim_soyisim);
+
+
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Hata durumu
+                    MessageBox.Show("Hata: " + ex.Message);
+                }
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -55,9 +126,31 @@ namespace NYP_Arsiv_Otomasyonu
         {
 
         }
+        public int girisTuru;
 
         private void personelEkle_Load(object sender, EventArgs e)
         {
+            var user = new User(kullaniciAdi);
+
+            if (user.user_name == "admin")
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+
+
+            /* if (kullaniciAdi == "Admin")
+             {
+                 personelEkleButton.Visible = true;
+                 personelEkleTxt.Visible = true;
+             }*/
+            /*
+            if (girisTuru == 1)
+            {
+                personelEkleButton.Visible = true;
+                personelEkleTxt.Visible = true;
+            }
+            */
             TabloyuDoldur();
 
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
@@ -75,7 +168,7 @@ namespace NYP_Arsiv_Otomasyonu
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             AdSoyad.ForeColor = Color.FromArgb(58, 86, 131);
             adSoyadTxt.ForeColor = Color.FromArgb(58, 86, 131);
-            kullaniciAdi.ForeColor = Color.FromArgb(58, 86, 131);
+            kullaniciAdilabel.ForeColor = Color.FromArgb(58, 86, 131);
             kullaniciAdiTxt.ForeColor = Color.FromArgb(58, 86, 131);
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
             unvanComboBox.ForeColor = Color.FromArgb(58, 86, 131);
@@ -96,56 +189,56 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void ajandaButton_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
-            anaSayfa anasayfa = new anaSayfa();
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
             this.Close();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivsayfası = new ArsivSayfasi();
+            ArsivSayfasi arsivsayfası = new ArsivSayfasi(kullaniciAdi);
             arsivsayfası.ShowDialog();
             this.Close();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
-            ArsivSayfasi arsivsayfası = new ArsivSayfasi();
+            ArsivSayfasi arsivsayfası = new ArsivSayfasi(kullaniciAdi);
             arsivsayfası.ShowDialog();
             this.Close();
         }
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
-            teslimbilgileri teslimBilgileri = new teslimbilgileri();
+            teslimbilgileri teslimBilgileri = new teslimbilgileri(kullaniciAdi);
             teslimBilgileri.ShowDialog();
             this.Close();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
-            teslimbilgileri teslimBilgileri = new teslimbilgileri();
+            teslimbilgileri teslimBilgileri = new teslimbilgileri(kullaniciAdi);
             teslimBilgileri.ShowDialog();
             this.Close();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
-              ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+              ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
               profilsayfasi.ShowDialog();
               this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
-              ProfilSayfasi profilsayfasi = new ProfilSayfasi();
+              ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
             this.Close();
         }

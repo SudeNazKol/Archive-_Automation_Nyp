@@ -168,6 +168,7 @@
     <Compile Include="teslimbilgileri.Designer.cs">
       <DependentUpon>teslimbilgileri.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EvrakGoruntule.resx">
       <DependentUpon>EvrakGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisSayfası.resx">
       <DependentUpon>GirisSayfası.cs</DependentUpon>

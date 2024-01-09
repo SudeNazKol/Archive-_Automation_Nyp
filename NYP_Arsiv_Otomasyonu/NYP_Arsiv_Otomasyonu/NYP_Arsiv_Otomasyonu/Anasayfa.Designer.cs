@@ -117,6 +117,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(533, 348);
             this.webBrowser1.TabIndex = 4;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // textBox1
             // 
@@ -169,6 +170,7 @@
             this.avatar.Size = new System.Drawing.Size(113, 105);
             this.avatar.TabIndex = 9;
             this.avatar.TabStop = false;
+            this.avatar.Click += new System.EventHandler(this.avatar_Click);
             // 
             // pictureBox4
             // 

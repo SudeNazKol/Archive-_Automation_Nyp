@@ -282,9 +282,8 @@
             this.labelAdSoyad.AutoSize = true;
             this.labelAdSoyad.Location = new System.Drawing.Point(277, 215);
             this.labelAdSoyad.Name = "labelAdSoyad";
-            this.labelAdSoyad.Size = new System.Drawing.Size(16, 16);
+            this.labelAdSoyad.Size = new System.Drawing.Size(0, 16);
             this.labelAdSoyad.TabIndex = 68;
-            this.labelAdSoyad.Text = "...";
             this.labelAdSoyad.Click += new System.EventHandler(this.labelAdSoyad_Click);
             // 
             // labelKullaniciAdi
@@ -292,9 +291,8 @@
             this.labelKullaniciAdi.AutoSize = true;
             this.labelKullaniciAdi.Location = new System.Drawing.Point(277, 254);
             this.labelKullaniciAdi.Name = "labelKullaniciAdi";
-            this.labelKullaniciAdi.Size = new System.Drawing.Size(22, 16);
+            this.labelKullaniciAdi.Size = new System.Drawing.Size(0, 16);
             this.labelKullaniciAdi.TabIndex = 69;
-            this.labelKullaniciAdi.Text = ".....";
             this.labelKullaniciAdi.Click += new System.EventHandler(this.labelKullaniciAdi_Click);
             // 
             // labelUnvan

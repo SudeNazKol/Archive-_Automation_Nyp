@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,36 +38,56 @@ namespace NYP_Arsiv_Otomasyonu
             string kullaniciAdi = adSoyadTxt.Text;
             string sifre = sifreTxt.Text;
 
+            if (adminRadioButton.Checked)
+            {
+                // Admin Girişi
+                var isAdmin = AdminKontrol(kullaniciAdi, sifre);
+                //Gelen Kullanıcı admin mi?
+                if (isAdmin)
+                {
+                    var user = new User(kullaniciAdi);
+                    anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
+                    anasayfa.User = user;
+                    anasayfa.ShowDialog();
+                    this.Hide();
+                }
+                else
+                {
+                    // Hata
+                    MessageBox.Show("Giriş Başarısız!");
+                    GirisSayfası girissayfası = new GirisSayfası();
+                    girissayfası.ShowDialog();
+                }
+            }
+            else if(personelRadioButton.Checked)
+            {
+                // personel Girişi
+                var isPersonel = GirisKontrol(kullaniciAdi, sifre);
+                //Gelen Kullanıcı personel mi?
+                if (isPersonel)
+                {
+                    var user = new User(kullaniciAdi);
+                    anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
+                    anasayfa.User = user;
+                    anasayfa.ShowDialog();
+                    this.Hide();
+                }
+                else
+                {
+                    // Hata
+                    MessageBox.Show("Giriş Başarısız!");
+                    GirisSayfası girissayfası = new GirisSayfası();
+                    girissayfası.ShowDialog();
+                }
+            }
+            
 
-            if (AdminKontrol(kullaniciAdi, sifre))
-            {
-                anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
-                anasayfa.girisTuru = 1;
-                anasayfa.ShowDialog();
-                this.Hide();               
-                
-            }
-            if (GirisKontrol(kullaniciAdi, sifre))
-            {
-                //MessageBox.Show("Giriş Başarılı!");
-                anaSayfa anasayfa = new anaSayfa();
-                //personel ekle butonu gösterme görünmemesi
-                anasayfa.ShowDialog();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Giriş Başarısız!");
-                GirisSayfası girissayfası= new GirisSayfası();
-                girissayfası.ShowDialog(); 
-            }
-            this.Hide();
 
         }
         private bool AdminKontrol(string kullaniciAdi, string sifre)
         {
             connection.Open();
-            string query = "SELECT COUNT(*) FROM personal WHERE Kullanici_Adi = @kullaniciAdi AND Parola = @sifre AND Kullanici_Adi= 'admin'";
+            string query = "SELECT COUNT(*) FROM personal WHERE Kullanici_Adi = @kullaniciAdi AND Parola = @sifre AND Unvan='Admin'";
             MySqlCommand command = new MySqlCommand(query, connection);
             command.Parameters.AddWithValue("@kullaniciAdi", kullaniciAdi);
             command.Parameters.AddWithValue("@sifre", sifre);
@@ -92,7 +113,6 @@ namespace NYP_Arsiv_Otomasyonu
         }
         private void adminRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
         private void ogrenciIsleriRadioButton_CheckedChanged(object sender, EventArgs e)
