@@ -1,21 +1,18 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NYP_Arsiv_Otomasyonu
 {
     public partial class anaSayfa : Form
     {
+
         private string kullaniciAdi;
+        private string isim_soyisim;
+        private string veri;
         private string rol;
         public anaSayfa(string kullaniciAdi)
         {
@@ -25,7 +22,8 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
             this.kullaniciAdi = kullaniciAdi;
-            lblKullaniciAdi.Text = kullaniciAdi;
+            //lblKullaniciAdi.Text = "Hoşgeldin "+kullaniciAdi;
+            getUserData(kullaniciAdi);
         }
 
         /*
@@ -40,16 +38,50 @@ namespace NYP_Arsiv_Otomasyonu
          */
 
         /* BUNU BİRLİKTE YAZDIK */
-        void personelVerileriniGetir()
+
+        public void getUserData(string kullaniciAdi)
         {
-            connection.Open();
-            veri = GetData("Select * From personal WHERE Kullanici_Adi="+kullaniciAdi); //ADMIN
-            lblKullaniciAdi.Text = veri[1].ToString();
-            rol = veri[3].ToString; //rol değişkeinin değeri ADMIN oldu.
-            connection.Close();
-            /*
-             verinin içinde adsouyad, rol, kullaniciadi, parola
-             */
+            // SQL Server bağlantı dizesi
+            string connectionString = "Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;";
+
+            // SqlConnection nesnesi oluşturulması
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Bağlantı açılır
+                    connection.Open();
+
+                    // SQL sorgusu
+                    //string sqlQuery = @"SELECT * FROM personal WHERE Kullanici_Adi='${kullaniciAdi}'";
+                    string sqlQuery = "SELECT * FROM personal WHERE Kullanici_Adi='"+ kullaniciAdi +"'";
+
+
+                    // SqlCommand nesnesi oluşturulması
+                    using (MySqlCommand command = new MySqlCommand(sqlQuery, connection))
+                    {
+                        // SqlDataReader nesnesi ile verilerin okunması
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            // Verilerin işlenmesi
+                            while (reader.Read())
+                            {
+                                // Örneğin, verilerin bir TextBox'a yazdırılması
+                                isim_soyisim = reader["Adi_Soyadi"].ToString();
+                                Console.WriteLine(isim_soyisim);
+                                MessageBox.Show(isim_soyisim);
+
+                                lblKullaniciAdi.Text = reader["Adi_Soyadi"].ToString();
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Hata durumu
+                    MessageBox.Show("Hata: " + ex.Message);
+                }
+            }
         }
 
         public anaSayfa()
@@ -66,17 +98,17 @@ namespace NYP_Arsiv_Otomasyonu
         
         private void girisSayfası_Load(object sender, EventArgs e)
         {
-            if(rol == "ADMIN")
+            if(rol == "admin")
             {
                 personelEkleButton.Visible = true;
                 personelEkleTxt.Visible = true;
             }
 
-            if(girisTuru==1)
+            /*if(girisTuru==1)
             {
                 personelEkleButton.Visible = true;
                 personelEkleTxt.Visible = true;
-            }
+            }*/
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             notlarTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);

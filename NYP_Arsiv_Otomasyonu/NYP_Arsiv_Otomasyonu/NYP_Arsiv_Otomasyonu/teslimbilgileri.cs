@@ -78,11 +78,11 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void teslimbilgileri_Load(object sender, EventArgs e)
         {
-            if (girisTuru == 1)
-            {
-                personelEkleButton.Visible = true;
-                personelEkleTxt.Visible = true;
-            }
+            //if (girisTuru == 1)
+            //{
+            //    personelEkleButton.Visible = true;
+            //    personelEkleTxt.Visible = true;
+            //}
 
             pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
             teslimBilgileriButton.BackColor = Color.FromArgb(43, 67, 106);

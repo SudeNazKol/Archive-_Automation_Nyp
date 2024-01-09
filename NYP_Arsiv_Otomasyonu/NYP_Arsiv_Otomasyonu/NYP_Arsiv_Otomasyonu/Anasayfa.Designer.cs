@@ -77,6 +77,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(102, 544);
@@ -363,7 +364,8 @@
             // lblKullaniciAdi
             // 
             this.lblKullaniciAdi.AutoSize = true;
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(304, 103);
+            this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(221, 72);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(44, 16);
             this.lblKullaniciAdi.TabIndex = 28;
