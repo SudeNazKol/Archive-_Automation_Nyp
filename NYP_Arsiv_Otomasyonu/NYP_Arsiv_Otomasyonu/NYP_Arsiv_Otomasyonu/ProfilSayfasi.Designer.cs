@@ -45,7 +45,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.avatar = new System.Windows.Forms.PictureBox();
             this.adSoyad = new System.Windows.Forms.Label();
             this.kullaniciAdiTxt = new System.Windows.Forms.Label();
             this.unvan = new System.Windows.Forms.Label();
@@ -54,6 +53,9 @@
             this.labelKullaniciAdi = new System.Windows.Forms.Label();
             this.labelUnvan = new System.Windows.Forms.Label();
             this.labelSifre = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -62,7 +64,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // personelEkleTxt
@@ -224,20 +228,13 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // avatar
-            // 
-            this.avatar.Location = new System.Drawing.Point(130, 29);
-            this.avatar.Name = "avatar";
-            this.avatar.Size = new System.Drawing.Size(135, 132);
-            this.avatar.TabIndex = 63;
-            this.avatar.TabStop = false;
-            // 
             // adSoyad
             // 
             this.adSoyad.AutoSize = true;
             this.adSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.adSoyad.ForeColor = System.Drawing.Color.White;
-            this.adSoyad.Location = new System.Drawing.Point(127, 210);
+            this.adSoyad.ForeColor = System.Drawing.Color.Black;
+            this.adSoyad.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.adSoyad.Location = new System.Drawing.Point(372, 284);
             this.adSoyad.Name = "adSoyad";
             this.adSoyad.Size = new System.Drawing.Size(108, 22);
             this.adSoyad.TabIndex = 64;
@@ -247,8 +244,9 @@
             // 
             this.kullaniciAdiTxt.AutoSize = true;
             this.kullaniciAdiTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kullaniciAdiTxt.ForeColor = System.Drawing.Color.White;
-            this.kullaniciAdiTxt.Location = new System.Drawing.Point(127, 249);
+            this.kullaniciAdiTxt.ForeColor = System.Drawing.Color.Black;
+            this.kullaniciAdiTxt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.kullaniciAdiTxt.Location = new System.Drawing.Point(372, 322);
             this.kullaniciAdiTxt.Name = "kullaniciAdiTxt";
             this.kullaniciAdiTxt.Size = new System.Drawing.Size(133, 22);
             this.kullaniciAdiTxt.TabIndex = 65;
@@ -259,8 +257,9 @@
             // 
             this.unvan.AutoSize = true;
             this.unvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.unvan.ForeColor = System.Drawing.Color.White;
-            this.unvan.Location = new System.Drawing.Point(126, 288);
+            this.unvan.ForeColor = System.Drawing.Color.Black;
+            this.unvan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.unvan.Location = new System.Drawing.Point(372, 363);
             this.unvan.Name = "unvan";
             this.unvan.Size = new System.Drawing.Size(79, 22);
             this.unvan.TabIndex = 66;
@@ -270,8 +269,9 @@
             // 
             this.sifre.AutoSize = true;
             this.sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sifre.ForeColor = System.Drawing.Color.White;
-            this.sifre.Location = new System.Drawing.Point(127, 327);
+            this.sifre.ForeColor = System.Drawing.Color.Black;
+            this.sifre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.sifre.Location = new System.Drawing.Point(372, 400);
             this.sifre.Name = "sifre";
             this.sifre.Size = new System.Drawing.Size(64, 22);
             this.sifre.TabIndex = 67;
@@ -280,46 +280,90 @@
             // labelAdSoyad
             // 
             this.labelAdSoyad.AutoSize = true;
-            this.labelAdSoyad.Location = new System.Drawing.Point(277, 215);
+            this.labelAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelAdSoyad.ForeColor = System.Drawing.Color.Black;
+            this.labelAdSoyad.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelAdSoyad.Location = new System.Drawing.Point(565, 284);
             this.labelAdSoyad.Name = "labelAdSoyad";
-            this.labelAdSoyad.Size = new System.Drawing.Size(0, 16);
+            this.labelAdSoyad.Size = new System.Drawing.Size(34, 22);
             this.labelAdSoyad.TabIndex = 68;
+            this.labelAdSoyad.Text = "....";
             this.labelAdSoyad.Click += new System.EventHandler(this.labelAdSoyad_Click);
             // 
             // labelKullaniciAdi
             // 
             this.labelKullaniciAdi.AutoSize = true;
-            this.labelKullaniciAdi.Location = new System.Drawing.Point(277, 254);
+            this.labelKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelKullaniciAdi.ForeColor = System.Drawing.Color.Black;
+            this.labelKullaniciAdi.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelKullaniciAdi.Location = new System.Drawing.Point(565, 322);
             this.labelKullaniciAdi.Name = "labelKullaniciAdi";
-            this.labelKullaniciAdi.Size = new System.Drawing.Size(0, 16);
+            this.labelKullaniciAdi.Size = new System.Drawing.Size(34, 22);
             this.labelKullaniciAdi.TabIndex = 69;
+            this.labelKullaniciAdi.Text = "....";
             this.labelKullaniciAdi.Click += new System.EventHandler(this.labelKullaniciAdi_Click);
             // 
             // labelUnvan
             // 
             this.labelUnvan.AutoSize = true;
-            this.labelUnvan.Location = new System.Drawing.Point(277, 294);
+            this.labelUnvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelUnvan.ForeColor = System.Drawing.Color.Black;
+            this.labelUnvan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelUnvan.Location = new System.Drawing.Point(565, 363);
             this.labelUnvan.Name = "labelUnvan";
-            this.labelUnvan.Size = new System.Drawing.Size(16, 16);
+            this.labelUnvan.Size = new System.Drawing.Size(34, 22);
             this.labelUnvan.TabIndex = 70;
-            this.labelUnvan.Text = "...";
+            this.labelUnvan.Text = "....";
             this.labelUnvan.Click += new System.EventHandler(this.labelUnvan_Click);
             // 
             // labelSifre
             // 
             this.labelSifre.AutoSize = true;
-            this.labelSifre.Location = new System.Drawing.Point(277, 337);
+            this.labelSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelSifre.ForeColor = System.Drawing.Color.Black;
+            this.labelSifre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelSifre.Location = new System.Drawing.Point(565, 400);
             this.labelSifre.Name = "labelSifre";
-            this.labelSifre.Size = new System.Drawing.Size(13, 16);
+            this.labelSifre.Size = new System.Drawing.Size(34, 22);
             this.labelSifre.TabIndex = 71;
-            this.labelSifre.Text = "..";
+            this.labelSifre.Text = "....";
             this.labelSifre.Click += new System.EventHandler(this.labelSifre_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(453, 63);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 72;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(95, 49);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(897, 177);
+            this.pictureBox3.TabIndex = 73;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox7.Location = new System.Drawing.Point(-2, 406);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(102, 78);
+            this.pictureBox7.TabIndex = 74;
+            this.pictureBox7.TabStop = false;
             // 
             // ProfilSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.labelSifre);
             this.Controls.Add(this.labelUnvan);
             this.Controls.Add(this.labelKullaniciAdi);
@@ -328,7 +372,6 @@
             this.Controls.Add(this.unvan);
             this.Controls.Add(this.kullaniciAdiTxt);
             this.Controls.Add(this.adSoyad);
-            this.Controls.Add(this.avatar);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.saatTxt);
             this.Controls.Add(this.personelEkleTxt);
@@ -343,9 +386,10 @@
             this.Controls.Add(this.arsivButton);
             this.Controls.Add(this.ajandaButton);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProfilSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProfilSayfasi";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.ProfilSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
@@ -355,7 +399,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,7 +424,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox avatar;
         private System.Windows.Forms.Label adSoyad;
         private System.Windows.Forms.Label kullaniciAdiTxt;
         private System.Windows.Forms.Label unvan;
@@ -387,5 +432,8 @@
         private System.Windows.Forms.Label labelKullaniciAdi;
         private System.Windows.Forms.Label labelUnvan;
         private System.Windows.Forms.Label labelSifre;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

@@ -130,7 +130,7 @@ namespace NYP_Arsiv_Otomasyonu
             notlarTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             textBox1.ForeColor = Color.FromArgb(58, 86, 131);
-          
+            lblKullaniciAdi.ForeColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
             profilButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -182,6 +182,7 @@ namespace NYP_Arsiv_Otomasyonu
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
+            this.Close();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -195,6 +196,7 @@ namespace NYP_Arsiv_Otomasyonu
         {
             teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
+            this.Close();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
@@ -202,30 +204,35 @@ namespace NYP_Arsiv_Otomasyonu
             
             personelEkle prs = new personelEkle(kullaniciAdi);
             prs.ShowDialog();
+            this.Close();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
+            this.Close();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
             teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
+            this.Close();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
             personelEkle prs = new personelEkle(kullaniciAdi);
             prs.ShowDialog();
+            this.Close();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
             ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
+            this.Close();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
@@ -233,6 +240,7 @@ namespace NYP_Arsiv_Otomasyonu
 
             ProfilSayfasi profilsayfasi = new ProfilSayfasi (kullaniciAdi);
             profilsayfasi.ShowDialog();
+            this.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

@@ -96,6 +96,7 @@ namespace NYP_Arsiv_Otomasyonu
             {
                 personelEkleButton.Visible = true;
                 personelEkleTxt.Visible = true;
+                silbutton.Visible = true;
             }
 
 
@@ -151,7 +152,7 @@ namespace NYP_Arsiv_Otomasyonu
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             dgvKullanicilar.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
             TabloyuDoldur();
-            label.Text = $"{dgvKullanicilar.RowCount}";
+            label.Text = $"{dgvKullanicilar.RowCount-1}";
 
         }
         private void button1_Click(object sender, EventArgs e)
@@ -174,7 +175,7 @@ namespace NYP_Arsiv_Otomasyonu
             TabloyuDoldur();
             
             MessageBox.Show("Eklendi!");
-            label.Text = $"{dgvKullanicilar.RowCount}";
+            label.Text = $"{dgvKullanicilar.RowCount - 1}";
 
 
 
@@ -194,7 +195,7 @@ namespace NYP_Arsiv_Otomasyonu
                 MessageBox.Show("Kayıt Silindi!");
                 connection.Close();
                TabloyuDoldur();
-                label.Text = $"{dgvKullanicilar.RowCount}";
+                label.Text = $"{dgvKullanicilar.RowCount-1}";
                 
             }
         }
@@ -220,7 +221,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void arabutton_Click(object sender, EventArgs e)
         {connection.Open();
-            MySqlCommand komut =new MySqlCommand("Select * from users where konum like '%" +txtara.Text+"%'",connection);
+            MySqlCommand komut =new MySqlCommand("Select * from users where Evrak_adi like '%" +txtara.Text+"%'",connection);
             MySqlDataAdapter da = new MySqlDataAdapter(komut);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -350,9 +351,9 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void katSayisiTxt_Click(object sender, EventArgs e)
         {
-            int kayitsayisi;
+            /*int kayitsayisi;
             kayitsayisi = dgvKullanicilar.RowCount;
-            label.Text = "Toplam Kayıt Sayısı: " + kayitsayisi.ToString();
+            label.Text = "Toplam Kayıt Sayısı: " + kayitsayisi.ToString();*/
         }
 
         private void evragınTuruComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -364,6 +365,11 @@ namespace NYP_Arsiv_Otomasyonu
         {
             saatTxt.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void txtara_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

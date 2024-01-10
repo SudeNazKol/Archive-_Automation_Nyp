@@ -215,7 +215,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(268, 75);
+            this.pictureBox3.Location = new System.Drawing.Point(265, 75);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,12 +232,13 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 39;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(680, 75);
+            this.pictureBox5.Location = new System.Drawing.Point(677, 75);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -250,7 +251,7 @@
             this.evrakEkleTxt.AutoSize = true;
             this.evrakEkleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakEkleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakEkleTxt.Location = new System.Drawing.Point(681, 178);
+            this.evrakEkleTxt.Location = new System.Drawing.Point(678, 178);
             this.evrakEkleTxt.Name = "evrakEkleTxt";
             this.evrakEkleTxt.Size = new System.Drawing.Size(94, 18);
             this.evrakEkleTxt.TabIndex = 41;
@@ -267,6 +268,7 @@
             this.evrakDuzenleTxt.Size = new System.Drawing.Size(117, 18);
             this.evrakDuzenleTxt.TabIndex = 42;
             this.evrakDuzenleTxt.Text = "Evrak Düzenle";
+            this.evrakDuzenleTxt.Visible = false;
             this.evrakDuzenleTxt.Click += new System.EventHandler(this.evrakDuzenleTxt_Click);
             // 
             // evrakGoruntuleTxt
@@ -274,7 +276,7 @@
             this.evrakGoruntuleTxt.AutoSize = true;
             this.evrakGoruntuleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakGoruntuleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakGoruntuleTxt.Location = new System.Drawing.Point(249, 178);
+            this.evrakGoruntuleTxt.Location = new System.Drawing.Point(246, 178);
             this.evrakGoruntuleTxt.Name = "evrakGoruntuleTxt";
             this.evrakGoruntuleTxt.Size = new System.Drawing.Size(130, 18);
             this.evrakGoruntuleTxt.TabIndex = 43;
@@ -343,9 +345,10 @@
             this.Controls.Add(this.arsivButton);
             this.Controls.Add(this.ajandaButton);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ArsivSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ArsivSayfasi";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.ArsivSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();

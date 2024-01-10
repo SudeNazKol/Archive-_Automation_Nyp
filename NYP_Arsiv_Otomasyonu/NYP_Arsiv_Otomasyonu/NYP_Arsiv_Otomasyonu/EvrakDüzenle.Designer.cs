@@ -355,7 +355,7 @@
             this.evraksilbutton.Name = "evraksilbutton";
             this.evraksilbutton.Size = new System.Drawing.Size(115, 39);
             this.evraksilbutton.TabIndex = 72;
-            this.evraksilbutton.Text = "Evrak Silme";
+            this.evraksilbutton.Text = "Sil";
             this.evraksilbutton.UseVisualStyleBackColor = true;
             this.evraksilbutton.Click += new System.EventHandler(this.evraksilbutton_Click);
             // 
@@ -429,7 +429,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 577);
+            this.ClientSize = new System.Drawing.Size(991, 540);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.rafNoTxt);
             this.Controls.Add(this.rafNo);
@@ -460,9 +460,10 @@
             this.Controls.Add(this.arsivButton);
             this.Controls.Add(this.ajandaButton);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EvrakDüzenle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EvrakDüzenle";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.EvrakDüzenle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();

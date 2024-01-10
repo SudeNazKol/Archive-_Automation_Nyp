@@ -53,6 +53,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.kaydetButton = new System.Windows.Forms.Button();
             this.lblKullaniciAdi = new System.Windows.Forms.Label();
+            this.PersonelImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -63,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PersonelImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -300,19 +302,30 @@
             this.lblKullaniciAdi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblKullaniciAdi.AutoSize = true;
             this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
-            this.lblKullaniciAdi.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(106, 10);
+            this.lblKullaniciAdi.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(142, 10);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(73, 25);
             this.lblKullaniciAdi.TabIndex = 28;
             this.lblKullaniciAdi.Text = "label1";
             this.lblKullaniciAdi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // PersonelImage
+            // 
+            this.PersonelImage.Image = ((System.Drawing.Image)(resources.GetObject("PersonelImage.Image")));
+            this.PersonelImage.Location = new System.Drawing.Point(107, 6);
+            this.PersonelImage.Name = "PersonelImage";
+            this.PersonelImage.Size = new System.Drawing.Size(29, 29);
+            this.PersonelImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PersonelImage.TabIndex = 29;
+            this.PersonelImage.TabStop = false;
+            // 
             // anaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.PersonelImage);
             this.Controls.Add(this.lblKullaniciAdi);
             this.Controls.Add(this.kaydetButton);
             this.Controls.Add(this.pictureBox7);
@@ -335,6 +348,7 @@
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "anaSayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anasayfa";
@@ -349,6 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PersonelImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,6 +394,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button kaydetButton;
         private System.Windows.Forms.Label lblKullaniciAdi;
+        private System.Windows.Forms.PictureBox PersonelImage;
     }
 }
 

@@ -45,6 +45,7 @@ namespace NYP_Arsiv_Otomasyonu
             {
                 personelEkleButton.Visible = true;
                 personelEkleTxt.Visible = true;
+                
             }
 
 
@@ -264,6 +265,11 @@ namespace NYP_Arsiv_Otomasyonu
         private void evrakkodutxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void TurEkleButton_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

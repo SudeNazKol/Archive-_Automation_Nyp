@@ -398,9 +398,10 @@
             this.Controls.Add(this.AdSoyad);
             this.Controls.Add(this.SifreTxt);
             this.Controls.Add(this.adSoyadTxt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "personelEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "personelEklecs";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.personelEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();

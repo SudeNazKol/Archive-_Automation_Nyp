@@ -87,6 +87,8 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void ajandaButton_Click(object sender, EventArgs e)
         {
+            anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
+            anasayfa.ShowDialog();
             this.Close();
         }
 
@@ -120,6 +122,9 @@ namespace NYP_Arsiv_Otomasyonu
             {
                 personelEkleButton.Visible = true;
                 personelEkleTxt.Visible = true;
+                evrakDuzenleTxt.Visible = true;
+                pictureBox4.Visible = true;
+
             }
 
             /*if (girisTuru == 1)
@@ -155,6 +160,7 @@ namespace NYP_Arsiv_Otomasyonu
             arsivButton.BackColor = Color.FromArgb(43, 67, 106);
             arsivButton.BringToFront();
             arsivTxt.BringToFront();
+            
         }
 
         private void evrakGoruntuleTxt_Click(object sender, EventArgs e)

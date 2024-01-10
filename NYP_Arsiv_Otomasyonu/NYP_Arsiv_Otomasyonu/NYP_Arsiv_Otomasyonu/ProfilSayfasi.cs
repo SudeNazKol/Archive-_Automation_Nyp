@@ -20,7 +20,9 @@ namespace NYP_Arsiv_Otomasyonu
         {
 
             InitializeComponent();
-            
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+
             this.kullaniciAdi = kullaniciAdi;
             var user = new User(kullaniciAdi);
             getUserData(kullaniciAdi);
@@ -58,26 +60,35 @@ namespace NYP_Arsiv_Otomasyonu
             }*/
 
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
-           
-
+            pictureBox2.BackColor = Color.FromArgb(58, 86, 131);
+            pictureBox3.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
-            profilButton.BackColor = Color.FromArgb(58, 86, 131);
+            
             exitButton.BackColor = Color.FromArgb(58, 86, 131);
             ajandaTxt.BackColor = Color.FromArgb(58, 86, 131);
             arsivTxt.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriTxt.BackColor = Color.FromArgb(58, 86, 131);
-            profilTxt.BackColor = Color.FromArgb(58, 86, 131);
+           
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             adSoyad.ForeColor = Color.FromArgb(58, 86, 131);
             kullaniciAdiTxt.ForeColor = Color.FromArgb(58, 86, 131);
             unvan.ForeColor = Color.FromArgb(58, 86, 131);
             sifre.ForeColor = Color.FromArgb(58, 86, 131);
-
+            labelAdSoyad.ForeColor = Color.FromArgb(58, 86, 131);
+            labelKullaniciAdi.ForeColor = Color.FromArgb(58, 86, 131);
+            labelSifre.ForeColor = Color.FromArgb(58, 86, 131);
+            labelUnvan.ForeColor = Color.FromArgb(58, 86, 131);
+            pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
+            profilButton.BackColor = Color.FromArgb(43, 67, 106);
+           profilTxt.BackColor = Color.FromArgb(43, 67, 106);
+            pictureBox2.BringToFront();
+           profilButton.BringToFront();
+            profilTxt.BringToFront();
         }
 
         public void getUserData(string kullaniciAdi)

@@ -100,6 +100,7 @@ namespace NYP_Arsiv_Otomasyonu
             teslimBilgileriTxt.BackColor = Color.FromArgb(58, 86, 131);
             profilTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelEkleButton.BackColor = Color.FromArgb(58, 86, 131);
+            personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             rafNo.ForeColor = Color.FromArgb(58, 86, 131);
             rafNoTxt.ForeColor = Color.FromArgb(58, 86, 131);
             evrakaditxt.ForeColor = Color.FromArgb(58, 86, 131);

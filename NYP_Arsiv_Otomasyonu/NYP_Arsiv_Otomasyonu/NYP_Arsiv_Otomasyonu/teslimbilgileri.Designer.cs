@@ -227,7 +227,7 @@
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label.Location = new System.Drawing.Point(875, 515);
+            this.label.Location = new System.Drawing.Point(875, 516);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(89, 18);
             this.label.TabIndex = 23;
@@ -250,12 +250,13 @@
             // 
             this.silbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.silbutton.ForeColor = System.Drawing.Color.White;
-            this.silbutton.Location = new System.Drawing.Point(613, 209);
+            this.silbutton.Location = new System.Drawing.Point(473, 209);
             this.silbutton.Name = "silbutton";
             this.silbutton.Size = new System.Drawing.Size(114, 30);
             this.silbutton.TabIndex = 25;
             this.silbutton.Text = "Sil";
             this.silbutton.UseVisualStyleBackColor = true;
+            this.silbutton.Visible = false;
             this.silbutton.Click += new System.EventHandler(this.silbutton_Click);
             // 
             // txtkonum
@@ -281,7 +282,7 @@
             // 
             this.güncellebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.güncellebutton.ForeColor = System.Drawing.Color.White;
-            this.güncellebutton.Location = new System.Drawing.Point(473, 209);
+            this.güncellebutton.Location = new System.Drawing.Point(613, 209);
             this.güncellebutton.Name = "güncellebutton";
             this.güncellebutton.Size = new System.Drawing.Size(114, 30);
             this.güncellebutton.TabIndex = 28;
@@ -293,7 +294,7 @@
             // 
             this.arabutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.arabutton.ForeColor = System.Drawing.Color.White;
-            this.arabutton.Location = new System.Drawing.Point(908, 153);
+            this.arabutton.Location = new System.Drawing.Point(909, 159);
             this.arabutton.Name = "arabutton";
             this.arabutton.Size = new System.Drawing.Size(75, 36);
             this.arabutton.TabIndex = 29;
@@ -304,21 +305,22 @@
             // txtara
             // 
             this.txtara.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtara.Location = new System.Drawing.Point(792, 160);
+            this.txtara.Location = new System.Drawing.Point(795, 165);
             this.txtara.Name = "txtara";
             this.txtara.Size = new System.Drawing.Size(108, 24);
             this.txtara.TabIndex = 30;
+            this.txtara.TextChanged += new System.EventHandler(this.txtara_TextChanged);
             // 
             // aranacakKodTxt
             // 
             this.aranacakKodTxt.AutoSize = true;
             this.aranacakKodTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.aranacakKodTxt.ForeColor = System.Drawing.Color.White;
-            this.aranacakKodTxt.Location = new System.Drawing.Point(702, 153);
+            this.aranacakKodTxt.Location = new System.Drawing.Point(693, 153);
             this.aranacakKodTxt.Name = "aranacakKodTxt";
-            this.aranacakKodTxt.Size = new System.Drawing.Size(78, 36);
+            this.aranacakKodTxt.Size = new System.Drawing.Size(89, 36);
             this.aranacakKodTxt.TabIndex = 31;
-            this.aranacakKodTxt.Text = "Aranacak\r\n    Kod :";
+            this.aranacakKodTxt.Text = "Aranacak\r\nEvrak Adı :";
             // 
             // personelEkleTxt
             // 
@@ -605,9 +607,10 @@
             this.Controls.Add(this.teslimAlmaTarihiTxt);
             this.Controls.Add(this.teslimAlanTxt);
             this.Controls.Add(this.evrakAdiTxt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "teslimbilgileri";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "teslimbilgileri";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.teslimbilgileri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();

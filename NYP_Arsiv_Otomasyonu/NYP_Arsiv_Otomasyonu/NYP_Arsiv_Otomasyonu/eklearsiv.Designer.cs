@@ -441,9 +441,10 @@
             this.Controls.Add(this.evrakBırakmaTarihi);
             this.Controls.Add(this.evrakAdi);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "eklearsiv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "eklearsiv";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.eklearsiv_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).EndInit();

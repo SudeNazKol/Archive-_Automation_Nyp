@@ -80,14 +80,15 @@ namespace NYP_Arsiv_Otomasyonu
             personelEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             aratxt.ForeColor = Color.FromArgb(58, 86, 131);
-            searchButton.BackColor = Color.FromArgb(58, 86, 131);
+            label1.ForeColor = Color.FromArgb(58, 86, 131);
+            label2.ForeColor = Color.FromArgb(58, 86, 131);
             evraklistelemedata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
             pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
             arsivTxt.BackColor = Color.FromArgb(43, 67, 106);
             arsivButton.BackColor = Color.FromArgb(43, 67, 106);
             arsivButton.BringToFront();
             arsivTxt.BringToFront();
-            label2.Text = $"{evraklistelemedata.RowCount}";
+            label2.Text = $"{evraklistelemedata.RowCount-1}";
         }
 
         private void ajandaButton_Click(object sender, EventArgs e)
@@ -176,7 +177,7 @@ namespace NYP_Arsiv_Otomasyonu
             da.Fill(ds);
             evraklistelemedata.DataSource = ds.Tables[0];
             connection.Close();
-            label2.Text = $"{evraklistelemedata.RowCount}";
+            label2.Text = $"{evraklistelemedata.RowCount-1}";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
