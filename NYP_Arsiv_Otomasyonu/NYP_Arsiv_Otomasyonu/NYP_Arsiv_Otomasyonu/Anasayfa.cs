@@ -81,7 +81,7 @@ namespace NYP_Arsiv_Otomasyonu
                                 //Console.WriteLine(isim_soyisim);
                                 //MessageBox.Show(isim_soyisim);
 
-                                lblKullaniciAdi.Text = reader["Adi_Soyadi"].ToString();
+                                lblKullaniciAdi.Text = "Hoşgeldin " + reader["Adi_Soyadi"].ToString();
                             }
                         }
                     }
@@ -129,8 +129,8 @@ namespace NYP_Arsiv_Otomasyonu
             pictureBox1.BackColor = Color.FromArgb(58, 86, 131);
             notlarTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
-            searchButton.BackColor = Color.FromArgb(58, 86, 131);
             textBox1.ForeColor = Color.FromArgb(58, 86, 131);
+          
             arsivButton.BackColor = Color.FromArgb(58, 86, 131);
             teslimBilgileriButton.BackColor = Color.FromArgb(58, 86, 131);
             profilButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -278,6 +278,11 @@ namespace NYP_Arsiv_Otomasyonu
         }
 
         private void avatar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
         {
 
         }

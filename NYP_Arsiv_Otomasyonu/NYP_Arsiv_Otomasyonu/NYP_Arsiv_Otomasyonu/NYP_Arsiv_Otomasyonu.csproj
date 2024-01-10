@@ -111,6 +111,12 @@
     <Compile Include="ArsivSayfasi.Designer.cs">
       <DependentUpon>ArsivSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="BilgiSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiSayfasi.Designer.cs">
+      <DependentUpon>BilgiSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="eklearsiv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArsivSayfasi.resx">
       <DependentUpon>ArsivSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiSayfasi.resx">
+      <DependentUpon>BilgiSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eklearsiv.resx">
       <DependentUpon>eklearsiv.cs</DependentUpon>

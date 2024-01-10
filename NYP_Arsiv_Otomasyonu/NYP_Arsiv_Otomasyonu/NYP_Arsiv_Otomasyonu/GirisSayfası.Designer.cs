@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisSayfası));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.adSoyadTxt = new System.Windows.Forms.TextBox();
             this.sifreTxt = new System.Windows.Forms.TextBox();
             this.adminRadioButton = new System.Windows.Forms.RadioButton();
@@ -41,11 +39,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.bilgiButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bilgiButton)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -58,26 +56,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(879, 40);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 40);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
             // adSoyadTxt
             // 
             this.adSoyadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -87,7 +65,10 @@
             this.adSoyadTxt.Name = "adSoyadTxt";
             this.adSoyadTxt.Size = new System.Drawing.Size(219, 37);
             this.adSoyadTxt.TabIndex = 5;
+            this.adSoyadTxt.Tag = "";
+            this.adSoyadTxt.Text = "Kullanıcı Adı";
             this.adSoyadTxt.TextChanged += new System.EventHandler(this.adSoyadTxt_TextChanged);
+            this.adSoyadTxt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.adSoyadTxt_MouseDown);
             // 
             // sifreTxt
             // 
@@ -98,14 +79,16 @@
             this.sifreTxt.Name = "sifreTxt";
             this.sifreTxt.Size = new System.Drawing.Size(219, 35);
             this.sifreTxt.TabIndex = 6;
+            this.sifreTxt.Text = "Şifre";
             this.sifreTxt.TextChanged += new System.EventHandler(this.sifreTxt_TextChanged);
+            this.sifreTxt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sifreTxt_MouseDown);
             // 
             // adminRadioButton
             // 
             this.adminRadioButton.AutoSize = true;
             this.adminRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.adminRadioButton.ForeColor = System.Drawing.Color.White;
-            this.adminRadioButton.Location = new System.Drawing.Point(440, 347);
+            this.adminRadioButton.Location = new System.Drawing.Point(411, 355);
             this.adminRadioButton.Name = "adminRadioButton";
             this.adminRadioButton.Size = new System.Drawing.Size(86, 26);
             this.adminRadioButton.TabIndex = 7;
@@ -119,7 +102,7 @@
             this.personelRadioButton.AutoSize = true;
             this.personelRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.personelRadioButton.ForeColor = System.Drawing.Color.White;
-            this.personelRadioButton.Location = new System.Drawing.Point(440, 379);
+            this.personelRadioButton.Location = new System.Drawing.Point(520, 355);
             this.personelRadioButton.Name = "personelRadioButton";
             this.personelRadioButton.Size = new System.Drawing.Size(110, 26);
             this.personelRadioButton.TabIndex = 8;
@@ -132,9 +115,9 @@
             // 
             this.girisButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.girisButton.ForeColor = System.Drawing.Color.Black;
-            this.girisButton.Location = new System.Drawing.Point(406, 431);
+            this.girisButton.Location = new System.Drawing.Point(411, 398);
             this.girisButton.Name = "girisButton";
-            this.girisButton.Size = new System.Drawing.Size(200, 58);
+            this.girisButton.Size = new System.Drawing.Size(219, 52);
             this.girisButton.TabIndex = 10;
             this.girisButton.Text = "GİRİŞ";
             this.girisButton.UseVisualStyleBackColor = true;
@@ -165,11 +148,23 @@
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
             // 
+            // bilgiButton
+            // 
+            this.bilgiButton.Image = ((System.Drawing.Image)(resources.GetObject("bilgiButton.Image")));
+            this.bilgiButton.Location = new System.Drawing.Point(952, 498);
+            this.bilgiButton.Name = "bilgiButton";
+            this.bilgiButton.Size = new System.Drawing.Size(30, 30);
+            this.bilgiButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bilgiButton.TabIndex = 13;
+            this.bilgiButton.TabStop = false;
+            this.bilgiButton.Click += new System.EventHandler(this.bilgiButton_Click);
+            // 
             // GirisSayfası
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 540);
+            this.ClientSize = new System.Drawing.Size(994, 540);
+            this.Controls.Add(this.bilgiButton);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.girisButton);
@@ -177,18 +172,16 @@
             this.Controls.Add(this.adminRadioButton);
             this.Controls.Add(this.sifreTxt);
             this.Controls.Add(this.adSoyadTxt);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GirisSayfası";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GirisSayfası";
+            this.Text = "Arşiv Otomasyonu";
             this.Load += new System.EventHandler(this.GirisSayfası_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bilgiButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,8 +190,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox adSoyadTxt;
         private System.Windows.Forms.TextBox sifreTxt;
         private System.Windows.Forms.RadioButton adminRadioButton;
@@ -207,5 +198,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox bilgiButton;
     }
 }

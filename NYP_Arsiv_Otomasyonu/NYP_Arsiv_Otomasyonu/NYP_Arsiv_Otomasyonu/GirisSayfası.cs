@@ -55,8 +55,8 @@ namespace NYP_Arsiv_Otomasyonu
                 {
                     // Hata
                     MessageBox.Show("Giriş Başarısız!");
-                    GirisSayfası girissayfası = new GirisSayfası();
-                    girissayfası.ShowDialog();
+                    adSoyadTxt.Text = "";
+                    sifreTxt.Text="";
                 }
             }
             else if(personelRadioButton.Checked)
@@ -140,6 +140,26 @@ namespace NYP_Arsiv_Otomasyonu
         {
 
         }
-       
+
+        private void bilgiButton_Click(object sender, EventArgs e)
+        {
+            BilgiSayfasi bilgiSayfasi = new BilgiSayfasi();
+            bilgiSayfasi.ShowDialog();
+        }
+
+        private void adSoyadTxt_MouseDown(object sender, MouseEventArgs e)
+        {
+            adSoyadTxt.Text="";
+        }
+
+        private void sifreTxt_MouseDown(object sender, MouseEventArgs e)
+        {
+            sifreTxt.Text = "";
+        }
+
+        private void sifreTxt_MouseEnter(object sender, EventArgs e)
+        {
+            sifreTxt.Text="Şifre buraya girr";
+        }
     }
 }
