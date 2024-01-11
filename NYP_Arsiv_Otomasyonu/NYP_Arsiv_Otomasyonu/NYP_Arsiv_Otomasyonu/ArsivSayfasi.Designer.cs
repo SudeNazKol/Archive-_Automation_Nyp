@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArsivSayfasi));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.personelEkleButton = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.profilButton = new System.Windows.Forms.PictureBox();
@@ -53,6 +56,7 @@
             this.saatTxt = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -66,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // personelEkleButton
@@ -205,9 +210,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(95, 63);
+            this.pictureBox2.Location = new System.Drawing.Point(95, 48);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(897, 153);
+            this.pictureBox2.Size = new System.Drawing.Size(897, 113);
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -215,9 +220,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(265, 75);
+            this.pictureBox3.Location = new System.Drawing.Point(283, 60);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
@@ -226,9 +231,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(478, 75);
+            this.pictureBox4.Location = new System.Drawing.Point(471, 60);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox4.Size = new System.Drawing.Size(70, 70);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 39;
             this.pictureBox4.TabStop = false;
@@ -238,9 +243,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(677, 75);
+            this.pictureBox5.Location = new System.Drawing.Point(666, 60);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox5.Size = new System.Drawing.Size(70, 70);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 40;
             this.pictureBox5.TabStop = false;
@@ -251,7 +256,7 @@
             this.evrakEkleTxt.AutoSize = true;
             this.evrakEkleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakEkleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakEkleTxt.Location = new System.Drawing.Point(678, 178);
+            this.evrakEkleTxt.Location = new System.Drawing.Point(654, 133);
             this.evrakEkleTxt.Name = "evrakEkleTxt";
             this.evrakEkleTxt.Size = new System.Drawing.Size(94, 18);
             this.evrakEkleTxt.TabIndex = 41;
@@ -263,7 +268,7 @@
             this.evrakDuzenleTxt.AutoSize = true;
             this.evrakDuzenleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakDuzenleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakDuzenleTxt.Location = new System.Drawing.Point(468, 178);
+            this.evrakDuzenleTxt.Location = new System.Drawing.Point(445, 133);
             this.evrakDuzenleTxt.Name = "evrakDuzenleTxt";
             this.evrakDuzenleTxt.Size = new System.Drawing.Size(117, 18);
             this.evrakDuzenleTxt.TabIndex = 42;
@@ -276,7 +281,7 @@
             this.evrakGoruntuleTxt.AutoSize = true;
             this.evrakGoruntuleTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.evrakGoruntuleTxt.ForeColor = System.Drawing.Color.White;
-            this.evrakGoruntuleTxt.Location = new System.Drawing.Point(246, 178);
+            this.evrakGoruntuleTxt.Location = new System.Drawing.Point(251, 133);
             this.evrakGoruntuleTxt.Name = "evrakGoruntuleTxt";
             this.evrakGoruntuleTxt.Size = new System.Drawing.Size(130, 18);
             this.evrakGoruntuleTxt.TabIndex = 43;
@@ -318,11 +323,30 @@
             this.pictureBox7.TabIndex = 46;
             this.pictureBox7.TabStop = false;
             // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(106, 167);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Konum";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(873, 363);
+            this.chart1.TabIndex = 47;
+            this.chart1.Text = "chart1";
+            // 
             // ArsivSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 540);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.saatTxt);
@@ -363,6 +387,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,5 +418,6 @@
         private System.Windows.Forms.Label saatTxt;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

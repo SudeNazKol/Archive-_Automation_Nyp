@@ -26,6 +26,7 @@ namespace NYP_Arsiv_Otomasyonu
 
             getUserData(kullaniciAdi);
         }
+        MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.148;Port=3306;Database=NYP23-15;User=NYP23-15;Password=Uludag9512357.;");
 
         public ArsivSayfasi()
         {
@@ -152,6 +153,7 @@ namespace NYP_Arsiv_Otomasyonu
             evrakEkleTxt.BackColor = Color.FromArgb(58, 86, 131);
             saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             pictureBox3.BackColor = Color.FromArgb(58, 86, 131);
+            
             pictureBox4.BackColor = Color.FromArgb(58, 86, 131);
             pictureBox5.BackColor = Color.FromArgb(58, 86, 131);
             ajandaButton.BackColor = Color.FromArgb(58, 86, 131);
@@ -160,7 +162,14 @@ namespace NYP_Arsiv_Otomasyonu
             arsivButton.BackColor = Color.FromArgb(43, 67, 106);
             arsivButton.BringToFront();
             arsivTxt.BringToFront();
-            
+            baglanti.Open();
+            MySqlCommand komut = new MySqlCommand("Select Evrak_Turu, Konum From archives", baglanti);
+            MySqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                chart1.Series["Konum"].Points.AddXY(oku[0].ToString(), oku[1].ToString());
+            }
+            baglanti.Close();
         }
 
         private void evrakGoruntuleTxt_Click(object sender, EventArgs e)
