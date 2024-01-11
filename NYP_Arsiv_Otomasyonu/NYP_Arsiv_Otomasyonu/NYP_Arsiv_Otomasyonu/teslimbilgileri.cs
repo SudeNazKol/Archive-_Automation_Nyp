@@ -235,15 +235,15 @@ namespace NYP_Arsiv_Otomasyonu
         private void dgvKullanicilar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int alanseçili = dgvKullanicilar.SelectedCells[0].RowIndex;
-            string Evrak_adi = dgvKullanicilar.Rows[alanseçili].Cells[1].Value.ToString();
-            string Teslim_Alan = dgvKullanicilar.Rows[alanseçili].Cells[2].Value.ToString();
-            string Unvan = dgvKullanicilar.Rows[alanseçili].Cells[3].Value.ToString();
-            string Evrak_Turu = dgvKullanicilar.Rows[alanseçili].Cells[4].Value.ToString();
-            string Teslim_Alma_Tarihi = dgvKullanicilar.Rows[alanseçili].Cells[5].Value.ToString();
-            string Teslim_Birakma_Tarihi = dgvKullanicilar.Rows[alanseçili].Cells[6].Value.ToString();
-            string Teslim_Neden = dgvKullanicilar.Rows[alanseçili].Cells[7].Value.ToString();
-            string Konum = dgvKullanicilar.Rows[alanseçili].Cells[8].Value.ToString();
-            string Raf_No = dgvKullanicilar.Rows[alanseçili].Cells[9].Value.ToString();
+            string Evrak_adi = dgvKullanicilar.Rows[alanseçili].Cells[0].Value.ToString();
+            string Teslim_Alan = dgvKullanicilar.Rows[alanseçili].Cells[1].Value.ToString();
+            string Unvan = dgvKullanicilar.Rows[alanseçili].Cells[2].Value.ToString();
+            string Evrak_Turu = dgvKullanicilar.Rows[alanseçili].Cells[3].Value.ToString();
+            string Teslim_Alma_Tarihi = dgvKullanicilar.Rows[alanseçili].Cells[4].Value.ToString();
+            string Teslim_Birakma_Tarihi = dgvKullanicilar.Rows[alanseçili].Cells[5].Value.ToString();
+            string Teslim_Neden = dgvKullanicilar.Rows[alanseçili].Cells[6].Value.ToString();
+            string Konum = dgvKullanicilar.Rows[alanseçili].Cells[7].Value.ToString();
+            string Raf_No = dgvKullanicilar.Rows[alanseçili].Cells[8].Value.ToString();
 
             txtevrakadı.Text = Evrak_adi;
             txtteslimalan.Text = Teslim_Alan;

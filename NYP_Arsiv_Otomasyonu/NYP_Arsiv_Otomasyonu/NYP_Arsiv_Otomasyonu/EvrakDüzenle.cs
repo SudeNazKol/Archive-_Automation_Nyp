@@ -207,12 +207,12 @@ namespace NYP_Arsiv_Otomasyonu
         {
             
             int seçilialan = evrakduzenledata.SelectedCells[0].RowIndex;
-            string Evrak_Adi = evrakduzenledata.Rows[seçilialan].Cells[1].Value.ToString();
-            string Unvan = evrakduzenledata.Rows[seçilialan].Cells[2].Value.ToString();
-            string Evrak_Tarih = evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
-            string Konum = evrakduzenledata.Rows[seçilialan].Cells[4].Value.ToString();
-            string Evrak_Turu = evrakduzenledata.Rows[seçilialan].Cells[5].Value.ToString();
-            string Raf_No = evrakduzenledata.Rows[seçilialan].Cells[6].Value.ToString();
+            string Evrak_Adi = evrakduzenledata.Rows[seçilialan].Cells[0].Value.ToString();
+            string Unvan = evrakduzenledata.Rows[seçilialan].Cells[1].Value.ToString();
+            string Evrak_Tarih = evrakduzenledata.Rows[seçilialan].Cells[2].Value.ToString();
+            string Konum = evrakduzenledata.Rows[seçilialan].Cells[3].Value.ToString();
+            string Evrak_Turu = evrakduzenledata.Rows[seçilialan].Cells[4].Value.ToString();
+            string Raf_No = evrakduzenledata.Rows[seçilialan].Cells[5].Value.ToString();
 
 
             evrakaditxt.Text = Evrak_Adi;
