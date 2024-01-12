@@ -21,7 +21,9 @@ namespace NYP_Arsiv_Otomasyonu
         public personelEkle()
         {
             InitializeComponent();
-           
+            saatTxt.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+
             this.Controls.Add(personelekledata);
         }
 
