@@ -142,63 +142,63 @@ namespace NYP_Arsiv_Otomasyonu
         {
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
             teslimbilgileri Teslimbilgileri = new teslimbilgileri(kullaniciAdi);
             Teslimbilgileri.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
             teslimbilgileri Teslimbilgileri = new teslimbilgileri(kullaniciAdi);
             Teslimbilgileri.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
             personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
             personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
-            this.Close();
-        }
+            this.Hide();
+        }   
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             GirisSayfası girisSayfası = new GirisSayfası();
             girisSayfası.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

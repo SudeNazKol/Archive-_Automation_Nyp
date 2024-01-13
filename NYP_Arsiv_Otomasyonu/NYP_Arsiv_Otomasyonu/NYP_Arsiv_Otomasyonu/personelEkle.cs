@@ -21,10 +21,9 @@ namespace NYP_Arsiv_Otomasyonu
         public personelEkle()
         {
             InitializeComponent();
-            saatTxt.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
-
+           
             this.Controls.Add(personelekledata);
+           
         }
 
         public personelEkle(string kullaniciAdi)
@@ -179,7 +178,6 @@ namespace NYP_Arsiv_Otomasyonu
             silButton.BackColor = Color.FromArgb(58, 86, 131);
             düzenleButton.BackColor = Color.FromArgb(58, 86, 131);
             ekleButton.BackColor = Color.FromArgb(58, 86, 131);
-            saatTxt.BackColor = Color.FromArgb(58, 86, 131);
             personelekledata.DefaultCellStyle.ForeColor = Color.FromArgb(58, 86, 131);
             pictureBox7.BackColor = Color.FromArgb(43, 67, 106);
             personelEkleButton.BackColor = Color.FromArgb(43, 67, 106);
@@ -193,63 +191,63 @@ namespace NYP_Arsiv_Otomasyonu
         {
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivsayfası = new ArsivSayfasi(kullaniciAdi);
             arsivsayfası.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivsayfası = new ArsivSayfasi(kullaniciAdi);
             arsivsayfası.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
             teslimbilgileri teslimBilgileri = new teslimbilgileri(kullaniciAdi);
             teslimBilgileri.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
             teslimbilgileri teslimBilgileri = new teslimbilgileri(kullaniciAdi);
             teslimBilgileri.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
               ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
               profilsayfasi.ShowDialog();
-              this.Close();
+              this.Hide();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
               ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             GirisSayfası girisSayfası = new GirisSayfası();
             girisSayfası.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -321,10 +319,11 @@ namespace NYP_Arsiv_Otomasyonu
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        
+
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
-            saatTxt.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
+           
         }
     }
-}
+}       

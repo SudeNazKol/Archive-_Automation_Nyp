@@ -90,28 +90,28 @@ namespace NYP_Arsiv_Otomasyonu
         {
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void teslimBilgileriButton_Click(object sender, EventArgs e)
         {
             teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             EvrakGoruntule evrakGoruntule = new EvrakGoruntule(kullaniciAdi);
             evrakGoruntule.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             eklearsiv eklarsv = new eklearsiv(kullaniciAdi);
             eklarsv.ShowDialog();
-            this.Close();
+            this.Hide();
         }
         
 
@@ -177,77 +177,77 @@ namespace NYP_Arsiv_Otomasyonu
 
             EvrakGoruntule evrakGoruntule = new EvrakGoruntule(kullaniciAdi);
             evrakGoruntule.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
         {
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void teslimBilgileriTxt_Click(object sender, EventArgs e)
         {
             teslimbilgileri tslm = new teslimbilgileri(kullaniciAdi);
             tslm.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
             personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
             personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
             ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
             profilsayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
              ProfilSayfasi profilsayfasi = new ProfilSayfasi(kullaniciAdi);
            profilsayfasi.ShowDialog();
-           this.Close();
+           this.Hide();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             GirisSayfası girisSayfasi = new GirisSayfası();
             girisSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void evrakEkleTxt_Click(object sender, EventArgs e)
         {
             eklearsiv eklarsv = new eklearsiv(kullaniciAdi);
             eklarsv.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             EvrakDüzenle evrakDüzenle = new EvrakDüzenle(kullaniciAdi);
             evrakDüzenle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void evrakDuzenleTxt_Click(object sender, EventArgs e)
         {
             EvrakDüzenle evrakDüzenle = new EvrakDüzenle(kullaniciAdi);
             evrakDüzenle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

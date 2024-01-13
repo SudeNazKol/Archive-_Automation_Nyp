@@ -274,7 +274,7 @@ namespace NYP_Arsiv_Otomasyonu
 
         private void ajandaButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void ajandaTxt_Click(object sender, EventArgs e)
@@ -282,56 +282,56 @@ namespace NYP_Arsiv_Otomasyonu
 
             anaSayfa anasayfa = new anaSayfa(kullaniciAdi);
             anasayfa.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void arsivButton_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void arsivTxt_Click(object sender, EventArgs e)
         {
             ArsivSayfasi arsivSayfasi = new ArsivSayfasi(kullaniciAdi);
             arsivSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void personelEkleButton_Click(object sender, EventArgs e)
         {
             personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void personelEkleTxt_Click(object sender, EventArgs e)
         {
             personelEkle personelekle = new personelEkle(kullaniciAdi);
             personelekle.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void profilButton_Click(object sender, EventArgs e)
         {
            ProfilSayfasi profilSayfasi = new ProfilSayfasi(kullaniciAdi);
             profilSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void profilTxt_Click(object sender, EventArgs e)
         {
              ProfilSayfasi profilSayfasi = new ProfilSayfasi(kullaniciAdi);
             profilSayfasi.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             GirisSayfası girisSayfası = new GirisSayfası();
             girisSayfası.ShowDialog();
-            this.Close();
+            this.Hide();
         }
 
         private void dgvKullanicilar_CellContentClick(object sender, DataGridViewCellEventArgs e)

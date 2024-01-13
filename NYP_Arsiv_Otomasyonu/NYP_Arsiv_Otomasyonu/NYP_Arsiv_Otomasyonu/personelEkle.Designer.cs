@@ -53,11 +53,9 @@
             this.ekleButton = new System.Windows.Forms.Button();
             this.düzenleButton = new System.Windows.Forms.Button();
             this.silButton = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.saatTxt = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.personelekledata = new System.Windows.Forms.DataGridView();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personelEkleButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilButton)).BeginInit();
@@ -65,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelekledata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
@@ -320,31 +317,6 @@
             this.silButton.UseVisualStyleBackColor = true;
             this.silButton.Click += new System.EventHandler(this.silButton_Click);
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(836, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 64;
-            this.pictureBox6.TabStop = false;
-            // 
-            // saatTxt
-            // 
-            this.saatTxt.AutoSize = true;
-            this.saatTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.saatTxt.ForeColor = System.Drawing.Color.White;
-            this.saatTxt.Location = new System.Drawing.Point(874, 19);
-            this.saatTxt.Name = "saatTxt";
-            this.saatTxt.Size = new System.Drawing.Size(59, 20);
-            this.saatTxt.TabIndex = 63;
-            this.saatTxt.Text = "label1";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // personelekledata
             // 
             this.personelekledata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -373,8 +345,6 @@
             this.ClientSize = new System.Drawing.Size(991, 540);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.personelekledata);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.saatTxt);
             this.Controls.Add(this.silButton);
             this.Controls.Add(this.düzenleButton);
             this.Controls.Add(this.ekleButton);
@@ -410,7 +380,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsivButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajandaButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelekledata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
@@ -443,10 +412,8 @@
         private System.Windows.Forms.Button ekleButton;
         private System.Windows.Forms.Button düzenleButton;
         private System.Windows.Forms.Button silButton;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label saatTxt;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridView personelekledata;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Timer timer1;
     }
 }
