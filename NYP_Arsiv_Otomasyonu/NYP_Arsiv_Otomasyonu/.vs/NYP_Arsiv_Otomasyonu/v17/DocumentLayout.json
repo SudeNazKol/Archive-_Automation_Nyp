@@ -1,0 +1,477 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|c:\\users\\ilayda\\desktop\\otomasyon\\archive-_automation_nyp\\nyp_arsiv_otomasyonu\\nyp_arsiv_otomasyonu\\nyp_arsiv_otomasyonu\\girissayfas\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\girissayfas\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\teslimbilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\teslimbilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\teslimbilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\teslimbilgileri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\profilsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\profilsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\profilsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\profilsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\personelekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\personelekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\personelekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\personelekle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\girissayfas\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\girissayfas\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\evrakgoruntule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\evrakgoruntule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\evrakgoruntule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\evrakgoruntule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\evrakd\u00FCzenle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\evrakd\u00FCzenle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\evrakd\u00FCzenle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\evrakd\u00FCzenle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\eklearsiv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\eklearsiv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\eklearsiv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\eklearsiv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\bilgisayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\bilgisayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\arsivsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\arsivsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\arsivsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\arsivsayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\listeleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\listeleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\listeleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\listeleme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\bilgisayfasi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\bilgisayfasi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\bilgisayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\bilgisayfasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\anasayfa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\anasayfa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\nyp_arsiv_otomasyonu\\personel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F0AA11-FCCC-49A1-873D-F038F916FE60}|NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu.csproj|solutionrelative:nyp_arsiv_otomasyonu\\personel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "personelEkle.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\personelEkle.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\personelEkle.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\personelEkle.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\personelEkle.cs",
+              "ViewState": "AQIAAD8BAAAAAAAAAAAlwPkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:38.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfilSayfasi.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:38.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfilSayfasi.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\ProfilSayfasi.cs",
+              "ViewState": "AQIAANYAAAAAAAAAAAASwMgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:38.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "teslimbilgileri.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\bulbulsenagit\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\admin\\Desktop\\bulbulsenagit\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:38.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "teslimbilgileri.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\teslimbilgileri.cs",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAnwBQBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:38.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GirisSayfas\u0131.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAApwFgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:12:38.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "personelEkle.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\personelEkle.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\personelEkle.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\personelEkle.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\personelEkle.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GirisSayfas\u0131.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\bulbulsenagit\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\admin\\Desktop\\bulbulsenagit\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\GirisSayfas\u0131.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EvrakGoruntule.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAlwKcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EvrakGoruntule.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakGoruntule.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EvrakD\u00FCzenle.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAjwLsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EvrakD\u00FCzenle.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\EvrakD\u00FCzenle.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "eklearsiv.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\eklearsiv.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\eklearsiv.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\eklearsiv.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\eklearsiv.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAgwMAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "eklearsiv.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\eklearsiv.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\eklearsiv.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\eklearsiv.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\eklearsiv.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BilgiSayfasi.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ArsivSayfasi.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAgwPkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ArsivSayfasi.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\ArsivSayfasi.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Anasayfa.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Anasayfa.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\Anasayfa.cs",
+              "ViewState": "AQIAABUBAAAAAAAAAAAhwAgBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Anasayfa.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Anasayfa.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "listeleme.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\listeleme.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\listeleme.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\listeleme.cs [Design]*",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\listeleme.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "listeleme.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\listeleme.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\listeleme.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\listeleme.cs*",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\listeleme.cs*",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form1.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Form1.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Form1.cs",
+              "ToolTip": "C:\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Form1.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\NypProje\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Form1.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BilgiSayfasi.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.Designer.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\BilgiSayfasi.Designer.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.Designer.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\BilgiSayfasi.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-03-25T13:12:39.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BilgiSayfasi.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\BilgiSayfasi.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\User.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\User.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\User.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:12:39.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Anasayfa.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.Designer.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Anasayfa.Designer.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Anasayfa.Designer.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\Anasayfa.Designer.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAcwKMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-03-25T13:12:39.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Program.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Program.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Program.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:12:39.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Form1.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Form1.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Form1.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\Form1.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAewBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-25T13:12:39.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Personel.cs",
+              "DocumentMoniker": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Personel.cs",
+              "RelativeDocumentMoniker": "NYP_Arsiv_Otomasyonu\\Personel.cs",
+              "ToolTip": "C:\\Users\\ilayda\\Desktop\\otomasyon\\Archive-_Automation_Nyp\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\NYP_Arsiv_Otomasyonu\\Personel.cs",
+              "RelativeToolTip": "NYP_Arsiv_Otomasyonu\\Personel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:12:39.019Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -309,7 +309,6 @@ C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\N
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.csproj.CopyComplete
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe.config
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.exe
 C:\Users\Hp\Documents\GitHub\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\bin\Debug\NYP_Arsiv_Otomasyonu.pdb
@@ -484,3 +483,4 @@ C:\NypProje\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NY
 C:\Users\admin\Desktop\bulbulsenagit\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.BilgiSayfasi.resources
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.BilgiSayfasi.resources
 C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsiv_Otomasyonu.Form1.resources
+C:\Users\ilayda\Desktop\otomasyon\Archive-_Automation_Nyp\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\NYP_Arsiv_Otomasyonu\obj\Debug\NYP_Arsi.E9B6C81C.Up2Date
